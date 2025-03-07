@@ -1,0 +1,11 @@
+# Ignore API keys and sensitive data
+*.env
+
+# Ignore temporary files
+output/audio/*.wav
+__pycache__/
+*.pyc
+
+# Ignore large video files
+input_videos/*
+!input_videos/.gitkeep

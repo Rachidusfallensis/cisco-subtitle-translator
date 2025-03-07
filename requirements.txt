@@ -1,0 +1,5 @@
+moviepy
+speechrecognition
+pydub
+requests
+anthropic
