@@ -9,3 +9,7 @@ __pycache__/
 # Ignore large video files
 input_videos/*
 !input_videos/.gitkeep
+
+# Ignore generated SRT files (optional)
+output/srt/*
+!output/srt/.gitkeep

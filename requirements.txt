@@ -3,3 +3,4 @@ speechrecognition
 pydub
 requests
 anthropic
+python-dotenv
