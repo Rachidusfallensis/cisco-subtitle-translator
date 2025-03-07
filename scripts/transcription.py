@@ -9,7 +9,7 @@ def transcribe_audio(audio_path):
     
     recognizer = sr.Recognizer()
     audio = AudioSegment.from_wav(audio_path)
-    chunk_length_ms = 60000  # 1 minute
+    chunk_length_ms = 10000  # 1 minute
     chunks = [audio[i:i + chunk_length_ms] for i in range(0, len(audio), chunk_length_ms)]
     
     subtitles = []
