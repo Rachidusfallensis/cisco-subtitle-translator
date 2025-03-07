@@ -30,5 +30,7 @@ pip install -r requirements.txt
 
 4. Configurez les clés API dans un fichier .env à la racine
 echo "DEEPL_API_KEY=your_deepl_api_key" >> .env
+
 echo "ANTHROPIC_API_KEY=your_anthropic_api_key" >> .env
+
 5. 
