@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:01:00,000
+si tu ne peux pas me voir ni m'entendre, mais que tu peux m'envoyer des SMS
+
+2
+00:01:00,000 --> 00:02:00,000
+me considéreriez-vous comme intelligent si vous communiquiez avec un ordinateur par le biais de messages textuels, le considéreriez-vous comme intelligent ?
+
+3
+00:02:00,000 --> 00:03:00,000
+L'intelligence artificielle et la façon dont les chercheurs en intelligence artificielle ont défini l'intelligence artificielle dans le passé Pour définir l'intelligence artificielle, il est utile d'examiner ce que certains des premiers fondateurs de l'intelligence artificielle ont fait.
+
+4
+00:03:00,000 --> 00:03:27,250
+Alan Turing est considéré comme l'un des fondateurs de l'informatique théorique et il a fourni la théorie mathématique qui sous-tend l'informatique.
+
+5
+00:04:00,000 --> 00:03:27,250
+l'ordinateur moderne en 1950 a écrit un article dans lequel il demandait si les machines pouvaient penser et il a proposé une façon de répondre à cette question appelée l'imitation.
+
+6
+00:05:00,000 --> 00:03:27,250
+dans lequel un observateur humain a des conversations textuelles avec un autre humain et a également une conversation similaire avec une machine que l'observateur ne peut pas voir ou qui n'est pas en mesure de le faire.
+
+7
+00:06:00,000 --> 00:03:27,250
+sur la qualité de la conversation textuelle si la personne à l'autre bout du fil
+
+8
+00:07:00,000 --> 00:03:27,250
+est un humain ou non si l'humain ne peut pas faire la distinction entre la machine et l'autre humain qui communique également par texte, alors cette machine démontre qu'elle est un humain.
+
+9
+00:08:00,000 --> 00:03:27,250
+Il est bon de penser que le jeu de l'imitation est maintenant aussi appelé le test de Turing. Pour l'anecdote, il y a eu un film assez cool sur Alan Ter.
+
+10
+00:09:00,000 --> 00:03:27,250
+pour décrypter les communications militaires de l'Allemagne nazie le nom du film est The Imitation Game le terme exact
+
+11
+00:10:00,000 --> 00:03:27,250
+Le terme "intelligence officielle" a été inventé par un autre fondateur de l'informatique, John McCarthy, en 1952. McCarthy et d'autres scientifiques se sont réunis à Dartmouth pour discuter de l'intelligence officielle.
+
+12
+00:11:00,000 --> 00:03:27,250
+large pour proposer une étude sur la façon dont les machines météorologiques peuvent être conçues pour simuler l'intelligence, ils ont écrit que la recherche serait basée sur la conjecture que tous les aspects de l'intelligence peuvent être simulés par les machines.
+
+13
+00:12:00,000 --> 00:03:27,250
+l'apprentissage ou toute autre caractéristique de l'intelligence peut en principe être décrite avec une telle précision qu'une machine peut être fabriquée pour la simuler Forme de McCarthy
+
+14
+00:13:00,000 --> 00:03:27,250
+L'intelligence artificielle est la science et l'ingénierie de la fabrication de machines intelligentes, mais comment définir l'intelligence ?
+
+15
+00:14:00,000 --> 00:03:27,250
+la partie informatique de la capacité à atteindre des objectifs dans le monde une autre façon de voir les choses est la capacité à effectuer des tâches utiles, donc
+
+16
+00:15:00,000 --> 00:03:27,250
+d'un point de vue historique l'intelligence artificielle est un domaine de recherche qui a vu le jour dans les années 1950 et dont l'objectif est de permettre aux machines d'effectuer des tâches
+
+17
+00:16:00,000 --> 00:03:27,250
+qui requièrent une intelligence - décomposons un peu - artificielle et machine signifie qu'elle n'est pas réalisée par une intelligence biologique comme un être humain.
+
+18
+00:17:00,000 --> 00:03:27,250
+un chien ou un panda est orienté Tâche la machine entreprend une action, comme la production d'un nombre ou d'un texte, afin d'obtenir un résultat utile.
+
+19
+00:18:00,000 --> 00:03:27,250
+L'intelligence et la définition de l'intelligence peuvent être quelque peu philosophiques, mais l'intelligence comprend la capacité de prendre des décisions, même si elles sont prises à l'avance.
+
+20
+00:19:00,000 --> 00:03:27,250
+L'intelligence est souvent définie en termes de ce que les humains sont capables de faire, bien qu'elle ne doive pas nécessairement se limiter à ce qu'ils peuvent faire.
+
+21
+00:20:00,000 --> 00:03:27,250
+Tissu et intelligence Examinons ensuite de plus près la définition de l'intelligence
+
