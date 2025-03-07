@@ -1,6 +1,10 @@
 import sys
 import os
-from audio_extraction import extract_audio
+
+# Add the directory containing this script (scripts/) to the Python module search path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from audio_extraction import extract_audio  # Corrected import
 from transcription import transcribe_audio
 from translation import translate_to_french
 from refinement import refine_subtitles

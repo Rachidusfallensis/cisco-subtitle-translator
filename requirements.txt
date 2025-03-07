@@ -4,3 +4,4 @@ pydub
 requests
 anthropic
 python-dotenv
+audio-extract 
