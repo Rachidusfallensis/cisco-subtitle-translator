@@ -1,80 +1,134 @@
-# Cisco Subtitle Translator
+# Video Subtitle Translator
 
-Ce projet traduit des fichiers de sous-titres SRT anglais en français à l'aide de l'API DeepL ( je l'ai testé avec la version libre pour le moment) et, en option, raffine les traductions avec Claude 3.5 (Anthropic) pour garantir une précision technique adaptée aux vidéos de cours Cisco.
+A web-based application for translating SRT subtitle files from English to French using DeepL API and Claude 3.5. The application features a modern, intuitive interface with real-time translation progress tracking and quality analysis.
 
-## Prérequis
+## Features
 
-- **Python 3.9+** : Assurez-vous d'avoir Python installé.
-- **Clés API** :
-  - [DeepL API Key](https://www.deepl.com/pro-api) pour la traduction.
-  - [Anthropic API Key](https://www.anthropic.com) pour le raffinement (optionnel).
-- **FFmpeg** : Nécessaire si vous utilisez les fonctionnalités d'extraction audio.
+### Translation
+- Batch processing of multiple SRT files
+- Real-time translation progress tracking
+- Maximum file size of 16MB
+- Concurrent translation support (up to 3 files simultaneously)
+- Rate limiting to prevent API abuse
 
-### Installation des Dépendances
+### Quality Analysis
+- Translation confidence scoring
+- Length ratio analysis
+- Placeholder preservation checking
+- Quality indicators (high/medium/low)
+- Processing time tracking
 
-1. Clonez le dépôt :
-   ```bash
-   git clone https://github.com/Rachidusfallensis/cisco-subtitle-translator.git
-   cd cisco-subtitle-translator
-   ```
-2. Créez et activez un environnement virtuel :
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # Sur macOS/Linux
-   # ou venv\Scripts\activate sur Windows
-   ```
-3. Installez les dépendances : 
-   ```bash
-   pip install -r requirements.txt
-   ```
+### File Management
+- Automatic cleanup of files older than 24 hours
+- Storage statistics monitoring
+- Secure file handling
+- Input validation for SRT files
 
-4. Configurez les clés API dans un fichier .env à la racine
-   ```bash
-   echo "DEEPL_API_KEY=your_deepl_api_key" >> .env
-   echo "ANTHROPIC_API_KEY=your_anthropic_api_key" >> .env
-   ```
+### User Interface
+- Drag-and-drop file upload
+- Multiple file upload support
+- Real-time progress tracking
+- File preview functionality
+- Quality metrics display
+- Translation status badges
+- Download management
+- Statistics dashboard
 
-## Utilisation
+## Setup
 
-### Interface Web (Nouveau!)
-
-Nous avons désormais une interface web conviviale qui permet de :
-- Glisser-déposer facilement des fichiers SRT
-- Suivre la progression de la traduction en temps réel
-- Comparer côte à côte les sous-titres originaux et traduits
-- Télécharger les sous-titres traduits
-
-Pour lancer l'interface web :
+1. Clone the repository:
 ```bash
-python run_web_interface.py
-```
-Puis accédez à http://localhost:5000 dans votre navigateur.
-
-### Ligne de Commande
-
-#### Traduire un fichier SRT existant :
-```bash
-python -m scripts.main_srt nom_du_fichier.srt
+git clone https://github.com/yourusername/video-translator.git
+cd video-translator
 ```
 
-#### Extraire et traduire depuis une vidéo :
+2. Install dependencies:
 ```bash
-python -m scripts.main chemin/vers/la/video.mp4
+pip install -r requirements.txt
 ```
 
-## Fonctionnalités
+3. Set up environment variables:
+Create a `.env` file in the project root with:
+```
+DEEPL_API_KEY=your_deepl_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
+```
 
-- **Traduction SRT** : Traduction efficace de sous-titres SRT de l'anglais vers le français.
-- **Raffinement avec Claude 3.5** : Amélioration des traductions pour garantir une précision technique.
-- **Extraction Audio** : Extrait l'audio des vidéos pour la transcription.
-- **Interface Web** : Interface utilisateur moderne avec suivi de progression et comparaison des sous-titres.
+## Usage
 
-## Structure du Projet
+1. Start the application:
+```bash
+python web/app.py
+```
 
-- `scripts/` : Scripts Python principaux
-- `input_srt/` : Déposez vos fichiers SRT à traduire ici
-- `input_videos/` : Déposez vos vidéos ici pour l'extraction audio
-- `output/` : Dossier contenant les sous-titres traduits
-- `web/` : Interface web pour la traduction de sous-titres
+2. Access the web interface at `http://localhost:5000`
 
-i
+3. Upload SRT files by either:
+   - Dragging and dropping files into the upload zone
+   - Clicking the upload zone to select files
+
+4. Monitor translation progress in real-time:
+   - View individual file progress
+   - Check translation quality metrics
+   - Download completed translations
+
+## Project Structure
+
+```
+video-translator/
+├── web/
+│   ├── app.py              # Main Flask application
+│   └── templates/
+│       └── index.html      # Web interface
+├── scripts/
+│   ├── srt_translator.py   # Translation logic
+│   ├── translation_quality.py  # Quality analysis
+│   └── file_manager.py     # File management
+├── input_srt/             # Upload directory
+├── output/
+│   └── srt/              # Translated files
+├── requirements.txt       # Project dependencies
+└── .env                  # Environment variables
+```
+
+## Dependencies
+
+- Flask - Web framework
+- Flask-SocketIO - Real-time communication
+- Flask-Limiter - Rate limiting
+- Anthropic - Claude API integration
+- DeepL API - Translation service
+- Other dependencies listed in requirements.txt
+
+## Error Handling
+
+- File size limits (16MB max)
+- SRT format validation
+- Concurrent translation limits
+- API rate limiting
+- Automatic file cleanup
+- Comprehensive error logging
+
+## Monitoring
+
+- Translation success rate
+- Processing time statistics
+- Storage usage tracking
+- Active translation monitoring
+- Error logging and tracking
+
+## Security Features
+
+- Secure file handling
+- Rate limiting
+- Maximum file size restrictions
+- Automatic file cleanup
+- Input validation
+
+## License
+
+[Your License Here]
+
+## Contributing
+
+[Your Contributing Guidelines Here]
