@@ -1,0 +1,396 @@
+1
+00:00:05,220 --> 00:00:10,120
+Let's say you have a mini toaster oven like this, and you want to take a piece of bread like this,
+
+2
+00:00:11,620 --> 00:00:16,960
+and turn it into a piece of toast like this. How would you do that? There are knobs in the toaster
+
+3
+00:00:17,100 --> 00:00:22,200
+oven to let you control how hot and how long to toast a piece of bread. Similarly, in machine
+
+4
+00:00:22,440 --> 00:00:27,720
+learning, there are these things called models that have parameters that you can adjust so that
+
+5
+00:00:27,740 --> 00:00:36,360
+you can get a piece of toast that looks like this and not a piece of toast that looks like this.
+
+6
+00:00:37,060 --> 00:00:41,920
+Let's take a closer look at machine learning models and how they learn. So what is a machine
+
+7
+00:00:42,160 --> 00:00:47,740
+learning model? A model is a function, meaning that it takes some input, does something to process
+
+8
+00:00:48,080 --> 00:00:54,180
+that input, and then produces some kind of output. And a model is a special kind of function in that
+
+9
+00:00:54,200 --> 00:00:59,620
+it can learn to change how it processes the input to produce the output. I'll try to describe this
+
+10
+00:00:59,940 --> 00:01:05,400
+model as if it's a smart mini toaster oven that can customize its temperature and timing settings
+
+11
+00:01:05,860 --> 00:01:10,560
+based on what kind of bread it gets as its input. So let's say you have a piece of bread that you
+
+12
+00:01:10,700 --> 00:01:17,220
+want to toast, and you can measure how big it is by its length and width, and also identify what
+
+13
+00:01:17,380 --> 00:01:22,760
+type of bread it is, for example, sourdough bread. These are inputs to the model that it will use to
+
+14
+00:01:22,780 --> 00:01:28,400
+help it perform its task. In machine learning vocabulary, we call these inputs features. So what
+
+15
+00:01:28,540 --> 00:01:34,380
+does the model use to help it perform the task? It has these things called parameters. I'm representing
+
+16
+00:01:34,640 --> 00:01:40,380
+these as gears that you can turn. I'll explain why in a bit. In reality, it's actually a number like
+
+17
+00:01:40,500 --> 00:01:46,680
+the number 0.5 or 0.75. It actually starts out randomly assigned as any number because it will
+
+18
+00:01:46,780 --> 00:01:52,740
+be adjusted as the model learns. Let's say, for example, one parameter is a heat parameter for
+
+19
+00:01:52,760 --> 00:01:59,460
+how hot to make the toaster oven. The model takes the inputs such as length, width, and type of bread,
+
+20
+00:01:59,880 --> 00:02:05,160
+sourdough in this case, and in combination with the heat parameter, it chooses a recommended
+
+21
+00:02:05,420 --> 00:02:11,440
+temperature to set the mini toaster oven based on both the features of the bread and this heat
+
+22
+00:02:11,620 --> 00:02:17,380
+parameter. And the model usually has many parameters. In this example, I'm just giving it two. So it also
+
+23
+00:02:17,400 --> 00:02:22,820
+has a time parameter. The model takes in the features of length, width, and type of bread,
+
+24
+00:02:23,340 --> 00:02:28,900
+and in combination with the time parameter, chooses the number of minutes to run the toaster oven. And
+
+25
+00:02:28,980 --> 00:02:34,100
+so the smart mini toaster oven can toast the bread based on the recommended temperature and the
+
+26
+00:02:34,220 --> 00:02:39,020
+number of minutes, and it outputs this piece of toast. To help the model learn, you can give it
+
+27
+00:02:39,160 --> 00:02:45,400
+the correct answer as feedback. So for instance, here is the ideal example of toasted bread for the
+
+28
+00:02:45,420 --> 00:02:50,440
+same length, width, and the type of bread, which is sourdough. In machine learning vocabulary,
+
+29
+00:02:51,100 --> 00:02:56,280
+the correct answer for a particular example of inputs is called a label. The model's output
+
+30
+00:02:56,700 --> 00:03:02,220
+and the correct answer, the label, are then fed into some kind of performance measure. So this
+
+31
+00:03:02,420 --> 00:03:07,180
+performance measure can output a number that quantifies how good the model's output is.
+
+32
+00:03:07,520 --> 00:03:12,439
+This measure of performance is then sent to what's called an optimizer. You can think of an optimizer
+
+33
+00:03:12,460 --> 00:03:18,820
+as a tool, in this case maybe a hand wrench, and it uses the measure of performance to then go into
+
+34
+00:03:18,940 --> 00:03:24,720
+the model itself and update its parameters, so that next time if the model is given the same exact
+
+35
+00:03:24,920 --> 00:03:30,660
+inputs, it would do better at that task in producing its output. And hopefully, even if given other
+
+36
+00:03:30,860 --> 00:03:36,000
+kinds of bread of different length, width, and type, the model may also learn to do better at
+
+37
+00:03:36,220 --> 00:03:40,999
+toasting those kinds of bread, although that's not necessarily the case. And so in order to help the
+
+38
+00:03:41,020 --> 00:03:46,240
+model learned to work well with lots of kinds of bread, you'd want to give it more data for it to
+
+39
+00:03:46,340 --> 00:03:51,180
+learn from, such as this croissant and many other kinds of bread. Something I think is helpful to
+
+40
+00:03:51,280 --> 00:03:57,640
+know is that AI is a collection of many categories of models that specialize in different domains or
+
+41
+00:03:57,780 --> 00:04:03,300
+tasks. I mention this because sometimes when we read about AI in the news, it kind of makes it
+
+42
+00:04:03,520 --> 00:04:08,499
+sound like AI is just one single entity that can do all sorts of things. But there are models that
+
+43
+00:04:08,520 --> 00:04:13,660
+have been trained specifically to take in numbers or categories such as different kinds of bread.
+
+44
+00:04:14,040 --> 00:04:19,420
+This is called structured data. There are also models that take in images and video. This field
+
+45
+00:04:19,560 --> 00:04:24,780
+of AI is called computer vision. There are models that can take in audio as inputs and produce text.
+
+46
+00:04:25,160 --> 00:04:30,260
+This is called automatic speech recognition and sometimes you might see this in your computer or
+
+47
+00:04:30,480 --> 00:04:36,519
+phone as voice dictation. There are also models that generate audio. This field of AI is called
+
+48
+00:04:36,560 --> 00:04:42,320
+audio generation. One common type is text-to-speech. There are models that take in and do something
+
+49
+00:04:42,500 --> 00:04:48,180
+useful with text and human language. This field of AI that handles human language in the form of
+
+50
+00:04:48,440 --> 00:04:53,700
+text as well as recognizing speech or generating speech is called natural language processing.
+
+51
+00:04:54,200 --> 00:04:58,980
+In the history of AI and machine learning, there are many models that researchers have designed
+
+52
+00:04:59,280 --> 00:05:05,899
+to work on processing text, images, audio, and numbers. There is one major category of machine
+
+53
+00:05:05,920 --> 00:05:11,260
+learning models, that is most likely what's used in a lot of the applications that you see today,
+
+54
+00:05:11,680 --> 00:05:16,820
+because it performs really well when it can learn from a lot of data. This is called a neural network.
+
+55
+00:05:17,160 --> 00:05:22,900
+A fundamental unit of a neural network is a neuron. A neuron contains what are called weights,
+
+56
+00:05:23,320 --> 00:05:29,060
+which is just another name for parameter, but the word weights is specific to neural networks. So you
+
+57
+00:05:29,140 --> 00:05:34,599
+can say that any model, whether it's a neural network or not, has parameters that it uses to
+
+58
+00:05:34,620 --> 00:05:39,800
+learn from data. And for a neural network, the parameters are called weights. You can have more
+
+59
+00:05:39,900 --> 00:05:45,080
+than one neuron, and combined together, they create what's called a layer. And you can have more neurons
+
+60
+00:05:45,320 --> 00:05:49,920
+grouped together, and they actually take the outputs of these neurons on the left as their own inputs,
+
+61
+00:05:50,380 --> 00:05:54,360
+so that they can produce their own outputs. These other group of neurons on the right can also be
+
+62
+00:05:54,560 --> 00:06:00,499
+grouped together and referred to as a layer. And a neural network can have many layers. Each layer
+
+63
+00:06:00,580 --> 00:06:06,720
+takes the previous layer's output as its input, and each layer sends its output to another layer
+
+64
+00:06:06,960 --> 00:06:12,300
+to be their input. When there are many layers in a neural network, we say that the neural network
+
+65
+00:06:12,660 --> 00:06:19,120
+is very deep. And another common way that people refer to neural networks is the term deep learning.
+
+66
+00:06:19,540 --> 00:06:24,300
+So when you hear people talk about deep learning in the news, they're really referring to machine
+
+67
+00:06:24,540 --> 00:06:30,480
+learning that uses these very powerful models called neural networks. So now you know how to
+
+68
+00:06:30,500 --> 00:06:35,680
+neural network. And if you add a blue line down here and an orange circle up here,
+
+69
+00:06:37,320 --> 00:06:44,220
+maybe a little red car over here, and a little birdie over here, you now also know how to draw
+
+70
+00:06:44,700 --> 00:06:49,440
+the Golden Gate Bridge. So there's one more thing I'd like to add. So I'd like to clarify
+
+71
+00:06:50,280 --> 00:06:55,840
+that models go through an explicit training phase versus an inference phase, and I'll explain what
+
+72
+00:06:55,860 --> 00:07:00,720
+that means. What you saw here where a model was learning, this whole picture that includes the
+
+73
+00:07:01,000 --> 00:07:06,040
+model, the performance measure, and the optimizer, these are all pieces that work together during
+
+74
+00:07:06,360 --> 00:07:11,640
+training when the model is learning from data and when you have data not just on what the inputs are
+
+75
+00:07:11,880 --> 00:07:16,260
+but what the correct answer should be for each given input. When models are done training,
+
+76
+00:07:16,760 --> 00:07:21,360
+they're ready to be used by application users like us, then you actually no longer have data
+
+77
+00:07:21,420 --> 00:07:26,180
+on the correct answer. You're not using the performance measure or the optimizer. So during
+
+78
+00:07:26,500 --> 00:07:31,580
+inference, you're giving your own input to the model, and the model is doing its best based on
+
+79
+00:07:31,720 --> 00:07:36,820
+what is learned during training to give you a good output to perform the desired task. But at this
+
+80
+00:07:36,980 --> 00:07:41,940
+point, the parameters are no longer going to be changed when you send inputs to the model. I want
+
+81
+00:07:42,040 --> 00:07:48,000
+to mention this because when you as a user are using some AI-enabled application, I just want to
+
+82
+00:07:48,020 --> 00:07:53,240
+make clear that each time you use the application, it's not automatically learning or changing its
+
+83
+00:07:53,580 --> 00:07:58,620
+parameters based on your inputs. Now, it is also true that companies that offer these software
+
+84
+00:07:58,900 --> 00:08:03,220
+applications will collect your inputs to train their model, but they usually aggregate that
+
+85
+00:08:03,460 --> 00:08:08,720
+information over time. They also will need to clean the data and identify the correct answers
+
+86
+00:08:09,220 --> 00:08:14,600
+for each input, and then they can separately train a model on that data at a later date. The main
+
+87
+00:08:14,620 --> 00:08:18,720
+point I want to get across is that most likely when you're using a machine learning model,
+
+88
+00:08:19,120 --> 00:08:23,600
+it's not going to be updating its parameters every minute or every second that you're using it.
+
+89
+00:08:23,940 --> 00:08:28,660
+So that was a lot of information over the past few videos, but I just want to take a step back
+
+90
+00:08:28,920 --> 00:08:34,539
+and describe the big picture of what you saw. AI is a field of research that enables computers to
+
+91
+00:08:34,760 --> 00:08:41,300
+perform tasks intelligently. Machine learning is a major subfield of AI that uses data to train
+
+92
+00:08:41,320 --> 00:08:48,280
+computers to perform tasks. A model is a function that performs a task by taking an input and
+
+93
+00:08:48,540 --> 00:08:54,480
+producing an output, and can learn from experience and data to get better at that task. If you didn't
+
+94
+00:08:54,600 --> 00:08:59,300
+catch everything that you saw in the past few videos, don't worry. The rest of this course is
+
+95
+00:08:59,460 --> 00:09:05,080
+much more focused on having you practice using AI-enabled applications and getting some conceptual
+
+96
+00:09:05,400 --> 00:09:09,959
+understanding of what's happening behind the scenes to do some of the pretty cool things that
+
+97
+00:09:09,980 --> 00:09:15,820
+you'll be able to do with AI. Coming up next, I'll give a brief study tip on looking at the big
+
+98
+00:09:16,180 --> 00:09:21,640
+picture, which I hope will help you give yourself more options when navigating this course. See you
+
+99
+00:09:21,800 --> 00:09:22,320
+in the next video.
+

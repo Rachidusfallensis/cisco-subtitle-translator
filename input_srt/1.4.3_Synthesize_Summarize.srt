@@ -1,0 +1,648 @@
+1
+00:00:05,160 --> 00:00:08,420
+Have you ever had to read through a really long document and summarize the key points?
+
+2
+00:00:08,900 --> 00:00:10,860
+Well, now you can ask a chatbot to do that for you.
+
+3
+00:00:11,280 --> 00:00:14,580
+Now let's take a look at one of these synthesized tasks called summarization.
+
+4
+00:00:15,860 --> 00:00:20,160
+Text summarization can really help you speed up your learning or help you when you're researching
+
+5
+00:00:20,320 --> 00:00:25,520
+a topic to really extract the parts of an article or document that's most relevant to what you're
+
+6
+00:00:25,620 --> 00:00:25,940
+looking for.
+
+7
+00:00:26,560 --> 00:00:29,200
+So let's look at an example where you might use summarization.
+
+8
+00:00:29,460 --> 00:00:32,580
+Let's say you want to learn about Banksy from a Wikipedia article.
+
+9
+00:00:33,280 --> 00:00:37,840
+It's quite long, and you may want to focus on a specific subtopic within the article.
+
+10
+00:00:38,260 --> 00:00:39,740
+So how can you ask a chatbot to help?
+
+11
+00:00:40,500 --> 00:00:45,120
+One thing you can try is to give the chatbot a web link and then ask it to summarize the article.
+
+12
+00:00:45,600 --> 00:00:49,080
+And in this case, I'm going to have it focus on a specific subtopic,
+
+13
+00:00:49,380 --> 00:00:55,160
+which is to summarize Banksy's activities that relate to social, geopolitical, or current events.
+
+14
+00:00:55,760 --> 00:01:02,560
+Let's use Notebook LM by Google, which is a tool that lets you upload documents and then chat about them using Gemini.
+
+15
+00:01:03,040 --> 00:01:08,040
+You can start by clicking the button "Create" and you can see there are a couple options for uploading documents.
+
+16
+00:01:08,460 --> 00:01:14,300
+You can connect it to Google Drive, you can paste the text in directly, you can upload documents in PDF or text format,
+
+17
+00:01:14,680 --> 00:01:18,920
+and it also has the option for you to provide a link to a website. Let's use the website option.
+
+18
+00:01:19,760 --> 00:01:23,680
+Again, here's the Wikipedia article, so you can copy the web link and paste it in here.
+
+19
+00:01:23,980 --> 00:01:27,920
+I'm fast forwarding a bit, but it takes a few seconds to process the website.
+
+20
+00:01:28,360 --> 00:01:32,060
+Now you can see on the left that it has uploaded this web article as a source
+
+21
+00:01:32,520 --> 00:01:34,980
+that the chatbot will use when you prompt it for something.
+
+22
+00:01:35,980 --> 00:01:40,960
+And here's the prompt: Summarize Banksy's activities that relate to social, geopolitical,
+
+23
+00:01:41,360 --> 00:01:47,820
+or current events. Let's zoom in a bit. You can see that it's a fairly detailed and also
+
+24
+00:01:48,140 --> 00:01:52,200
+annotated list of topics. You can double check that these are coming from the source material.
+
+25
+00:01:52,540 --> 00:01:54,700
+It mentions an elephant that was painted pink.
+
+26
+00:01:55,240 --> 00:01:58,640
+If you go back to the web article, you can verify that it's mentioned there.
+
+27
+00:01:59,020 --> 00:02:01,980
+You can also click on the citation buttons within the output,
+
+28
+00:02:02,380 --> 00:02:07,080
+and it opens up a side window that also shows the original text from the Wikipedia article.
+
+29
+00:02:07,680 --> 00:02:08,600
+Let's do another check.
+
+30
+00:02:09,039 --> 00:02:11,880
+It mentions a piece of art called Love is in the Bin.
+
+31
+00:02:12,360 --> 00:02:17,140
+Here, if you click on the first citation, it doesn't seem to mention this piece of art.
+
+32
+00:02:17,360 --> 00:02:20,660
+But for the next citation, it does mention this particular piece of artwork.
+
+33
+00:02:21,580 --> 00:02:24,540
+And if you go to the original article, you can see it there too.
+
+34
+00:02:25,440 --> 00:02:29,240
+So I hope you can see that having a chatbot read through an article first
+
+35
+00:02:29,540 --> 00:02:34,720
+can really help you zoom in and focus on the topics or details that you're really interested in.
+
+36
+00:02:35,080 --> 00:02:39,800
+And I hope you can also see how valuable it is to be able to reference the original source material.
+
+37
+00:02:40,300 --> 00:02:44,500
+And I'll just mention that Balloon Girl is one of Banksy's most famous pieces of art,
+
+38
+00:02:44,760 --> 00:02:48,600
+and it was transformed into another piece of art called Love is in the Bin.
+
+39
+00:02:48,920 --> 00:02:53,120
+If you're curious to learn more, you can check out the Wikipedia article or ask a chatbot.
+
+40
+00:02:53,380 --> 00:02:57,120
+You may find that if you use the keyword summarize for a task,
+
+41
+00:02:57,460 --> 00:03:03,120
+then a chatbot may reply in its own words instead of providing direct quotes from the original source material.
+
+42
+00:03:03,700 --> 00:03:09,020
+And since not all chatbots have the feature of linking citations to the original source,
+
+43
+00:03:09,420 --> 00:03:14,740
+it may become a bit more difficult to verify if the chatbot's output is coming from the source document.
+
+44
+00:03:15,200 --> 00:03:19,720
+so you may prefer that it gives you word-for-word text from the source instead.
+
+45
+00:03:20,300 --> 00:03:23,200
+One recommendation I have is, instead of saying summarize,
+
+46
+00:03:23,700 --> 00:03:28,020
+you may want to ask it to extract relevant text as direct quotes.
+
+47
+00:03:28,520 --> 00:03:32,320
+This encourages the chatbot to use the exact wording from the source material.
+
+48
+00:03:32,820 --> 00:03:37,960
+One thing I've experienced is that sometimes it's not enough to only say extract relevant text.
+
+49
+00:03:38,320 --> 00:03:44,160
+Sometimes it works better if you use this entire phrase, extract relevant text as direct quotes.
+
+50
+00:03:44,400 --> 00:03:48,860
+to try to make it clear as possible that you want it to not try to summarize in its own words,
+
+51
+00:03:49,140 --> 00:03:51,160
+but to really get the original wording from the source.
+
+52
+00:03:51,820 --> 00:03:53,280
+Let's try this out with ChatGPT.
+
+53
+00:03:54,260 --> 00:03:57,640
+And it looks like it has provided some direct quotes, but let's double check.
+
+54
+00:03:58,240 --> 00:04:02,860
+So as before, you can copy some text and then search for it in the original source.
+
+55
+00:04:06,120 --> 00:04:11,300
+Here you can see the issue is just that the elephant in the room was in double quotes in the original article,
+
+56
+00:04:11,380 --> 00:04:15,140
+and it was changed to single quotes in the output of the chatbot,
+
+57
+00:04:15,340 --> 00:04:17,500
+but the rest of the text was retrieved word for word.
+
+58
+00:04:17,959 --> 00:04:18,920
+Let's check another example.
+
+59
+00:04:19,359 --> 00:04:23,240
+Here's another piece of text, nine images on the Israeli West Bank wall,
+
+60
+00:04:23,760 --> 00:04:26,420
+and we can see that it's extracted that text word for word.
+
+61
+00:04:26,780 --> 00:04:29,620
+One thing I would like to note is that if I run this multiple times,
+
+62
+00:04:30,260 --> 00:04:32,020
+sometimes ChatGPT will say,
+
+63
+00:04:32,540 --> 00:04:34,280
+sorry, I actually can't do that.
+
+64
+00:04:34,800 --> 00:04:38,080
+Please go to the website yourself and extract the relevant text.
+
+65
+00:04:38,600 --> 00:04:41,040
+So sometimes when you ask it to extract direct quotes,
+
+66
+00:04:41,300 --> 00:04:46,020
+it might decline to do so. For other chatbots that I've tried, a lot of them are only allowed
+
+67
+00:04:46,400 --> 00:04:51,420
+to summarize, but are not allowed to extract direct quotes. And most of the chatbots that
+
+68
+00:04:51,540 --> 00:04:55,340
+you've seen in the previous videos do not have the ability to work with a web link.
+
+69
+00:04:55,880 --> 00:05:00,340
+Sometimes they will reply as if they're complying with your instruction, but when you double check,
+
+70
+00:05:00,580 --> 00:05:04,900
+you'll notice that it's just producing information based on its own knowledge and not retrieving it
+
+71
+00:05:04,980 --> 00:05:09,959
+from the article. So if providing a direct web link to a website isn't working, then one thing
+
+72
+00:05:09,980 --> 00:05:15,320
+you can try is to download that web page as an HTML file and upload the file to
+
+73
+00:05:15,380 --> 00:05:19,120
+the chatbot. So then the prompt will become: "From the following attached
+
+74
+00:05:19,460 --> 00:05:23,760
+document, extract all the relevant text and the rest of the prompt is the same."
+
+75
+00:05:24,460 --> 00:05:28,920
+For ChatGPT, there's this paperclip icon and it allows you to upload from your
+
+76
+00:05:29,120 --> 00:05:33,000
+computer. So let's first go back to the Wikipedia article and download it as a
+
+77
+00:05:33,160 --> 00:05:36,820
+file and then let's save the web page as HTML only.
+
+78
+00:05:38,860 --> 00:05:42,460
+Now that you have a file, you can upload it and then give your instructions.
+
+79
+00:05:43,820 --> 00:05:47,880
+And you can see that it has these hyperlinks in green that refer to the attached file.
+
+80
+00:05:48,220 --> 00:05:52,800
+It's saying, "These are quotes that were extracted directly from the attached document."
+
+81
+00:05:53,320 --> 00:05:56,580
+And it's always good to double-check, so you can copy some text from this output
+
+82
+00:05:57,080 --> 00:05:59,120
+and then check if it's actually in the original article.
+
+83
+00:06:00,000 --> 00:06:04,540
+For Claude, you can see that you can upload five files with a limit of 30 megabytes each.
+
+84
+00:06:04,980 --> 00:06:07,880
+So I can upload this HTML file to see if it works.
+
+85
+00:06:07,900 --> 00:06:13,200
+works. And here it says that it's over the length limit. So all of these chatbots have
+
+86
+00:06:13,400 --> 00:06:18,420
+different context lengths. That's how much text it can take in at one single time as
+
+87
+00:06:18,500 --> 00:06:23,980
+a prompt. Let's try this with Command + R + by Coher. We'll upload that same HTML file.
+
+88
+00:06:24,480 --> 00:06:31,420
+OK, so far, no error, so I'll go ahead and give it the instructions. So this is taking
+
+89
+00:06:31,520 --> 00:06:35,700
+a bit of time, so I'm speeding up the video recording a bit. One of the reasons this takes
+
+90
+00:06:35,720 --> 00:06:40,940
+quite a long time is because the HTML file has a lot of other structure around the text.
+
+91
+00:06:41,460 --> 00:06:45,640
+Later, you'll see a way to make this a bit more efficient for the chatbot by just giving
+
+92
+00:06:45,840 --> 00:06:47,800
+it the exact text and nothing else.
+
+93
+00:06:48,320 --> 00:06:51,780
+But you can see that if you were to open up the HTML file, there's a lot of structure
+
+94
+00:06:52,040 --> 00:06:54,560
+around the text that gives it the font and also the layout.
+
+95
+00:06:55,020 --> 00:06:59,060
+If you were to look at this from a text document, it would sort of look like code.
+
+96
+00:06:59,500 --> 00:07:01,920
+So coming back, looks like it was able to process this document.
+
+97
+00:07:05,740 --> 00:07:11,320
+And what's really cool is that chatbots can understand that when you ask for social, political,
+
+98
+00:07:11,880 --> 00:07:17,260
+cultural, or current events, you can see topics about poverty or environment and understand
+
+99
+00:07:17,820 --> 00:07:22,760
+that these words are also related to what you're asking for. In comparison, if you were to use
+
+100
+00:07:22,920 --> 00:07:27,860
+traditional software, you would probably have to specify keywords that you were looking for
+
+101
+00:07:28,060 --> 00:07:31,040
+that refer to these social, political, or current events,
+
+102
+00:07:31,500 --> 00:07:33,100
+such as specific names of countries
+
+103
+00:07:33,820 --> 00:07:38,100
+and specific keywords like climate or war or refugee.
+
+104
+00:07:38,680 --> 00:07:40,520
+And it's still really helpful to be ready
+
+105
+00:07:40,840 --> 00:07:44,300
+to copy and paste the source text directly into the prompt.
+
+106
+00:07:44,620 --> 00:07:47,860
+This is because some chatbots don't take in HTML files.
+
+107
+00:07:48,200 --> 00:07:50,780
+Some chatbots also don't take in any attached documents at all,
+
+108
+00:07:51,060 --> 00:07:53,060
+but they can still perform the task quite well
+
+109
+00:07:53,240 --> 00:07:54,860
+if you give them the source document
+
+110
+00:07:55,160 --> 00:07:56,680
+as plain text inside the prompt.
+
+111
+00:07:57,120 --> 00:08:02,820
+So I recommend first saving that text into some word processor like Google Docs or Microsoft Word,
+
+112
+00:08:03,080 --> 00:08:08,540
+and also first checking how much text the chatbot can actually take in as an input at one time.
+
+113
+00:08:09,120 --> 00:08:11,540
+Let's check if the other chatbots let you upload documents.
+
+114
+00:08:12,020 --> 00:08:16,240
+In Mistral, there's currently no upload file feature at the time that I'm filming this lecture.
+
+115
+00:08:16,680 --> 00:08:20,960
+In Gemini, you can only upload an image. We'll get into images later in the course.
+
+116
+00:08:21,460 --> 00:08:25,160
+In Meta AI, you can't currently upload anything at this time.
+
+117
+00:08:25,800 --> 00:08:28,300
+And in Microsoft Copilot, you can only upload an image.
+
+118
+00:08:28,740 --> 00:08:33,159
+So for these chatbots, you can still copy and paste the text directly into the prompt.
+
+119
+00:08:33,560 --> 00:08:36,919
+To make it easier, let's first copy this text into a word processor.
+
+120
+00:08:37,500 --> 00:08:39,599
+So you can open up a blank Google Doc, for instance,
+
+121
+00:08:40,219 --> 00:08:44,460
+use the keyboard shortcut Ctrl-A on a PC or Command-A on a Mac,
+
+122
+00:08:44,960 --> 00:08:47,800
+copy all the text, and paste it into the word processor.
+
+123
+00:08:48,300 --> 00:08:49,440
+Let's do a little bit of cleanup.
+
+124
+00:08:50,000 --> 00:08:54,080
+Usually at the bottom of these Wikipedia articles, there are citations and external links.
+
+125
+00:08:54,460 --> 00:08:58,140
+We probably won't need these for this task, so I'm just going to make it a bit shorter
+
+126
+00:08:58,420 --> 00:08:59,580
+by removing all the references.
+
+127
+00:09:00,140 --> 00:09:02,000
+And I'll also do a little bit of cleanup at the top.
+
+128
+00:09:02,940 --> 00:09:07,340
+Now you can double check if you can actually paste all the text directly into these chatbots,
+
+129
+00:09:07,540 --> 00:09:10,900
+because they do have a limit to how much text they can take in for the prompt.
+
+130
+00:09:11,340 --> 00:09:13,500
+And again, this is called the context length.
+
+131
+00:09:13,920 --> 00:09:17,680
+So let's see how much text can fit into each of these chatbots as a single prompt.
+
+132
+00:09:18,080 --> 00:09:20,680
+Recall that prompting tip test it before you rely on it.
+
+133
+00:09:20,960 --> 00:09:27,640
+So you can check what was the last piece of text that still appears inside the prompt window after you try to paste in the entire text.
+
+134
+00:09:28,120 --> 00:09:33,440
+For Mistral, it looks like it was able to take in the entire text that I copied from the doc.
+
+135
+00:09:36,240 --> 00:09:43,520
+With Gemini, it looks like it stopped somewhere earlier, and I can check by copying some of the text and seeing where in the document that is.
+
+136
+00:09:43,840 --> 00:09:47,160
+So at about page 26, it stopped pasting in the text.
+
+137
+00:09:47,680 --> 00:09:51,200
+So with Gemini, it was able to take in about 26 pages worth of the text.
+
+138
+00:09:51,660 --> 00:09:54,340
+With Mistral, the whole thing was about 51 pages.
+
+139
+00:09:54,840 --> 00:09:57,180
+Now let's check the context length for Meta AI.
+
+140
+00:09:57,940 --> 00:09:59,480
+Looks like it was about 14 pages.
+
+141
+00:10:01,040 --> 00:10:02,800
+Now let's try Microsoft Copilot.
+
+142
+00:10:03,400 --> 00:10:07,620
+It says maximum character limit reached, and I can see where that ended in the document.
+
+143
+00:10:08,120 --> 00:10:09,840
+And in this case, it was about 4 pages.
+
+144
+00:10:10,740 --> 00:10:14,120
+Now let's prepare to put the entire text about Banksy into the prompt.
+
+145
+00:10:14,700 --> 00:10:22,380
+And then after that, I'm going to say, for the provided text above, extract all the relevant text as direct quotes, so it's the same request as before.
+
+146
+00:10:22,840 --> 00:10:27,220
+Notice that I'm putting a delimiter here to separate the article text from the instructions.
+
+147
+00:10:27,840 --> 00:10:34,820
+These characters are called backticks, but you could also use three hashtags or three double quotes or three single quotes.
+
+148
+00:10:35,300 --> 00:10:38,960
+And if you want to use three of any other characters, it'll probably work okay as well.
+
+149
+00:10:39,460 --> 00:10:44,020
+Let's try this with Mistral, since I was able to fit the entire source text into the context window.
+
+150
+00:10:44,780 --> 00:10:49,920
+Let's also try this with Claude. Recall that when I uploaded the HTML file directly to Claude,
+
+151
+00:10:50,180 --> 00:10:54,800
+it said that it was over the context length window. Now, I'm just copy-pasting that text
+
+152
+00:10:55,320 --> 00:11:00,140
+from the word processor. It saves that text as an attachment, and it looks like it can take in that
+
+153
+00:11:00,380 --> 00:11:06,200
+entire 52 pages of text. So this is good to keep in mind, that if you upload an HTML file, the extra
+
+154
+00:11:06,460 --> 00:11:11,599
+formatting also takes up space in the context window. If you want to make the most of the context
+
+155
+00:11:11,620 --> 00:11:16,780
+window, then paste in pure text. And I encourage you to try this out yourself on your own article
+
+156
+00:11:17,100 --> 00:11:22,000
+of interest and ask it to summarize or extract relevant text to help you understand a particular
+
+157
+00:11:22,220 --> 00:11:27,360
+subtopic that you're interested in. And just one quick reminder about privacy that you'll probably
+
+158
+00:11:27,500 --> 00:11:32,340
+want to just paste in something that's publicly available and not some personal document or
+
+159
+00:11:32,660 --> 00:11:37,700
+proprietary document. If you want more privacy, then I recommend working with a downloadable model.
+
+160
+00:11:38,060 --> 00:11:45,100
+Another way to synthesize information is to give it labels, such as topics or positive or negative sentiment, and more.
+
+161
+00:11:45,620 --> 00:11:49,840
+This is helpful when you have a lot of separate pieces of text that you want to make sense of.
+
+162
+00:11:50,200 --> 00:11:52,380
+Let's look at labeling text next.
+

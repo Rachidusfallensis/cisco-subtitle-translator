@@ -85,3 +85,47 @@
 2025-03-10 12:04:02,282 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:04:02] "GET /stats HTTP/1.1" 200 -
 2025-03-10 12:04:19,276 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:04:19] "GET /stats HTTP/1.1" 200 -
 2025-03-10 12:04:49,276 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 12:04:49] "GET /stats HTTP/1.1" 200 -
+2025-03-10 14:55:02,205 - __main__ - INFO - Starting Video Subtitle Translator
+2025-03-10 14:55:02,224 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.192.36.95:5000
+2025-03-10 14:55:02,224 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 14:55:02,224 - werkzeug - INFO -  * Restarting with stat
+2025-03-10 14:55:02,345 - __main__ - INFO - Starting Video Subtitle Translator
+2025-03-10 14:55:02,354 - werkzeug - WARNING -  * Debugger is active!
+2025-03-10 14:55:02,359 - werkzeug - INFO -  * Debugger PIN: 574-802-974
+2025-03-10 14:55:05,582 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:05] "GET / HTTP/1.1" 200 -
+2025-03-10 14:55:05,656 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:05] "GET /socket.io/?EIO=4&transport=polling&t=PM0Ldap HTTP/1.1" 200 -
+2025-03-10 14:55:05,657 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:05] "GET /stats HTTP/1.1" 200 -
+2025-03-10 14:55:05,678 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:05] "POST /socket.io/?EIO=4&transport=polling&t=PM0LdbB&sid=X9QGo5ujanx_E8jfAAAA HTTP/1.1" 200 -
+2025-03-10 14:55:05,688 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:05] "GET /socket.io/?EIO=4&transport=polling&t=PM0LdbB.0&sid=X9QGo5ujanx_E8jfAAAA HTTP/1.1" 200 -
+2025-03-10 14:55:05,778 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:05] "GET /socket.io/?EIO=4&transport=polling&t=PM0Ldcd&sid=X9QGo5ujanx_E8jfAAAA HTTP/1.1" 200 -
+2025-03-10 14:55:06,682 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:06] "GET /socket.io/?EIO=4&transport=websocket&sid=X9QGo5ujanx_E8jfAAAA HTTP/1.1" 200 -
+2025-03-10 14:55:06,693 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:06] "GET / HTTP/1.1" 200 -
+2025-03-10 14:55:06,729 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:06] "GET /socket.io/?EIO=4&transport=polling&t=PM0Ldrd HTTP/1.1" 200 -
+2025-03-10 14:55:06,731 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:06] "GET /stats HTTP/1.1" 200 -
+2025-03-10 14:55:06,735 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:06] "POST /socket.io/?EIO=4&transport=polling&t=PM0Ldrj&sid=PByU73tADEg5TQiTAAAC HTTP/1.1" 200 -
+2025-03-10 14:55:06,735 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:06] "GET /socket.io/?EIO=4&transport=polling&t=PM0Ldrj.0&sid=PByU73tADEg5TQiTAAAC HTTP/1.1" 200 -
+2025-03-10 14:55:06,749 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:06] "GET /socket.io/?EIO=4&transport=polling&t=PM0Ldry&sid=PByU73tADEg5TQiTAAAC HTTP/1.1" 200 -
+2025-03-10 14:55:06,755 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:06] "GET /socket.io/?EIO=4&transport=polling&t=PM0Lds2&sid=PByU73tADEg5TQiTAAAC HTTP/1.1" 200 -
+2025-03-10 14:55:07,555 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:07] "GET /socket.io/?EIO=4&transport=websocket&sid=PByU73tADEg5TQiTAAAC HTTP/1.1" 200 -
+2025-03-10 14:55:07,570 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:07] "GET / HTTP/1.1" 200 -
+2025-03-10 14:55:07,605 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:07] "GET /socket.io/?EIO=4&transport=polling&t=PM0Le3J HTTP/1.1" 200 -
+2025-03-10 14:55:07,606 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:07] "GET /stats HTTP/1.1" 200 -
+2025-03-10 14:55:07,609 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:07] "POST /socket.io/?EIO=4&transport=polling&t=PM0Le3N&sid=eyz5MaelSAbjr5MaAAAE HTTP/1.1" 200 -
+2025-03-10 14:55:07,612 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:07] "GET /socket.io/?EIO=4&transport=polling&t=PM0Le3N.0&sid=eyz5MaelSAbjr5MaAAAE HTTP/1.1" 200 -
+2025-03-10 14:55:07,621 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:07] "GET /socket.io/?EIO=4&transport=polling&t=PM0Le3Z&sid=eyz5MaelSAbjr5MaAAAE HTTP/1.1" 200 -
+2025-03-10 14:55:08,187 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:08] "GET /socket.io/?EIO=4&transport=websocket&sid=eyz5MaelSAbjr5MaAAAE HTTP/1.1" 200 -
+2025-03-10 14:55:08,192 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:08] "GET / HTTP/1.1" 200 -
+2025-03-10 14:55:08,229 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:08] "GET /socket.io/?EIO=4&transport=polling&t=PM0LeD3 HTTP/1.1" 200 -
+2025-03-10 14:55:08,231 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:08] "GET /stats HTTP/1.1" 200 -
+2025-03-10 14:55:08,237 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:08] "POST /socket.io/?EIO=4&transport=polling&t=PM0LeD9&sid=QLdlDEyyDYfINcotAAAG HTTP/1.1" 200 -
+2025-03-10 14:55:08,238 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:08] "GET /socket.io/?EIO=4&transport=polling&t=PM0LeDA&sid=QLdlDEyyDYfINcotAAAG HTTP/1.1" 200 -
+2025-03-10 14:55:08,250 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:08] "GET /socket.io/?EIO=4&transport=polling&t=PM0LeDO&sid=QLdlDEyyDYfINcotAAAG HTTP/1.1" 200 -
+2025-03-10 14:55:26,893 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:26] "POST /upload HTTP/1.1" 200 -
+2025-03-10 14:55:26,894 - __main__ - ERROR - Translation error for job 1741614926-1.0.4_Intelligence.srt: DEEPL_API_KEY not set in environment variables
+2025-03-10 14:55:39,063 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:55:39] "GET /stats HTTP/1.1" 200 -
+2025-03-10 14:56:09,065 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:56:09] "GET /stats HTTP/1.1" 200 -
+2025-03-10 14:56:39,065 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:56:39] "GET /stats HTTP/1.1" 200 -
+2025-03-10 14:57:09,062 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 14:57:09] "GET /stats HTTP/1.1" 200 -

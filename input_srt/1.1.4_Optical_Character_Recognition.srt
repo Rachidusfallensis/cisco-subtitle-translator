@@ -1,0 +1,188 @@
+1
+00:00:05,080 --> 00:00:09,220
+Have you ever picked up a receipt or a brochure or seen a sign on the wall and found yourself
+
+2
+00:00:09,520 --> 00:00:14,940
+typing the text into your phone? What if instead you could take a picture of it and then let your
+
+3
+00:00:15,120 --> 00:00:20,420
+phone get the text from it for you? Let's take a look at optical character recognition and how it
+
+4
+00:00:20,480 --> 00:00:25,640
+lets you do that. Let's say you took a picture of a sign that you thought was interesting and you
+
+5
+00:00:25,660 --> 00:00:30,600
+want to send it to your friend, Frances Ko. Frances replies that she can't read what the
+
+6
+00:00:30,680 --> 00:00:35,660
+sign says and asks you to type it out. So you could try to type it out by hand, but then you remember
+
+7
+00:00:35,940 --> 00:00:40,800
+that you can use computer vision on your phone. So if you're using Google Photos, you can click on
+
+8
+00:00:40,900 --> 00:00:44,920
+the lens icon, then it looks for parts of the image that look like characters of a language,
+
+9
+00:00:45,420 --> 00:00:49,160
+in this case English. Then it lets you select the text that you want to further process.
+
+10
+00:00:49,880 --> 00:00:54,620
+So then you can click copy. Then you can go back to your message to Frances, paste in the text,
+
+11
+00:00:54,700 --> 00:00:59,120
+and send it. So this kind of computer vision task that looks for characters of a language
+
+12
+00:00:59,700 --> 00:01:04,620
+and attempts to identify and recognize those characters in order to output regular text,
+
+13
+00:01:05,100 --> 00:01:12,060
+this is called optical character recognition, often shortened to the acronym OCR. So what is OCR
+
+14
+00:01:12,280 --> 00:01:17,100
+doing? The software identifies a bounding box around each part of the image that appears to
+
+15
+00:01:17,340 --> 00:01:23,319
+contain a character in a language. Then, for each bounding box, it classifies that as one of those
+
+16
+00:01:23,340 --> 00:01:28,600
+letters. So optical character recognition is actually an application of object detection,
+
+17
+00:01:29,100 --> 00:01:34,260
+because it's first localizing where the text appears in an image, and then it's identifying
+
+18
+00:01:34,640 --> 00:01:40,560
+whether it's letter A, B, C, D, all the way to Z, as well as punctuation like commas, periods,
+
+19
+00:01:41,000 --> 00:01:44,900
+dollar signs, and so on. So I'd like to go back and point out one thing you might have noticed.
+
+20
+00:01:45,300 --> 00:01:49,999
+The text that you got from optical character recognition looked like this, and you can see here
+
+21
+00:01:50,060 --> 00:01:56,020
+the text doesn't seem quite understandable. First, there's this line, Leawood Walk of F,
+
+22
+00:01:56,240 --> 00:02:01,780
+and below that, just Holly. Let's go back to the image and take a closer look. If you zoom in,
+
+23
+00:02:02,080 --> 00:02:06,960
+here's part of the image that the software is having trouble with. The text is written on the
+
+24
+00:02:07,120 --> 00:02:12,880
+inside of a circle. Here you can see that Leawood Walk of Fame, and here is Holly. So why do you
+
+25
+00:02:12,940 --> 00:02:18,379
+think it output the text like this? Well, most text, like in a document or a book, is written in
+
+26
+00:02:18,400 --> 00:02:23,480
+straight lines. And for many languages like English, text flows from left to right, then top
+
+27
+00:02:23,600 --> 00:02:29,180
+to bottom. So it looks like the OCR software was detecting text from top to bottom, and it assumed
+
+28
+00:02:29,500 --> 00:02:35,860
+that Leawood walk of F was on one line, and the next line below that was Holly. And so one common
+
+29
+00:02:36,100 --> 00:02:40,760
+theme that you'll see throughout this course is that even though AI-enabled software can do pretty
+
+30
+00:02:40,920 --> 00:02:46,739
+cool things, you as the user and the human still play an important role in checking whether the
+
+31
+00:02:46,760 --> 00:02:51,440
+output makes sense, so it's still up to you to make adjustments as necessary. The other point I'd
+
+32
+00:02:51,440 --> 00:02:55,400
+like to make is that when something doesn't work, it might be a chance to learn. For instance,
+
+33
+00:02:55,920 --> 00:03:00,240
+when something like this isn't working quite right, if you can figure out why it's not working the
+
+34
+00:03:00,380 --> 00:03:04,760
+way you expect it to, then you might get a better understanding of how this application or this
+
+35
+00:03:04,840 --> 00:03:09,280
+software works and how you can use it. Another scenario where you could use optical character
+
+36
+00:03:09,480 --> 00:03:14,159
+recognition is when you take pictures of your receipts after you go to a restaurant or grocery
+
+37
+00:03:14,180 --> 00:03:19,480
+store. You can use OCR to extract the items that you purchased, as well as the prices that you paid
+
+38
+00:03:19,600 --> 00:03:24,080
+for them. And what if you're traveling and you took a picture of this sign at an outdoor food market?
+
+39
+00:03:24,580 --> 00:03:29,900
+This app has another button, Translate, and it looks like it performs OCR on parts of the image
+
+40
+00:03:30,240 --> 00:03:35,040
+with Chinese characters, then translate that text into English and overlays the English on top of
+
+41
+00:03:35,140 --> 00:03:39,779
+that. You'll learn more about machine translation later on in the rest of this course. You can also
+
+42
+00:03:39,800 --> 00:03:44,920
+apply these computer vision tasks that you saw in the previous couple videos on your computer inside
+
+43
+00:03:45,120 --> 00:03:50,080
+a web browser. If you use Google Chrome web browser, you can open up the menu on the top right and then
+
+44
+00:03:50,280 --> 00:03:56,160
+click on "Search with Google Lens". Select the area you want to search or extract text from and you
+
+45
+00:03:56,240 --> 00:04:01,440
+can copy that text. You can also translate that text and select objects and images to search as
+
+46
+00:04:01,440 --> 00:04:06,659
+well. Coming up next, I'll share some tips on why taking a break may help you with your studies and
+
+47
+00:04:06,680 --> 00:04:11,980
+your work. So please take a short break and then check out the next video to see why it's good for you.
+

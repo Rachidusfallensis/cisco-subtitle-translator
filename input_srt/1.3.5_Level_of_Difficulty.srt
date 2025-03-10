@@ -1,0 +1,96 @@
+1
+00:00:05,280 --> 00:00:11,660
+Some tasks are easier and some tasks are harder, so it's good to keep that in mind when asking a chatbot to perform a task.
+
+2
+00:00:17,840 --> 00:00:21,700
+Here are some pairs of tasks, one easier and the other more challenging.
+
+3
+00:00:22,220 --> 00:00:25,960
+You can instruct a chatbot to suggest some ways of saying I love you.
+
+4
+00:00:26,320 --> 00:00:31,840
+Or, you could ask it to write a compelling movie script about two people who fall in love on a big boat.
+
+5
+00:00:32,380 --> 00:00:40,020
+When comparing the two, one is a narrower task, whereas the other is a more complex, multi-step task, which makes it harder to do as well.
+
+6
+00:00:40,540 --> 00:00:42,560
+Let's compare two other kinds of prompts.
+
+7
+00:00:43,160 --> 00:00:45,120
+One is, suggest a cake recipe.
+
+8
+00:00:45,760 --> 00:00:48,060
+And the other is, solve this math problem.
+
+9
+00:00:48,480 --> 00:00:55,300
+The first one can have more than one acceptable answer, whereas the other one requires reasoning and likely has only one correct answer.
+
+10
+00:00:55,520 --> 00:01:00,340
+so it's more difficult to get correct. Let's compare these next two. You can ask a chatbot to
+
+11
+00:01:00,500 --> 00:01:07,080
+translate from English to Spanish, or you can ask it to translate from Latvian to Nepali. For the
+
+12
+00:01:07,220 --> 00:01:12,940
+first task, the large language model probably had more access to text data in English and Spanish,
+
+13
+00:01:13,400 --> 00:01:17,980
+and also text that included both English and Spanish together, such as a tourism website. In
+
+14
+00:01:18,100 --> 00:01:24,060
+comparison, the large language model probably had less training data related to Latvian and Nepali
+
+15
+00:01:24,400 --> 00:01:29,220
+compared to English and Spanish. Sometimes when using translation services, people even prefer
+
+16
+00:01:29,600 --> 00:01:35,080
+to first translate to English as an intermediate step and then translate from English to their
+
+17
+00:01:35,300 --> 00:01:39,640
+desired language because these models have more access to text data in English and so are more
+
+18
+00:01:39,900 --> 00:01:44,200
+likely to perform better when the task includes English. So what does this mean for you? Well,
+
+19
+00:01:44,320 --> 00:01:48,799
+it helps to be extra careful to check the model's output when you're asking it to do a more difficult
+
+20
+00:01:48,820 --> 00:01:54,720
+task. It also helps to use more powerful models for more difficult tasks, and as you'll soon see
+
+21
+00:01:54,900 --> 00:01:59,040
+in the next video, there are also benefits to using the less powerful models as well.
+
+22
+00:01:59,540 --> 00:02:03,720
+Coming up next, you'll learn about different groups of large language models that are available
+
+23
+00:02:03,980 --> 00:02:08,619
+to you for free, and get a better understanding of when you might want to use one or the other,
+
+24
+00:02:09,020 --> 00:02:13,140
+or maybe even more than one. Let's look into using multiple chatbots in the next video.
+

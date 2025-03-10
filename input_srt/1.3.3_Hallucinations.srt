@@ -1,0 +1,324 @@
+1
+00:00:00,020 --> 00:00:08,040
+If you are asked a question that you don't quite know the answer to,
+
+2
+00:00:08,860 --> 00:00:10,380
+what would you say if you have to give an answer?
+
+3
+00:00:11,080 --> 00:00:14,580
+For example, on which side did you see the purple emoji ball?
+
+4
+00:00:15,140 --> 00:00:17,360
+Was it on your left side or on the right side?
+
+5
+00:00:19,100 --> 00:00:21,240
+Now you may not have enough information to answer this question,
+
+6
+00:00:21,880 --> 00:00:23,580
+but you may try to give a reasonable answer.
+
+7
+00:00:24,660 --> 00:00:29,540
+Similarly, machine learning models and chatbots as well try their best to perform a task,
+
+8
+00:00:30,020 --> 00:00:34,420
+sometimes they get it wrong. When a chatbot makes up something that isn't quite right,
+
+9
+00:00:35,000 --> 00:00:39,900
+it's called a hallucination. Let's see more examples of hallucinations. Oh, and by the way,
+
+10
+00:00:40,460 --> 00:00:46,540
+there was no purple emoji ball. In August 2024, the Olympic Games were held in Paris.
+
+11
+00:00:47,200 --> 00:00:52,140
+At the time of filming this course, I'm using models that were trained on information that
+
+12
+00:00:52,340 --> 00:00:57,379
+had a cutoff point before the Olympic Games happened, which means that these models were
+
+13
+00:00:57,400 --> 00:01:02,420
+not trained on any information that happened during these Olympic events. Here I'm going to
+
+14
+00:01:02,600 --> 00:01:08,840
+use Meta AI. I'll ask some questions about the Olympic Games. Who won medals at the Paris Olympics?
+
+15
+00:01:12,800 --> 00:01:18,460
+Who are some of the people who won medals at the Paris Olympics? I'm noticing here that it says
+
+16
+00:01:18,940 --> 00:01:25,040
+for the silver medal winners, it mentions Noah Lyles in the men's 200 meters. I'll ask another
+
+17
+00:01:25,060 --> 00:01:32,820
+question who won medals in the men's 200 meters it says that arian knight and won gold noah lyle's
+
+18
+00:01:33,020 --> 00:01:39,520
+won silver and let's seal tabogo won bronze in the men's 200 meter events at the paris olympics
+
+19
+00:01:40,040 --> 00:01:44,440
+let's watch a replay of that race i'm watching a youtube video provided by nbc sports
+
+20
+00:01:48,080 --> 00:01:53,920
+final demands 200 is away benard responded very well to the gun he's gotten out well
+
+21
+00:01:53,940 --> 00:01:55,660
+But now here comes Noah Lyles.
+
+22
+00:01:56,580 --> 00:01:58,220
+Lyles in the middle of the track.
+
+23
+00:01:58,620 --> 00:02:00,520
+Tobongo is going with Benarek.
+
+24
+00:02:01,000 --> 00:02:03,900
+Noah Lyles said this is where he gets to show his speed.
+
+25
+00:02:04,280 --> 00:02:05,100
+His coming speed.
+
+26
+00:02:05,460 --> 00:02:06,160
+There's Eriksen.
+
+27
+00:02:06,760 --> 00:02:07,300
+Tobongo.
+
+28
+00:02:09,000 --> 00:02:12,660
+So it actually looks like Letil Tobongo won the gold, not bronze.
+
+29
+00:02:13,080 --> 00:02:15,040
+Kenneth Bednarek won silver.
+
+30
+00:02:15,460 --> 00:02:17,320
+And Noah Lyles won bronze, not silver.
+
+31
+00:02:17,780 --> 00:02:19,940
+Arian Knighton placed fourth and not first.
+
+32
+00:02:20,380 --> 00:02:21,200
+So why did this happen?
+
+33
+00:02:21,520 --> 00:02:26,520
+Large language models have some randomness built in, so for the same input prompt, the output
+
+34
+00:02:26,820 --> 00:02:31,700
+completion is a bit different every time. Let's take a look at an example of this in OpenAI's
+
+35
+00:02:31,960 --> 00:02:37,880
+Playground. I'll enter the prompt here, which is, a city I want to visit is. Then the model will
+
+36
+00:02:38,140 --> 00:02:43,680
+continue outputting the completion right after the prompt. First, it says San Diego, and if I click on
+
+37
+00:02:43,900 --> 00:02:49,040
+San Diego, it has a drop-down menu which shows other possible words the model was considering
+
+38
+00:02:49,060 --> 00:02:54,420
+using, including all these other cities, as well as a percentage, which indicates how likely it
+
+39
+00:02:54,560 --> 00:03:00,300
+thinks each word is likely to be the next word to come next. If I do this again, it says Tokyo,
+
+40
+00:03:00,980 --> 00:03:07,380
+then it says Rome, then Seattle, then Amsterdam, and then Paris. Notice that there's no way for
+
+41
+00:03:07,500 --> 00:03:12,920
+the model to read my mind and know what city I want to visit, and so it's making an educated guess
+
+42
+00:03:13,240 --> 00:03:18,500
+based on other texts that it's learned from that these cities that it's proposing are places that
+
+43
+00:03:18,520 --> 00:03:24,040
+many people have said they want to visit. This OpenAI Playground also shows the percent probability
+
+44
+00:03:24,380 --> 00:03:28,420
+assigned to each word, which is the model's estimate of how likely that word should appear
+
+45
+00:03:28,620 --> 00:03:33,020
+next. But it doesn't always just pick the word that has the highest probability. Let's take a
+
+46
+00:03:33,180 --> 00:03:39,340
+closer look. The input is, a city I want to visit is. The model gathers a list of possible options
+
+47
+00:03:39,660 --> 00:03:44,340
+for the next word, and then it randomly samples from that list, giving some weight or consideration
+
+48
+00:03:44,360 --> 00:03:50,100
+to the probability assigned to each word or part of a word. For TOK, it likely is the beginning of
+
+49
+00:03:50,180 --> 00:03:54,960
+the word for Tokyo. BAR is likely the beginning of the word for Barcelona. From what you saw a moment
+
+50
+00:03:55,160 --> 00:03:59,940
+ago, the model randomly sampled the word Paris and then appended that at the end of the initial
+
+51
+00:04:00,180 --> 00:04:04,860
+prompt, and this allows it to move on to randomly sampling the next word after that. So you can see
+
+52
+00:04:04,960 --> 00:04:09,360
+that the chatbot is just doing its best to try and look at what text it was given and then try
+
+53
+00:04:09,380 --> 00:04:14,560
+to predict the next word that has some reasonable likelihood of making sense. This is fine when
+
+54
+00:04:14,660 --> 00:04:19,140
+you're not expecting it to make some factually correct claim. For instance, any of these cities
+
+55
+00:04:19,320 --> 00:04:23,420
+that it mentions sound like cities that I would like to visit. But when the model is making a
+
+56
+00:04:23,560 --> 00:04:28,560
+statement that is a factual claim, and when what it says is not factually correct, then this is
+
+57
+00:04:28,760 --> 00:04:33,320
+called a hallucination. It's easier to notice when a chatbot is saying something incorrect when you
+
+58
+00:04:33,520 --> 00:04:39,340
+ask it about a topic that you know well, and when it's also a topic that the chatbot may not have
+
+59
+00:04:39,360 --> 00:04:46,160
+about. So in this case, I'll ask it about myself. Who is Eddie Xu? So it says that I am a YouTuber
+
+60
+00:04:46,600 --> 00:04:51,280
+who talks about smartphones and laptops and other tech gadgets, and it also says that I'm very
+
+61
+00:04:51,560 --> 00:04:57,060
+popular. Oh, and by the way, I'm very flattered, but none of those things are true. Now, it's
+
+62
+00:04:57,220 --> 00:05:01,520
+easier for me to fact check this because I've done web searches of my name and of the people who have
+
+63
+00:05:01,640 --> 00:05:06,180
+my name, including myself, and nobody fits this very flattering description, although maybe it's
+
+64
+00:05:06,200 --> 00:05:10,880
+something to aspire to someday. If you want, you can try to ask a chatbot to describe who you are
+
+65
+00:05:11,280 --> 00:05:15,160
+and see what it says. There's one more thing I'd like to note, which is that if a chatbot says
+
+66
+00:05:15,300 --> 00:05:20,460
+something that's off topic and not answering your question, then even if it's factually correct,
+
+67
+00:05:20,900 --> 00:05:25,240
+this completion is also considered a kind of hallucination. One way to think about this is
+
+68
+00:05:25,340 --> 00:05:30,780
+that a chatbot might be hallucinating a question that you didn't even ask, and so it's answering
+
+69
+00:05:30,860 --> 00:05:36,780
+that question instead of answering your question. Here's an example of this. I'm using the downloadable
+
+70
+00:05:37,000 --> 00:05:43,160
+app LM Studio and using it to download a compressed version of the Nemo Mistral model. And don't worry,
+
+71
+00:05:43,540 --> 00:05:47,600
+you'll learn soon about how you can download models onto your own computer, as well as what
+
+72
+00:05:47,720 --> 00:05:52,820
+a compressed model is. So I'll ask it, what are some highlights of the Paris Olympics? It first
+
+73
+00:05:53,180 --> 00:05:59,660
+mentions the 2024 Olympics, but then the rest of the completion is about the 1900 and 1924 Olympics,
+
+74
+00:06:00,280 --> 00:06:04,260
+which also occurred in Paris. So it can be a bit debatable whether this is considered an
+
+75
+00:06:04,420 --> 00:06:10,020
+off-topic response because I didn't specify the 2024 Olympics in the prompt. But if you use a
+
+76
+00:06:10,180 --> 00:06:15,240
+chatbot often enough, you may notice that it sometimes appears to be answering a different
+
+77
+00:06:15,680 --> 00:06:20,860
+question and not the one you were asking. So I encourage you to try testing out prompts that you
+
+78
+00:06:20,980 --> 00:06:26,120
+think may lead a chatbot to hallucinate and then practice fact-checking its response as it will
+
+79
+00:06:26,140 --> 00:06:32,280
+help you to develop a good habit of anticipating and identifying when the chatbot's output isn't
+
+80
+00:06:32,420 --> 00:06:38,160
+quite right. Next, let's look at how memory affects the chatbot's most recent responses.
+
+81
+00:06:38,720 --> 00:06:39,660
+I'll see you in the next video.
+

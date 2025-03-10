@@ -1,0 +1,940 @@
+1
+00:00:05,940 --> 00:00:10,140
+As you're reading or hearing about AI in the news or online, you may come across a lot of
+
+2
+00:00:10,500 --> 00:00:15,700
+vocabulary words. There's an expression "word salad" to refer to when there are just too many
+
+3
+00:00:15,980 --> 00:00:20,720
+vocabulary words that it's hard to understand some article or document. For example, there's
+
+4
+00:00:20,900 --> 00:00:28,720
+generative AI, often abbreviated as just Gen AI. There's transformers, GPT, GPUs, and these are
+
+5
+00:00:28,740 --> 00:00:33,940
+words that you might see in regular news articles about AI. Other words like quantized models,
+
+6
+00:00:34,440 --> 00:00:39,640
+distilled models, and pruned models might show up when you're reading about those compressed
+
+7
+00:00:39,980 --> 00:00:44,320
+downloadable models that you may have tried in this course. If you're reading a bit more about AI,
+
+8
+00:00:44,660 --> 00:00:50,180
+you might come across words such as foundation models, base models, and instruction tuned model.
+
+9
+00:00:50,520 --> 00:00:55,540
+You may also hear about retrieval augmented generation as well as agents. Each of these
+
+10
+00:00:55,560 --> 00:01:00,040
+are pretty big topics that probably deserve their own course, but even a brief conceptual
+
+11
+00:01:00,360 --> 00:01:04,620
+introduction to these topics might make it easier for you as you navigate your own learning
+
+12
+00:01:04,960 --> 00:01:09,080
+resources and start learning on your own. So let's take a brief look at what these words mean.
+
+13
+00:01:09,500 --> 00:01:15,260
+So what is generative AI? Well, it helps to also ask the question, what is non-generative AI? You
+
+14
+00:01:15,340 --> 00:01:18,900
+may have heard that generative AI is about creating something new. Let's look at some
+
+15
+00:01:19,120 --> 00:01:23,340
+examples of machine learning models and the tasks that they perform and see whether they're
+
+16
+00:01:23,360 --> 00:01:29,900
+generative or non-generative, and why. Let's start with an image classifier. It takes an image of a
+
+17
+00:01:30,040 --> 00:01:35,200
+dog, for instance, as input, and then outputs a piece of text that defines a class or category
+
+18
+00:01:35,820 --> 00:01:40,020
+from a predefined list of possible categories that the model has been trained to classify.
+
+19
+00:01:40,500 --> 00:01:46,580
+For instance, cute dog. Is this a generative task? No, and we'll discuss why in a little bit.
+
+20
+00:01:47,000 --> 00:01:52,740
+Let's look at an image generator. If you take a text description such as cute frog and input this
+
+21
+00:01:52,800 --> 00:01:58,440
+into an image generation model, it outputs an image of a cute frog. Is this generative? You may
+
+22
+00:01:58,540 --> 00:02:03,060
+have guessed from the description of the model that yes, this is a generative task. Let's look
+
+23
+00:02:03,180 --> 00:02:08,780
+at another example, a sentiment analysis model. For an input, you have a product review, such as,
+
+24
+00:02:08,899 --> 00:02:14,040
+I took this online course and it was fun. You send this to a sentiment analysis model, which outputs
+
+25
+00:02:14,220 --> 00:02:20,060
+one of a few possible classes such as positive, negative, or neutral. In this case, it outputs
+
+26
+00:02:20,140 --> 00:02:25,920
+positive. Is this generative? No, it's not. Now let's look at a text summarizer. You have a
+
+27
+00:02:26,080 --> 00:02:31,400
+transcript of an online course, and you send this to a model that summarizes text. It outputs a brief
+
+28
+00:02:31,640 --> 00:02:36,740
+summary that attempts to get at the essence of that transcript. So is this generative? Yes, it is.
+
+29
+00:02:37,080 --> 00:02:41,920
+If you look at the two examples where it is not generative, something they have in common is that
+
+30
+00:02:42,040 --> 00:02:47,700
+the kinds of outputs that these models can produce are limited. In this case, limited to a predefined
+
+31
+00:02:47,720 --> 00:02:52,300
+set of classes that the model is able to output. And they don't have to be classes either. They
+
+32
+00:02:52,420 --> 00:02:56,960
+could be numbers. For instance, if you have a model that tries to predict a person's life
+
+33
+00:02:57,260 --> 00:03:01,880
+expectancy based on their eating and sleeping habits, this is a non-generative model as well.
+
+34
+00:03:02,220 --> 00:03:07,140
+When you look at the two examples of models that are generative, in the first one, it produces a
+
+35
+00:03:07,340 --> 00:03:13,040
+new image that is not limited to some predefined set of images that it can produce. In the case of
+
+36
+00:03:13,060 --> 00:03:18,780
+the summarization model, it produces a new piece of text that is also considered free-form and
+
+37
+00:03:19,060 --> 00:03:24,960
+open-ended. In other words, the summarizer model can choose its own words as it attempts to perform
+
+38
+00:03:25,100 --> 00:03:31,200
+the task of summarizing a larger piece of text. And other generative models can also produce new
+
+39
+00:03:31,540 --> 00:03:36,860
+audio, such as music, or others can produce new tabular data, which are numbers and categories
+
+40
+00:03:37,400 --> 00:03:43,020
+that you would see in a spreadsheet. And by the way, you may hear different vocabulary words to
+
+41
+00:03:43,040 --> 00:03:50,640
+non-generative AI. The most common is discriminative AI. Another is predictive AI. You may also hear
+
+42
+00:03:50,720 --> 00:03:57,360
+it referred to as supervised learning or traditional AI. Just to keep this lecture simpler, I'll keep
+
+43
+00:03:57,500 --> 00:04:03,120
+referring to this as non-generative AI. But if you hear people mention any of the other terms,
+
+44
+00:04:03,620 --> 00:04:08,780
+especially if the overall discussion is about generative AI, then they're probably using these
+
+45
+00:04:08,800 --> 00:04:15,880
+words to refer to non-generative AI. An interesting aspect of what makes generative AI generative is
+
+46
+00:04:15,980 --> 00:04:22,280
+that the output from a generative task can be used as the input to another model. For instance,
+
+47
+00:04:22,800 --> 00:04:28,780
+you may recall with chatbot2chatbotcollaboration that you had one chatbot play the role of a writer
+
+48
+00:04:29,180 --> 00:04:35,620
+writing an opinion article for a newspaper. The article that it output was given as input to
+
+49
+00:04:35,660 --> 00:04:41,120
+another chatbot that played the role of the editor, which was tasked with reviewing and giving feedback
+
+50
+00:04:41,640 --> 00:04:47,640
+on that article. As another example, when an image generation model outputs an image, that image could
+
+51
+00:04:47,740 --> 00:04:54,220
+be sent as the input to another model, such as an image classifier model. So because the outputs of
+
+52
+00:04:54,380 --> 00:05:00,500
+generative models are usually rich in details and features, the outputs of generative AI models can
+
+53
+00:05:00,520 --> 00:05:06,140
+be used as features or inputs to other models, including for training other models.
+
+54
+00:05:06,920 --> 00:05:11,980
+Let's look at another comparison of generative and non-generative models in terms of what you
+
+55
+00:05:12,260 --> 00:05:17,140
+expect to be an acceptable output. For an image classifier, you give it an image and it outputs
+
+56
+00:05:17,340 --> 00:05:21,740
+a class. In this case, you would expect that there would be one correct answer. With similarity
+
+57
+00:05:22,100 --> 00:05:27,240
+search, which is also a non-generative model, you give it an image and it outputs a couple of images
+
+58
+00:05:27,580 --> 00:05:34,100
+that is selected from an existing set of images. So the expectation here is that the model selects
+
+59
+00:05:34,480 --> 00:05:39,700
+from an existing set of items. Now let's take a look at an image generation model. When you give
+
+60
+00:05:39,840 --> 00:05:45,640
+it some text that describes an image for it to create, there are many possible correct and new
+
+61
+00:05:45,860 --> 00:05:50,840
+outputs that the image generator could potentially create. So when it outputs a new image, our
+
+62
+00:05:51,060 --> 00:05:55,980
+expectation is that this is an image that was not retrieved from some database of images,
+
+63
+00:05:56,780 --> 00:05:57,460
+It's something new.
+
+64
+00:05:57,960 --> 00:06:02,240
+And if you were to give the image generator the same input text multiple times, you would
+
+65
+00:06:02,420 --> 00:06:05,640
+also expect it to generate other new images each time.
+
+66
+00:06:06,060 --> 00:06:12,320
+So our expectation of these models is that there are many possible correct and new answers,
+
+67
+00:06:12,920 --> 00:06:14,800
+probably infinitely many correct answers.
+
+68
+00:06:15,320 --> 00:06:20,200
+Another way to think of this is to compare non-generative AI to multiple-choice quizzes,
+
+69
+00:06:20,740 --> 00:06:23,960
+and to compare generative AI to an open-ended essay.
+
+70
+00:06:24,480 --> 00:06:28,220
+With a multiple choice quiz, there's a finite set of options for you to choose from.
+
+71
+00:06:28,780 --> 00:06:32,980
+With an open-ended essay, there are many ways that you could write that essay for it to
+
+72
+00:06:33,080 --> 00:06:34,480
+be considered a good essay.
+
+73
+00:06:35,060 --> 00:06:39,880
+And it's not limited to what the teacher might imagine to be possible essays that you
+
+74
+00:06:40,020 --> 00:06:40,440
+might write.
+
+75
+00:06:40,600 --> 00:06:43,260
+Is machine translation generative or not?
+
+76
+00:06:43,640 --> 00:06:48,620
+Well, if you had a model that was limited to single word translations, like a bilingual
+
+77
+00:06:48,820 --> 00:06:50,860
+dictionary, this would be non-generative.
+
+78
+00:06:51,240 --> 00:06:53,180
+It's similar to a classification task.
+
+79
+00:06:53,640 --> 00:06:55,180
+And you might not even need AI for this.
+
+80
+00:06:55,660 --> 00:06:59,960
+But how about when you're translating not a single word, but phrases and sentences,
+
+81
+00:07:00,500 --> 00:07:01,320
+like you saw in this course?
+
+82
+00:07:01,820 --> 00:07:04,180
+As you recall from the machine translation part of the course,
+
+83
+00:07:04,520 --> 00:07:09,580
+a translation model outputs open-ended text based on its interpretation of the input text.
+
+84
+00:07:10,000 --> 00:07:13,300
+For example, it would have to interpret whether to translate an expression,
+
+85
+00:07:13,740 --> 00:07:16,520
+like piece of cake, literally, or idiomatically.
+
+86
+00:07:16,880 --> 00:07:18,380
+So this is a generative task.
+
+87
+00:07:18,820 --> 00:07:20,240
+Well, how about question answering?
+
+88
+00:07:20,700 --> 00:07:24,900
+Well, before large language models got really good at this, there were other versions of
+
+89
+00:07:25,200 --> 00:07:28,940
+question-answering models that would do something simpler, where they would take two inputs,
+
+90
+00:07:29,560 --> 00:07:33,960
+both the question and also a document from which the model would search for the answer
+
+91
+00:07:34,160 --> 00:07:34,700
+to that question.
+
+92
+00:07:35,100 --> 00:07:39,240
+So this type of limited question-answering model would try to identify the relevant parts
+
+93
+00:07:39,440 --> 00:07:41,660
+of the source document that might answer the question.
+
+94
+00:07:42,060 --> 00:07:47,120
+This is non-generative because the model's output is limited to extracting direct quotes
+
+95
+00:07:47,440 --> 00:07:48,240
+from the source document.
+
+96
+00:07:48,760 --> 00:07:54,900
+In contrast, what you saw when you used large language models is that these models can answer questions in their own words,
+
+97
+00:07:55,400 --> 00:08:00,100
+and also they can use their own knowledge gained from training without having an additional source document.
+
+98
+00:08:00,560 --> 00:08:02,060
+So this is generative.
+
+99
+00:08:02,400 --> 00:08:03,800
+How about text summarization?
+
+100
+00:08:04,120 --> 00:08:10,680
+What you saw in this course is considered generative because the model is using its own interpretation and own wording to produce that summary.
+
+101
+00:08:11,140 --> 00:08:12,700
+How about text classification?
+
+102
+00:08:13,480 --> 00:08:18,280
+There are models that are designed to assign categories to text based on a predefined set
+
+103
+00:08:18,440 --> 00:08:19,040
+of these categories.
+
+104
+00:08:19,600 --> 00:08:22,220
+This is non-generative, as it's a classification task.
+
+105
+00:08:22,580 --> 00:08:27,400
+On the other hand, with large language models, these models choose their own open-ended labels
+
+106
+00:08:27,840 --> 00:08:30,380
+and are not limited to a predefined list.
+
+107
+00:08:30,720 --> 00:08:35,300
+You may recall this is like when you asked a model to identify all the sports that were
+
+108
+00:08:35,500 --> 00:08:36,740
+mentioned in a discussion forum.
+
+109
+00:08:37,300 --> 00:08:38,479
+So this is generative.
+
+110
+00:08:38,780 --> 00:08:40,280
+How about qualitative scoring?
+
+111
+00:08:40,919 --> 00:08:50,140
+If you have a model just give a number, a score from 0 to 10, to evaluate a debate speech, for instance, or an essay, this is non-generative.
+
+112
+00:08:50,500 --> 00:09:00,560
+What you saw in this course, when the model not only outputs a number, but also outputs criteria for evaluation and explanations for the scores it gives, this is generative.
+
+113
+00:09:00,880 --> 00:09:05,960
+So what I hope you see here is that before the arrival of powerful generative models,
+
+114
+00:09:06,400 --> 00:09:11,060
+a more limited version of some of these tasks could be performed by non-generative models.
+
+115
+00:09:11,520 --> 00:09:16,340
+It's also helpful to keep in mind that there are also benefits of using non-generative models
+
+116
+00:09:16,680 --> 00:09:19,760
+when you want to more clearly control what kind of output the model produces.
+
+117
+00:09:20,280 --> 00:09:25,740
+For example, sometimes the output of a model might be sent as the input to other software,
+
+118
+00:09:26,140 --> 00:09:29,240
+and that regular software expects specific inputs.
+
+119
+00:09:29,840 --> 00:09:36,480
+Sometimes people also prompt chatbots to encourage the outputs to be limited to a predefined set of outputs as well.
+
+120
+00:09:36,740 --> 00:09:43,660
+For example, they may prompt the model to give a single word answer, only yes or no, and do not provide additional explanations.
+
+121
+00:09:44,380 --> 00:09:50,880
+So in a way, this is prompting a generative model to try and behave in the same way as a non-generative model.
+
+122
+00:09:51,140 --> 00:09:52,980
+So what kinds of models are generative?
+
+123
+00:09:53,400 --> 00:09:56,880
+You've seen large language models, which are generative and produce text.
+
+124
+00:09:57,020 --> 00:10:02,220
+You also saw a little bit about diffusion models, which are primarily used to generate images.
+
+125
+00:10:02,840 --> 00:10:08,820
+There's also another category of models that were actually really popular for generating images just a few years ago,
+
+126
+00:10:09,200 --> 00:10:10,840
+called generative adversarial networks.
+
+127
+00:10:11,460 --> 00:10:16,120
+But most of the latest image generation models that have become popular lately are diffusion models.
+
+128
+00:10:16,660 --> 00:10:20,400
+Some examples include Stable Diffusion by Stability AI,
+
+129
+00:10:20,920 --> 00:10:27,700
+DAL-A3 by OpenAI, and EMU, which you saw in this course as Imagine by Meta-AI.
+
+130
+00:10:28,280 --> 00:10:32,760
+Large language models are actually based on a type of neural network called the transformer,
+
+131
+00:10:33,240 --> 00:10:37,180
+and you'll also hear that it's called the transformer architecture. Transformers are
+
+132
+00:10:37,340 --> 00:10:42,280
+part of a broader category of models called sequence models. Sequence models are designed
+
+133
+00:10:42,460 --> 00:10:49,039
+to be able to handle sequential data. For example, a piece of text in human language is sequential data
+
+134
+00:10:49,220 --> 00:10:53,720
+because the order of the words matter, and we process the words in order, for instance,
+
+135
+00:10:54,080 --> 00:11:01,220
+from left to right. Another example is DNA or RNA sequences, genomic data. Again, the order of these
+
+136
+00:11:01,420 --> 00:11:05,860
+letters, which are actually called nucleotides, matters in determining what kinds of proteins
+
+137
+00:11:06,340 --> 00:11:11,020
+these sequences are ultimately coding for. And there's also time series data, such as weather
+
+138
+00:11:11,440 --> 00:11:17,079
+or temperature over time, or stock data over time. There are different categories of sequence models
+
+139
+00:11:17,480 --> 00:11:21,380
+that have been designed to handle sequential data. One collection of models are called
+
+140
+00:11:21,880 --> 00:11:27,080
+recurrent neural networks. The way recurrent neural networks process sequential data is one
+
+141
+00:11:27,260 --> 00:11:33,360
+at a time. So if it's given a sequence of words, it first takes in the first word, then the second
+
+142
+00:11:33,600 --> 00:11:41,259
+word, the third word, and the fourth word, and then its task is to try and predict the next word
+
+143
+00:11:41,280 --> 00:11:47,600
+after that. So it processes the input sequence in series, one at a time. In contrast, a newer
+
+144
+00:11:47,960 --> 00:11:54,020
+sequence model that was developed by researchers at Google in 2017 is the transformer. If given a
+
+145
+00:11:54,160 --> 00:11:59,660
+piece of text like this, the transformer model can actually take in many of the words all at the same
+
+146
+00:11:59,780 --> 00:12:05,000
+time with an understanding of the order in which those words appeared in the original text. And
+
+147
+00:12:05,140 --> 00:12:10,359
+based on these inputs, it produces an output, such as the next word. So a major difference between
+
+148
+00:12:10,380 --> 00:12:16,020
+these two is that with a recurrent neural network, it processes the input sequence in series. In
+
+149
+00:12:16,280 --> 00:12:22,040
+contrast, the transformer model is able to process the input text in parallel, which makes it much
+
+150
+00:12:22,360 --> 00:12:27,620
+faster and also in practice makes it better able to handle long sequences. Another word you may
+
+151
+00:12:27,800 --> 00:12:33,320
+come across is the term foundation model. Let's first look at models that are not foundation
+
+152
+00:12:33,620 --> 00:12:38,959
+models. These are task-specific models. If you have a translation model, it takes an input piece
+
+153
+00:12:38,980 --> 00:12:44,660
+of text and assumes that its job is to translate that piece of text, not to do something else with
+
+154
+00:12:44,760 --> 00:12:49,360
+it. If you have a summarization model and you give it a piece of text, it knows that it's going to
+
+155
+00:12:49,480 --> 00:12:54,140
+try to summarize that piece of text and not do anything else with it. If you have a sentiment
+
+156
+00:12:54,380 --> 00:12:59,160
+analysis model and you give it a piece of text, such as a product review, then this model knows
+
+157
+00:12:59,280 --> 00:13:03,580
+that it's going to predict a number and not do something else, like try to summarize or translate.
+
+158
+00:13:04,000 --> 00:13:07,540
+So for every one model, it performs one specific task.
+
+159
+00:13:07,940 --> 00:13:10,440
+In contrast, let's look at a foundation model.
+
+160
+00:13:10,820 --> 00:13:13,720
+A large language model is an example of a foundation model.
+
+161
+00:13:14,000 --> 00:13:18,640
+If you give it a piece of text, as well as the instruction to translate to French, then
+
+162
+00:13:18,760 --> 00:13:20,340
+it will perform a translation task.
+
+163
+00:13:20,720 --> 00:13:25,500
+If you give that same model a movie script with the instruction to summarize that script,
+
+164
+00:13:25,940 --> 00:13:28,060
+then it will perform the summarization task.
+
+165
+00:13:28,420 --> 00:13:33,239
+If you give it a prompt to predict the rating of some product review, for example, between
+
+166
+00:13:33,320 --> 00:13:38,740
+one and five stars, then it will perform that task and output a star rating. So with one foundation
+
+167
+00:13:39,080 --> 00:13:45,660
+model, it can actually generalize to many tasks if prompted with some hints as to the task that you
+
+168
+00:13:45,760 --> 00:13:50,760
+want it to perform. And here's a brief look at how foundation models are trained. Again, let's take a
+
+169
+00:13:50,860 --> 00:13:56,200
+look at task-specific models to see how training foundation models is different. With a task-specific
+
+170
+00:13:56,660 --> 00:14:03,220
+model, it's given training data with input features and labels that are specific to the task that is
+
+171
+00:14:03,240 --> 00:14:09,020
+asked to learn. In this case, it is asked to take some product review and output a number that the
+
+172
+00:14:09,260 --> 00:14:14,320
+reviewer might have given based on the text of their review. So a task-specific model is being
+
+173
+00:14:14,580 --> 00:14:20,260
+given inputs and correct outputs that define how to perform a specific task, in this case,
+
+174
+00:14:20,720 --> 00:14:26,680
+sentiment analysis on a piece of text. In contrast with foundation models, they're just fed any piece
+
+175
+00:14:26,800 --> 00:14:33,200
+of text and asked to predict the next word, and the label in this case is the actual word that
+
+176
+00:14:33,220 --> 00:14:38,340
+in a textbook or online article that is being used for training. For example, with the text
+
+177
+00:14:38,640 --> 00:14:44,100
+twinkle twinkle little star, the input could be twinkle twinkle little, and then the label or the
+
+178
+00:14:44,340 --> 00:14:49,100
+correct output would be star. And the model might still be training, and so it might output its best
+
+179
+00:14:49,300 --> 00:14:53,780
+guess, which might be llama, for instance. Similarly, with a piece of text that says
+
+180
+00:14:54,420 --> 00:15:00,160
+happy birthday to you, the feature or input for the foundation model could be happy birthday to,
+
+181
+00:15:00,200 --> 00:15:05,400
+and the label that defines the correct answer would be you. The model will try its best guess,
+
+182
+00:15:05,860 --> 00:15:10,520
+for example it might say happy birthday to me, but the labels will be used to help the model learn.
+
+183
+00:15:10,880 --> 00:15:15,320
+So in the case of a large language model, the task that it's learning to perform is to predict the
+
+184
+00:15:15,380 --> 00:15:20,300
+next word, which you recall is officially called language modeling. And the key point here is that
+
+185
+00:15:20,460 --> 00:15:25,660
+the foundation model is not being explicitly trained to perform any other specific tasks,
+
+186
+00:15:25,960 --> 00:15:30,040
+such as translation or summarization or sentiment analysis.
+
+187
+00:15:30,620 --> 00:15:33,800
+And the reason why predicting the next word is a useful task
+
+188
+00:15:34,100 --> 00:15:38,280
+is that this allows the foundation model to take in a lot more data for training.
+
+189
+00:15:38,860 --> 00:15:43,700
+With other task-specific models, you would need humans to create the labels in the training data.
+
+190
+00:15:44,120 --> 00:15:46,980
+In contrast, when you're predicting the next word in a document,
+
+191
+00:15:47,480 --> 00:15:52,340
+then those labels already exist because each label is just the next word and piece of text.
+
+192
+00:15:52,780 --> 00:15:58,060
+So when these models have a lot more data that can be used for training, even though they're just predicting the next word,
+
+193
+00:15:58,560 --> 00:16:03,960
+these models are also learning about human language when they're being trained on so much text data.
+
+194
+00:16:04,320 --> 00:16:09,240
+And this allows foundation models to develop the ability to perform other useful tasks,
+
+195
+00:16:09,760 --> 00:16:13,600
+such as translation, summarization, sentiment analysis, and more,
+
+196
+00:16:14,040 --> 00:16:17,080
+even though they were not specifically trained to perform those tasks.
+
+197
+00:16:17,580 --> 00:16:19,660
+And so that's what a foundation model is.
+
+198
+00:16:19,800 --> 00:16:24,340
+It's a model that can learn broadly about a particular type of data, such as human language,
+
+199
+00:16:24,920 --> 00:16:30,320
+so that it can develop on its own the ability to perform useful tasks to process that data,
+
+200
+00:16:31,020 --> 00:16:32,280
+in this case, human language.
+
+201
+00:16:33,040 --> 00:16:38,040
+This task of learning from predicting the next word and a lot of text data is part of a training
+
+202
+00:16:38,420 --> 00:16:41,760
+process that includes pre-training followed by fine-tuning.
+
+203
+00:16:42,300 --> 00:16:47,020
+So a pre-trained model is also called a base model, and it has learned to predict the next
+
+204
+00:16:47,200 --> 00:16:48,400
+word given some input text.
+
+205
+00:16:48,800 --> 00:16:53,180
+This means that if you were to try and get the base model to perform a task that's useful to you,
+
+206
+00:16:53,460 --> 00:16:57,160
+you would need to phrase it in a way so that the useful outcome that you're looking for
+
+207
+00:16:57,500 --> 00:17:02,260
+would be the next word in that sentence. For instance, if I wanted it to recommend some nice
+
+208
+00:17:02,540 --> 00:17:07,100
+places to go on vacation, for a base model, I could try to give it a prompt such as,
+
+209
+00:17:07,300 --> 00:17:12,980
+a city I want to visit for a vacation is. Notice that this text is formatted as an
+
+210
+00:17:13,300 --> 00:17:17,579
+incomplete sentence. The base model may try to predict the next couple of words,
+
+211
+00:17:18,040 --> 00:17:24,520
+such as Paris, China, or Colorado. This is why it's called a completion because it's trying to
+
+212
+00:17:24,780 --> 00:17:30,060
+complete an incomplete sentence. To make it easier to use these models, they then go through an
+
+213
+00:17:30,220 --> 00:17:35,120
+additional training step to learn how to follow instructions. This is called instruction tuning,
+
+214
+00:17:35,560 --> 00:17:41,100
+and it gives the model more curated examples where the inputs look like this, suggest some dessert
+
+215
+00:17:41,280 --> 00:17:46,820
+options. Notice that this is formatted as an instruction, some task you're asking the model
+
+216
+00:17:46,840 --> 00:17:52,080
+to perform. While it's still learning, the model may initially try to complete an incomplete
+
+217
+00:17:52,500 --> 00:17:57,440
+sentence. So its completion might look like this. Suggest some appetizers. For instruction tuning,
+
+218
+00:17:57,960 --> 00:18:04,520
+the training data also includes examples of ideal completions, such as I recommend ice cream cake.
+
+219
+00:18:05,000 --> 00:18:10,900
+So this is formatted as a response to an instruction. And I'm simplifying the training
+
+220
+00:18:11,180 --> 00:18:15,620
+process a lot here, but you can have some performance measure and an optimizer update
+
+221
+00:18:15,640 --> 00:18:21,200
+the model so that it can learn. So after instruction tuning, you'll get an instruction tuned model,
+
+222
+00:18:21,720 --> 00:18:26,100
+which is what most of us are used to when we access a chatbot. If you give it an instruction,
+
+223
+00:18:26,740 --> 00:18:32,180
+such as, suggest a vacation itinerary, it will understand that this is an instruction,
+
+224
+00:18:32,840 --> 00:18:40,180
+an output text that is meant to satisfy that request, such as, I recommend Paris to China to
+
+225
+00:18:40,200 --> 00:18:45,880
+Colorado. You've heard of ChatGPT and may have heard that the underlying model created by OpenAI
+
+226
+00:18:46,580 --> 00:18:52,780
+is called GPT. But what does GPT stand for? Now, just for fun, you might be able to figure this out
+
+227
+00:18:52,940 --> 00:18:58,480
+if you rewind a little bit and look at all the text that was colored in green in the past couple
+
+228
+00:18:58,620 --> 00:19:05,460
+of slides. The G in GPT stands for generative because it can generate outputs that are new
+
+229
+00:19:05,500 --> 00:19:13,040
+sequences of text that could be responses to open-ended questions or requests. The P stands
+
+230
+00:19:13,220 --> 00:19:19,740
+for pre-trained. It's a foundation model that was pre-trained on a large amount of text data so that
+
+231
+00:19:19,840 --> 00:19:26,100
+it would have the ability to generalize to many tasks beyond just predicting the next word. And T
+
+232
+00:19:26,360 --> 00:19:32,420
+stands for transformer because the model design is based on the transformer architecture, a kind of
+
+233
+00:19:32,440 --> 00:19:39,720
+sequence model. So there you go. That's GPT. Next up, we'll go through more vocabulary words
+
+234
+00:19:40,140 --> 00:19:41,920
+that you might hear when you're learning about AI.
+
+235
+00:20:09,520 --> 00:20:10,780
+Bye.
+

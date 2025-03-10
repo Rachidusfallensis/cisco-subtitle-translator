@@ -1,0 +1,368 @@
+1
+00:00:05,120 --> 00:00:10,140
+You can use chatbots to transform text from one form to another. For example, you can also use
+
+2
+00:00:10,280 --> 00:00:15,700
+chatbots to translate from one language to another. If you took the machine translation part of this
+
+3
+00:00:15,760 --> 00:00:21,380
+course, you used it to translate an idiom or saying, and depending on the context, the translation tool
+
+4
+00:00:21,700 --> 00:00:27,640
+may have translated this into an idiom in the target language, or it may have translated this
+
+5
+00:00:27,720 --> 00:00:32,840
+literally. You can also use chatbots to perform translation as well. And the nice thing is that
+
+6
+00:00:33,080 --> 00:00:37,680
+you can ask it to translate to more than one target language at the same time. Let's see how a chatbot
+
+7
+00:00:37,920 --> 00:00:43,760
+translates the phrase "every cloud has a silver lining" into multiple languages. And here I'll use
+
+8
+00:00:43,920 --> 00:00:51,120
+Copilot. So it translates to Spanish, French, German, Chinese, Japanese, Russian, Arabic, Portuguese,
+
+9
+00:00:51,560 --> 00:00:55,800
+Hindi. And I've actually tried this out with multiple chatbots. Most of them do pretty well
+
+10
+00:00:55,820 --> 00:01:01,200
+with translating to Spanish. Here I'll look at the Chinese translation, and in this case it's
+
+11
+00:01:01,400 --> 00:01:06,880
+suggesting a phrase that looks a little bit more literal and is not the equivalent idiom in Chinese
+
+12
+00:01:07,200 --> 00:01:10,700
+that I'm looking for. But even if you're not familiar with the target language that you're
+
+13
+00:01:10,860 --> 00:01:15,480
+trying to translate to, you can ask a chatbot to help you out and check if it's providing a
+
+14
+00:01:15,640 --> 00:01:20,759
+translation that a native speaker would recognize. So you can ask a follow-up question: for the
+
+15
+00:01:20,780 --> 00:01:25,000
+For the Chinese translation, is this a common idiom or expression in Chinese?
+
+16
+00:01:25,660 --> 00:01:29,580
+If not, can you suggest common idioms or expressions that have the same meaning?
+
+17
+00:01:30,080 --> 00:01:30,760
+Let's see what it says.
+
+18
+00:01:31,080 --> 00:01:35,000
+So now that it has a chance to double-check itself, the chatbot says that this is not
+
+19
+00:01:35,100 --> 00:01:40,340
+a common expression, and lists three expressions that might be more recognizable to people who
+
+20
+00:01:40,440 --> 00:01:41,080
+speak that language.
+
+21
+00:01:41,580 --> 00:01:46,520
+And the first expression that it suggested, 塞翁师马, 言之非福, means "a
+
+22
+00:01:46,540 --> 00:01:50,920
+a blessing in disguise. And that was actually the idiom that I was thinking about as the equivalent
+
+23
+00:01:51,440 --> 00:01:55,680
+to every cloud has a silver lining. And again, if you're not familiar with the target language,
+
+24
+00:01:56,120 --> 00:02:00,860
+you can ask the chatbot to explain what that idiom means. So for the next follow-up question,
+
+25
+00:02:01,320 --> 00:02:05,880
+you can ask, for the first idiom referring to the list that it just output, please give some
+
+26
+00:02:06,100 --> 00:02:11,599
+background on the meaning and origin of this idiom. And let's see what it says. And so it explains
+
+27
+00:02:11,600 --> 00:02:18,600
+that bad luck can turn into good luck and also the other way around. Good luck might turn into bad
+
+28
+00:02:18,740 --> 00:02:23,900
+luck. And it tells the story that is the origin of this phrase. It's about a man who loses his horse
+
+29
+00:02:24,240 --> 00:02:29,680
+and his neighbors say, oh, that's too bad. And he says, well, maybe it's not so bad. Then that same
+
+30
+00:02:30,460 --> 00:02:35,960
+horse that ran away came home and also came back with an additional horse, who I'm sure is just a
+
+31
+00:02:35,980 --> 00:02:41,300
+friend. So the neighbors say, oh, that's great. But then the owner says, well, maybe it's not that
+
+32
+00:02:41,500 --> 00:02:47,200
+great. Later, the owner's child is riding that new horse, the one who's just a friend, and accidentally
+
+33
+00:02:47,500 --> 00:02:52,280
+falls off and breaks his leg. So the neighbors all say, oh, that's too bad. But the father says,
+
+34
+00:02:52,620 --> 00:02:57,420
+well, maybe it's not so bad. Then one day there's a war, so all the young people have to go off and
+
+35
+00:02:57,540 --> 00:03:02,480
+fight in that war, and many of them get hurt or worse. But because the man's son had a broken leg,
+
+36
+00:03:02,660 --> 00:03:07,180
+The son was not able to go to war, and therefore he was able to stay home and stay safe.
+
+37
+00:03:07,720 --> 00:03:09,860
+So that's kind of a cool background story to the idiom.
+
+38
+00:03:10,220 --> 00:03:15,680
+And there's a lot of idioms in other languages that have similar meanings, as every cloud has a silver lining.
+
+39
+00:03:16,120 --> 00:03:21,420
+So I encourage you to ask a chatbot to identify idioms in other languages that have the same meaning,
+
+40
+00:03:21,940 --> 00:03:24,020
+and to explore the origins of those idioms.
+
+41
+00:03:24,300 --> 00:03:28,940
+And the nice thing about performing translation with a chatbot is you're no longer just limited to
+
+42
+00:03:29,000 --> 00:03:33,780
+surrounding a phrase with certain keywords or phrases to encourage the translation service
+
+43
+00:03:34,300 --> 00:03:38,500
+to provide the idiomatic translation or alternatively the literal translation.
+
+44
+00:03:38,980 --> 00:03:42,380
+Now with a chatbot, you can directly ask it for the idiomatic translation
+
+45
+00:03:42,920 --> 00:03:46,760
+and even ask it to propose a couple different options because there may be more than one.
+
+46
+00:03:47,260 --> 00:03:49,120
+Let's now try to translate another idiom.
+
+47
+00:03:49,640 --> 00:03:54,020
+It's a piece of cake into French and ask for different options for expressions
+
+48
+00:03:54,620 --> 00:03:55,560
+that might have the same meaning.
+
+49
+00:03:55,820 --> 00:04:01,800
+And let's ask it to label each of these options as to whether it's a figurative or literal word-for-word translation.
+
+50
+00:04:02,520 --> 00:04:07,680
+So I'll go ahead and use Mistral, because they're based in France, and have an emphasis on the French language.
+
+51
+00:04:08,600 --> 00:04:12,820
+It first provides the literal translation, which is literally a piece or slice of cake,
+
+52
+00:04:13,280 --> 00:04:19,060
+and then it provides a couple figurative translations, including a game for children, as easy as saying hello,
+
+53
+00:04:19,780 --> 00:04:22,600
+and this is kind of funny, with a finger up the nose.
+
+54
+00:04:23,580 --> 00:04:25,540
+So which one might be more commonly understood?
+
+55
+00:04:25,640 --> 00:04:27,960
+Well, you can ask the chatbot that exact question.
+
+56
+00:04:28,480 --> 00:04:33,040
+For these options, which are more commonly used in everyday language and conversation?
+
+57
+00:04:33,460 --> 00:04:34,280
+So here's what it says.
+
+58
+00:04:34,760 --> 00:04:37,720
+A game of children is listed first as the most common expression.
+
+59
+00:04:38,520 --> 00:04:40,200
+You can think of it as child's play.
+
+60
+00:04:40,600 --> 00:04:42,940
+Followed by as easy as saying hello.
+
+61
+00:04:43,520 --> 00:04:45,600
+And followed by with a finger up the nose.
+
+62
+00:04:46,420 --> 00:04:49,880
+And as before, I do encourage you to try this out with a couple different chatbots
+
+63
+00:04:50,280 --> 00:04:51,600
+because they may give different results.
+
+64
+00:04:51,780 --> 00:04:55,920
+and it will help you to review a couple different chatbots outputs to help you decide which
+
+65
+00:04:56,080 --> 00:05:00,660
+translation to use. In addition to foreign languages, it might help to know that you can
+
+66
+00:05:00,860 --> 00:05:06,000
+translate into Morse code, which is an alphabet that you can signal using a mirror and some sunlight,
+
+67
+00:05:06,400 --> 00:05:10,000
+or even a flashlight. You might have seen this demonstrated in a spy movie, for instance.
+
+68
+00:05:10,560 --> 00:05:14,640
+So here's a scenario where this might come in handy. Say you're sitting on a beautiful tropical
+
+69
+00:05:15,020 --> 00:05:19,600
+island eating some fresh pineapples. In the distance, you see a ship in the ocean, and you
+
+70
+00:05:19,620 --> 00:05:24,020
+decide you want to send them a signal in Morse code with a mirror and the sunlight. Thankfully,
+
+71
+00:05:24,640 --> 00:05:29,220
+you took this free online course that suggested the benefits of downloading compressed language
+
+72
+00:05:29,580 --> 00:05:34,120
+models onto your personal computer, and you also have that same computer with you. So you turn on
+
+73
+00:05:34,200 --> 00:05:39,640
+the computer, and here's what you ask the chatbot to do. Convert the following text to Morse code
+
+74
+00:05:40,160 --> 00:05:46,480
+and break it down letter by letter. SOS, I'm stuck on a deserted island. And it's still good to
+
+75
+00:05:46,500 --> 00:05:51,280
+double check if this looks right to you. For instance, it looks like the letter S is consistent
+
+76
+00:05:51,900 --> 00:05:58,520
+here and here. And here's the letter O. It looks like S is a dot, two dashes, followed by a dot,
+
+77
+00:05:59,340 --> 00:06:05,340
+and O is three dashes. But let's double check this. So we can rewrite this prompt by adding this
+
+78
+00:06:05,820 --> 00:06:11,500
+to the beginning. List out the alphabet in Morse code. Then convert this to Morse code and break
+
+79
+00:06:11,520 --> 00:06:17,040
+down letter by letter. And here's the same message as before. Let's try this out. So here is the
+
+80
+00:06:17,280 --> 00:06:22,200
+updated prompt, and you can see that it's first listing out the alphabet in Morse code. And now
+
+81
+00:06:22,380 --> 00:06:27,440
+it's converting the message to Morse code. Let's scroll back up and check the alphabet for S and O.
+
+82
+00:06:28,020 --> 00:06:33,620
+So S is actually three dots, not what we saw earlier. O is three dashes, which is the same
+
+83
+00:06:33,800 --> 00:06:39,500
+as what we saw earlier. And now you can see that the message SOS looks like this. S is three dots,
+
+84
+00:06:40,120 --> 00:06:43,060
+Here and here, O is three dashes.
+
+85
+00:06:43,980 --> 00:06:46,240
+You can also do an internet search, and here in Wikipedia,
+
+86
+00:06:47,080 --> 00:06:50,780
+you can verify that S is three dots and O is three dashes.
+
+87
+00:06:51,360 --> 00:06:54,280
+So maybe you can practice how you might prompt a chatbot to
+
+88
+00:06:54,520 --> 00:06:57,880
+convert your message into Morse code, and your future self will thank you
+
+89
+00:06:58,180 --> 00:07:00,700
+when you encounter a situation where it's really useful.
+
+90
+00:07:01,380 --> 00:07:05,480
+Next up, you can transform text using chatbots in other ways as well.
+
+91
+00:07:06,040 --> 00:07:09,140
+Let's look at how you might reword and rewrite text.
+
+92
+00:07:09,540 --> 00:07:10,660
+Let's go on to the next video.
+

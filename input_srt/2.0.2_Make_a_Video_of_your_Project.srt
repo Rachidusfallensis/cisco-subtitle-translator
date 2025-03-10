@@ -1,0 +1,8 @@
+1
+00:00:00,020 --> 00:00:06,720
+Now that you've made a fun cool project,
+
+2
+00:00:07,240 --> 00:00:08,920
+let's see how you can document it in a video.
+

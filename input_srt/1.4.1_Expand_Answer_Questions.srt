@@ -1,0 +1,304 @@
+1
+00:00:05,280 --> 00:00:10,520
+You've probably used chatbots in the same way that you use web search, by asking it a question and getting an answer.
+
+2
+00:00:11,100 --> 00:00:18,940
+This is an example of an expand task in that you give it a small input, such as, who is Taylor Swift, and you get a lot of information back.
+
+3
+00:00:19,400 --> 00:00:22,180
+Let's take a look at how you can use chatbots for question answering.
+
+4
+00:00:23,060 --> 00:00:26,260
+Let's look at various ways that you can ask for information from a chatbot.
+
+5
+00:00:26,380 --> 00:00:31,640
+We can start with asking a question such as "What is K-pop and hip-hop?"
+
+6
+00:00:31,860 --> 00:00:33,040
+Let's see what the chatbot says.
+
+7
+00:00:41,060 --> 00:00:45,600
+Beyond asking a question, you can also request information with explicit instructions.
+
+8
+00:00:46,220 --> 00:00:53,159
+For example, you can say "Compare and contrast" or "List" or "Describe" or "Explain".
+
+9
+00:00:53,320 --> 00:00:57,140
+And you can give your prompt more structure with a sequence of subtasks.
+
+10
+00:00:57,640 --> 00:01:03,300
+For example, list some resources, then collect key information like persons and terminology,
+
+11
+00:01:03,840 --> 00:01:09,580
+then list out similarities, and then list out differences, and finally draw some conclusions.
+
+12
+00:01:10,860 --> 00:01:15,560
+So it's nice that when you give your prompt more structure and also flesh out what you're looking
+
+13
+00:01:15,760 --> 00:01:22,639
+for, it also will prompt the chatbot to follow your structure and also provide more information
+
+14
+00:01:22,660 --> 00:01:30,720
+that you're asking for. And you can ask follow-up questions or add follow-up instructions. For
+
+15
+00:01:30,900 --> 00:01:37,580
+example, for the previous two topics, divide your analysis into two parts. Compare and contrast the
+
+16
+00:01:37,820 --> 00:01:42,640
+music, and then compare and contrast the dance style. Notice that you could have also included
+
+17
+00:01:42,920 --> 00:01:48,239
+this in the previous prompt so that it's just one long prompt. But sometimes you may get better
+
+18
+00:01:48,260 --> 00:01:53,700
+results if you break up your task into separate prompts. If you ask a chatbot to do too many
+
+19
+00:01:53,920 --> 00:01:58,840
+things, it may not do all of them that well compared to if it was able to focus on fewer
+
+20
+00:01:59,080 --> 00:02:01,760
+tasks at the same time. And let's see what it says.
+
+21
+00:02:09,240 --> 00:02:14,539
+And you can ask it to review its previous work. Sometimes it can spot its own mistakes
+
+22
+00:02:14,960 --> 00:02:18,560
+if you just ask it to double check. People have been calling this prompting technique
+
+23
+00:02:19,080 --> 00:02:24,460
+reflection because the model is asked to reflect on its previous completions to check if they can
+
+24
+00:02:24,560 --> 00:02:29,600
+be improved or corrected. So for instance, you can ask it to check for factual accuracy
+
+25
+00:02:30,060 --> 00:02:35,660
+and also ask it to add any additional information. Asking a chatbot to review its work can make a
+
+26
+00:02:35,820 --> 00:02:41,799
+difference because once a chatbot predicts a word, it only moves onto the next word and the next and
+
+27
+00:02:41,820 --> 00:02:47,600
+can't go back to change or remove any word that it's already output. And to make it easier to see
+
+28
+00:02:47,840 --> 00:02:52,920
+what it decided to revise, I'll ask it to copy over its original output that it reviewed,
+
+29
+00:02:53,780 --> 00:02:59,080
+followed by the clarification or addition. I'm calling these key and value because that's a
+
+30
+00:02:59,320 --> 00:03:04,100
+common way that software engineers like to organize information. If you're not familiar with key-value
+
+31
+00:03:04,320 --> 00:03:09,199
+pairs, don't worry, you can write your prompt without explicitly using these vocabulary words
+
+32
+00:03:09,620 --> 00:03:12,600
+and it will probably still work. And let's see what it says.
+
+33
+00:03:24,980 --> 00:03:29,780
+You can go deeper into subtopics based on what you learned from its previous completions.
+
+34
+00:03:30,200 --> 00:03:35,740
+For instance, I can say, you mentioned breaking, breakdancing. Can you clarify what this is?
+
+35
+00:03:36,220 --> 00:03:47,920
+You can think of this as just asking another follow-up question, but I'd like to mention this because you may sometimes feel like a chatbot's answer didn't give you the depth of information that you were looking for when you first asked for it.
+
+36
+00:03:48,140 --> 00:03:53,880
+But if you focus on a narrower subtopic, you may get more details than you did in the first more general request.
+
+37
+00:03:54,820 --> 00:03:57,080
+And so I'll actually ask two follow-up questions.
+
+38
+00:03:57,660 --> 00:04:01,620
+The second one will be, what is the difference between breaking and breakdancing?
+
+39
+00:04:02,200 --> 00:04:06,260
+So the first question is, I'll ask it to clarify breaking or breakdancing.
+
+40
+00:04:16,560 --> 00:04:20,400
+And then my next follow-up is, what's the difference between breaking and breakdancing?
+
+41
+00:04:23,640 --> 00:04:29,160
+And so it clarifies that the preferred term is breaking as opposed to breakdancing.
+
+42
+00:04:30,160 --> 00:04:36,240
+So far, you've seen questions or instructions that ask about a keyword such as hip-hop or breaking.
+
+43
+00:04:36,720 --> 00:04:43,320
+What if instead you have a fuzzy recollection of a word or concept and need a reminder of what that is?
+
+44
+00:04:43,700 --> 00:04:46,380
+You can ask a chatbot to fill in the blanks for you.
+
+45
+00:04:47,140 --> 00:04:52,160
+For example, I'll ask it for words or terminology that describe this,
+
+46
+00:04:52,740 --> 00:04:55,060
+and then I'll describe what I'm thinking of as best I can.
+
+47
+00:04:55,160 --> 00:05:00,260
+someone sees their friends doing fun stuff on social media, and it makes them feel bad.
+
+48
+00:05:00,700 --> 00:05:06,160
+One thing I'd like to point out is I worded this so that I'm trying to encourage the chatbot to
+
+49
+00:05:06,300 --> 00:05:12,360
+give multiple suggestions for what this keyword or terminology could be by using the plural words
+
+50
+00:05:12,640 --> 00:05:17,160
+as opposed to singular word. Sometimes if I don't hint that I want multiple options,
+
+51
+00:05:17,800 --> 00:05:22,140
+it will just give me one result. Let's see if the chatbot can help me fill in the blanks.
+
+52
+00:05:23,020 --> 00:05:28,200
+So it looks like the word I was thinking of was FOMO, but it also lists other possible
+
+53
+00:05:28,520 --> 00:05:33,180
+words or phrases that I didn't think about and that I can ask follow-up questions about.
+
+54
+00:05:33,580 --> 00:05:38,560
+So it also mentions other things like social comparison and asks me if I want to learn
+
+55
+00:05:38,740 --> 00:05:39,680
+more, and I say yes.
+
+56
+00:05:40,220 --> 00:05:44,980
+And now it provides more detailed definitions of all those words it suggested, as well as
+
+57
+00:05:45,060 --> 00:05:47,880
+some strategies for coping with social media envy.
+
+58
+00:05:49,360 --> 00:05:54,320
+You can also interact with chatbots in a way that you probably wouldn't with a regular search engine.
+
+59
+00:05:54,720 --> 00:05:57,780
+You can try to clarify maybe some confusion about some topic.
+
+60
+00:05:58,280 --> 00:06:00,400
+For example, I wanted clarification on this.
+
+61
+00:06:00,920 --> 00:06:05,980
+When people announce some accomplishment, they either say they're proud of that accomplishment,
+
+62
+00:06:06,520 --> 00:06:10,400
+but other people say they're humbled by their accomplishment or award.
+
+63
+00:06:10,800 --> 00:06:13,480
+So my question is, do these mean the same thing?
+
+64
+00:06:14,320 --> 00:06:16,620
+And why do people say one versus the other?
+
+65
+00:06:17,200 --> 00:06:17,860
+Let's try this out.
+
+66
+00:06:22,400 --> 00:06:29,180
+So it defines proud of and it defines humbled by and tries to explain why people choose one or the
+
+67
+00:06:29,320 --> 00:06:34,760
+other based on personal preferences, culture, or situation. Now I've tried this with a couple
+
+68
+00:06:34,900 --> 00:06:40,700
+different chatbots and they all gave similar safe answers that are some version of, well,
+
+69
+00:06:40,860 --> 00:06:44,859
+it depends on the person or it depends on the culture. What I thought was interesting with this
+
+70
+00:06:44,880 --> 00:06:50,320
+answered by Claude was that it mentioned something that's kind of an opinion or maybe even an insight.
+
+71
+00:06:51,120 --> 00:06:58,120
+It says, it's worth noting that humbled by is sometimes criticized as false modesty. And so,
+
+72
+00:06:58,440 --> 00:07:02,480
+it's not necessarily that you have to believe what it's saying, but it's trying to provide some
+
+73
+00:07:02,820 --> 00:07:08,160
+additional opinion or insight that you might get when you're talking to a human. So it's helpful to
+
+74
+00:07:08,280 --> 00:07:13,679
+try out the same prompt or question or task on more than one chatbot. You might learn more than
+
+75
+00:07:13,700 --> 00:07:18,580
+if you just stuck with just one. Coming up next, you'll use chatbots to help you generate
+
+76
+00:07:18,860 --> 00:07:21,100
+new ideas. I'll see you in the next video.
+

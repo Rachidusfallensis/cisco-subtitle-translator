@@ -1,0 +1,356 @@
+1
+00:00:05,080 --> 00:00:10,100
+When you have a conversation with a chatbot, you can actually prompt it to take the initiative and lead the conversation.
+
+2
+00:00:10,880 --> 00:00:14,960
+For example, you could have it be an interviewer and help you do interview prep.
+
+3
+00:00:15,680 --> 00:00:20,240
+Recently, you wrote a letter to the president of Furry Friends Forever Cat Cafe,
+
+4
+00:00:20,780 --> 00:00:23,420
+asking them to consider you for a position at that cafe.
+
+5
+00:00:24,040 --> 00:00:26,140
+And congratulations, they're giving you an interview.
+
+6
+00:00:26,240 --> 00:00:30,900
+and the interviewer will probably ask you some questions, listen to your answers, and ask more
+
+7
+00:00:31,280 --> 00:00:35,740
+follow-up questions. Interviews can be a little bit intimidating, but it gets easier with practice.
+
+8
+00:00:36,320 --> 00:00:40,880
+And practicing with your friends is great, but you could also practice with a chatbot. Let's see how
+
+9
+00:00:40,980 --> 00:00:45,540
+you can do that. You can start by defining the chatbot's role as an interviewer for a job
+
+10
+00:00:45,740 --> 00:00:51,160
+position. The position that you're applying for is cat cafe manager. So here's the job description.
+
+11
+00:00:51,540 --> 00:00:56,880
+provide attention to cats, feed the cats, make coffee for guests, give cat petting guidelines
+
+12
+00:00:57,260 --> 00:01:02,860
+to guests, and clean the cats and litter boxes. And here's the task for the interviewer. The
+
+13
+00:01:03,000 --> 00:01:07,580
+interviewer will ask any three questions that they find relevant to this position, one at a time.
+
+14
+00:01:07,980 --> 00:01:13,060
+So by explicitly saying three questions, you're helping it to set limits to how long the interview
+
+15
+00:01:13,260 --> 00:01:18,540
+will last. And by asking it to ask one question at a time, you're telling the chatbot to make this
+
+16
+00:01:18,560 --> 00:01:23,520
+feel like a live in-person interview instead of having the chatbot list out the entire list of
+
+17
+00:01:23,660 --> 00:01:29,060
+interview questions all at once, which some chatbots I noticed will do unless you explicitly tell them
+
+18
+00:01:29,260 --> 00:01:33,840
+to ask questions one at a time. Here are more details on the process that you're going to ask
+
+19
+00:01:34,120 --> 00:01:39,320
+the chatbot to follow as an interviewer. And part of the reason I suggest being very detailed here
+
+20
+00:01:39,640 --> 00:01:44,920
+is because by default, a chatbot tends to output all the interview questions all at once, and
+
+21
+00:01:44,940 --> 00:01:51,180
+sometimes even starts to answer its own questions as if it is both the interviewer and interviewee.
+
+22
+00:01:51,480 --> 00:01:56,060
+So here's the process for this interview. So here you'll ask it to repeat this pattern
+
+23
+00:01:56,580 --> 00:02:02,320
+for the interview. Ask a prepared question. Wait for the interviewee to answer the question.
+
+24
+00:02:02,920 --> 00:02:07,780
+Then ask a follow-up question based on the interviewee's reply. These follow-up questions
+
+25
+00:02:08,080 --> 00:02:11,640
+are really helpful because they really simulate what happens in a real interview, where the
+
+26
+00:02:11,660 --> 00:02:16,240
+direction that the interview takes is in part determined by your responses and the interviewer's
+
+27
+00:02:16,520 --> 00:02:20,660
+reaction to those responses. It also lets you practice moving the interview in a certain
+
+28
+00:02:20,880 --> 00:02:24,640
+direction because if you want to talk about something that really helps you stand out,
+
+29
+00:02:25,160 --> 00:02:29,240
+even if the question isn't directly asking about it, you can find some way to bring it up so that
+
+30
+00:02:29,440 --> 00:02:34,400
+then the interviewer, whether it's a chatbot or a real person, will then shift the conversation
+
+31
+00:02:34,820 --> 00:02:39,100
+towards that interesting topic that you just brought up. Okay, so let's continue on with the
+
+32
+00:02:39,120 --> 00:02:45,160
+instructions. Wait to allow the interviewee to respond to your follow-up question. And I'm putting
+
+33
+00:02:45,260 --> 00:02:50,480
+this here because sometimes the chatbot will ask a follow-up question and then immediately ask its
+
+34
+00:02:50,700 --> 00:02:56,300
+next prepared question. So this is reminding the chatbot to pause and really make this a two-way
+
+35
+00:02:56,580 --> 00:03:01,620
+back-and-forth conversation. The next step is after the interviewee responds to the follow-up question,
+
+36
+00:03:02,120 --> 00:03:07,300
+move on to the next prepared question. And remember earlier in the prompt, you've asked the interviewer
+
+37
+00:03:07,320 --> 00:03:13,140
+to ask three prepared interview questions. Finally, after you have asked your prepared question and
+
+38
+00:03:13,240 --> 00:03:17,880
+your follow-up questions, conclude the interview. And this is important because we don't want the
+
+39
+00:03:18,040 --> 00:03:23,460
+interview to go on indefinitely because the next step is asking the interviewer to provide feedback
+
+40
+00:03:24,000 --> 00:03:28,800
+on your interview performance. The last part of the prompt is to request feedback from the
+
+41
+00:03:29,000 --> 00:03:34,880
+interviewer. For each of the prepared questions, rate the response on a scale of 1 to 5, where 5 is
+
+42
+00:03:34,900 --> 00:03:40,060
+highest score. Provide some suggestions for how the interviewee can improve their interview answers.
+
+43
+00:03:40,700 --> 00:03:45,160
+So as you may recall from earlier in the course, chatbots can help you with qualitative scoring
+
+44
+00:03:45,640 --> 00:03:50,720
+of open-ended responses or essays. And so they can also give a qualitative score to your interview
+
+45
+00:03:50,880 --> 00:03:55,760
+responses. Now you don't have to treat these numeric scores as an absolute fact, and even for
+
+46
+00:03:55,860 --> 00:04:00,920
+these suggestions for how to improve, you can reflect on whether these apply to your situation.
+
+47
+00:04:01,380 --> 00:04:05,880
+But one thing that I think can be helpful is to practice receiving constructive criticism
+
+48
+00:04:06,300 --> 00:04:10,600
+graciously, because demonstrating that you can take feedback and work on improving based
+
+49
+00:04:10,820 --> 00:04:13,780
+on that feedback is something that interviewers will find very valuable.
+
+50
+00:04:14,240 --> 00:04:19,019
+So for privacy, both for myself and for any existing company that I worked for or worked
+
+51
+00:04:19,100 --> 00:04:22,880
+for in the past, I will practice the mock interview with a model that I can download
+
+52
+00:04:23,360 --> 00:04:24,040
+using LM Studio.
+
+53
+00:04:24,500 --> 00:04:28,500
+I'll demonstrate with Gemma, which is the open source sibling of Gemini by Google.
+
+54
+00:04:28,860 --> 00:04:35,040
+I think it does pretty well in asking one question at a time, asking follow-up questions that are related to my actual responses,
+
+55
+00:04:35,440 --> 00:04:39,100
+and it seems to do a good job of maintaining the role of an interviewer.
+
+56
+00:04:39,340 --> 00:04:46,000
+So I'll give it the instructions for playing the role of an interviewer, as well as the process I want it to follow for conducting the interview.
+
+57
+00:04:46,440 --> 00:04:53,740
+So it does a good job of immediately jumping into the role right away, welcoming me to the interview, and asking the first question about cat body language.
+
+58
+00:04:54,180 --> 00:04:59,340
+And I'm trying my best to respond and also mention when a cat's body language may indicate anxiety.
+
+59
+00:04:59,740 --> 00:05:07,020
+The interviewer shows that they're actively listening because they pick on what I talked about in terms of tension and anxiety of a cat.
+
+60
+00:05:07,320 --> 00:05:14,240
+It then moves on and asks me for a specific scenario where a client at a cat cafe may have misunderstood the cat's body language.
+
+61
+00:05:14,740 --> 00:05:20,440
+I try to respond that it would explain to the customer that both for the safety of the customer and the comfort of the cat,
+
+62
+00:05:20,520 --> 00:05:23,960
+to usually take a hands-off approach and let the cats approach the humans first.
+
+63
+00:05:24,520 --> 00:05:28,920
+And so the interviewer responds good example and ties this into their original question
+
+64
+00:05:29,740 --> 00:05:32,500
+about how body language might be misinterpreted.
+
+65
+00:05:32,880 --> 00:05:38,380
+Next, the interviewer asks me how I would handle a litter of new kittens that arrive at the cat cafe.
+
+66
+00:05:38,840 --> 00:05:43,000
+And I respond that adult cats and baby cats might behave differently
+
+67
+00:05:43,520 --> 00:05:48,500
+and recommend placing the kittens in a separate room where trained staff members can interact with the kittens
+
+68
+00:05:48,700 --> 00:05:52,560
+but leave a viewing window open to allow guests to watch the kittens from a safe distance.
+
+69
+00:05:53,100 --> 00:05:55,040
+And it looks like the interviewer picks up on my suggestion
+
+70
+00:05:55,800 --> 00:05:59,140
+and also seems to recommend giving the kittens a safe space.
+
+71
+00:05:59,660 --> 00:06:01,760
+And now the interviewer wraps up the interview
+
+72
+00:06:02,380 --> 00:06:06,240
+and now is giving me feedback on each of my responses to his questions.
+
+73
+00:06:06,800 --> 00:06:08,380
+The feedback it gives is a bit general,
+
+74
+00:06:08,820 --> 00:06:11,560
+mostly saying I could do more research on the topic it's asking about.
+
+75
+00:06:11,900 --> 00:06:13,900
+The cool thing is I've tried this out before filming
+
+76
+00:06:14,360 --> 00:06:16,440
+and I gave some really bad interview answers.
+
+77
+00:06:17,020 --> 00:06:19,380
+For example, I said that I'm really allergic to cats.
+
+78
+00:06:19,820 --> 00:06:28,540
+And some of the chatbots do a good job of pointing out that this is an issue and that maybe being a manager of a cat cafe may not be the best employment option for me.
+
+79
+00:06:28,940 --> 00:06:31,320
+So when you have a chance, please try this out for yourself.
+
+80
+00:06:32,120 --> 00:06:38,680
+Download a model onto your computer for privacy and prompt it to be an interviewer for a job that you're interested in.
+
+81
+00:06:38,980 --> 00:06:44,240
+Now, because I've tried this out with a couple chatbots, I will just tell you up front that this won't work all the time.
+
+82
+00:06:44,580 --> 00:06:48,280
+And depending on the large language model you're using, you may need to write different instructions
+
+83
+00:06:49,080 --> 00:06:52,200
+to get them to behave in the way that makes it feel like a natural interview.
+
+84
+00:06:52,720 --> 00:06:56,880
+But I found that even when a large language model isn't quite doing what I'm expecting it to do,
+
+85
+00:06:57,240 --> 00:07:01,720
+that's actually good practice for me to rewrite my prompts in a way to steer it in the direction
+
+86
+00:07:02,160 --> 00:07:07,320
+and the behavior that I'm looking for. Coming up next, you can actually have a chatbot chat with
+
+87
+00:07:07,540 --> 00:07:12,939
+another chatbot and collaborate to perform a task. And this could potentially give you better results
+
+88
+00:07:13,260 --> 00:07:15,180
+than if you were to work with just one chatbot.
+
+89
+00:07:15,600 --> 00:07:18,960
+Let's check out chatbot to chatbot collaboration next.
+

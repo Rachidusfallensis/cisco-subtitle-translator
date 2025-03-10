@@ -1,0 +1,696 @@
+1
+00:00:05,220 --> 00:00:09,740
+You may have at some point tried to scroll through a discussion forum post and all its replies and
+
+2
+00:00:09,880 --> 00:00:13,920
+tried to make sense of it. Or maybe you had a similar situation with your own social media
+
+3
+00:00:14,200 --> 00:00:19,280
+post and all of its replies. Let's see how you can synthesize all the replies by labeling them.
+
+4
+00:00:19,820 --> 00:00:24,920
+When you have many many distinct pieces of text, perhaps written by different people,
+
+5
+00:00:25,180 --> 00:00:29,560
+and want to make sense of all of it, it may help to label them by topic. For example,
+
+6
+00:00:30,300 --> 00:00:36,900
+with keywords such as love, positive, excited, negative, sad, and so on. Then you can group them
+
+7
+00:00:37,280 --> 00:00:42,880
+based on those labels, and based on the text that is grouped together, you can summarize key points
+
+8
+00:00:43,040 --> 00:00:48,140
+for each group. To look at how to synthesize information from many people, let's use, for
+
+9
+00:00:48,300 --> 00:00:53,859
+example, a public discussion forum, Reddit. And I'll just make a quick reminder of privacy that
+
+10
+00:00:53,880 --> 00:00:58,660
+If you have some internal discussion forum, you probably don't want to use a publicly hosted model.
+
+11
+00:00:59,120 --> 00:01:01,000
+Probably try something with a downloaded model.
+
+12
+00:01:01,480 --> 00:01:05,260
+So in Reddit, I'll search for discussions about the Olympics and breaking.
+
+13
+00:01:05,740 --> 00:01:12,780
+This particular original poster is asking why breaking will not be included in the 2028 Olympic Games,
+
+14
+00:01:13,280 --> 00:01:16,320
+whereas dressage has been included for many, many years.
+
+15
+00:01:16,920 --> 00:01:20,420
+And if you scroll down, you can see that there are many, many replies.
+
+16
+00:01:20,880 --> 00:01:26,840
+Some may disagree, some may agree, and some may be talking about something else.
+
+17
+00:01:27,400 --> 00:01:32,260
+So how can you enlist the help of a chatbot to help you label and synthesize this information?
+
+18
+00:01:32,800 --> 00:01:35,980
+Let's start out by getting the web link to this discussion forum post
+
+19
+00:01:36,400 --> 00:01:41,200
+and first test it out with a simple task to help us verify if it's doing what we hope it will do.
+
+20
+00:01:41,420 --> 00:01:45,140
+If you recall earlier in the course, you learned about testing a chatbot
+
+21
+00:01:45,420 --> 00:01:48,880
+or actually any AI-enabled software before you rely on it.
+
+22
+00:01:49,140 --> 00:01:50,560
+Let's use Notebook LM.
+
+23
+00:01:51,180 --> 00:01:56,720
+You can see that you can upload documents, connect to Google Docs, paste in text, or provide
+
+24
+00:01:56,940 --> 00:01:57,300
+a web link.
+
+25
+00:01:57,680 --> 00:01:59,060
+So let's use the web link option.
+
+26
+00:01:59,480 --> 00:02:03,420
+I'll go back to the website, get the link to that discussion forum post, and paste it
+
+27
+00:02:03,500 --> 00:02:03,580
+here.
+
+28
+00:02:03,880 --> 00:02:08,220
+Now you can see on the left-hand column, it displays that source article, and you can
+
+29
+00:02:08,259 --> 00:02:12,840
+expand it to verify that it indeed is the text from that discussion forum post.
+
+30
+00:02:13,140 --> 00:02:14,860
+So let's ask it for a simple task.
+
+31
+00:02:15,260 --> 00:02:20,620
+ask it to count the number of replies that it can see that are in this discussion forum post.
+
+32
+00:02:21,080 --> 00:02:25,820
+And you can see that it's trying to be cautious, and it says that the source material does not
+
+33
+00:02:26,200 --> 00:02:31,400
+explicitly say how many people there are. So you can try to ask a few follow-up questions and let
+
+34
+00:02:31,460 --> 00:02:35,760
+it know that you're not expecting it to give a precise answer, also acknowledging some of the
+
+35
+00:02:36,020 --> 00:02:40,699
+concerns that it might raise about not having enough information to answer the question. So these are
+
+36
+00:02:40,720 --> 00:02:45,720
+the two follow-up questions that I'm going to ask. So I'll try again and ask it to count the number
+
+37
+00:02:45,920 --> 00:02:50,820
+of replies that it can find even if some of the replies are not visible. It still responds very
+
+38
+00:02:51,060 --> 00:02:55,840
+cautiously that because it can't see all the replies which might be hidden by other links,
+
+39
+00:02:56,220 --> 00:03:01,000
+it's not willing to give an exact number. So I'll ask another follow-up question asking it to count
+
+40
+00:03:01,140 --> 00:03:05,600
+the number of replies even if it's a rough estimate. And now at least it gives me a number,
+
+41
+00:03:05,960 --> 00:03:07,360
+In this case, 214.
+
+42
+00:03:08,040 --> 00:03:12,460
+To better understand why it was so cautious, you can go back to the source and scroll to
+
+43
+00:03:12,540 --> 00:03:16,340
+the bottom, and you can see that the bottom says there are more replies, but these are
+
+44
+00:03:16,440 --> 00:03:17,580
+not visible on the webpage.
+
+45
+00:03:18,100 --> 00:03:22,100
+You can take a closer look at the original website, and if you scroll all the way down,
+
+46
+00:03:22,360 --> 00:03:26,600
+you can see that there's a red button that you can click on that says view more comments.
+
+47
+00:03:27,040 --> 00:03:29,860
+Only after you click on that does it load additional comments.
+
+48
+00:03:30,380 --> 00:03:35,680
+So to get all the replies, you just keep scrolling down and clicking on view more comments until
+
+49
+00:03:35,700 --> 00:03:41,440
+it shows all the replies. And in case the chatbot is not able to use a web link to see all the text
+
+50
+00:03:41,720 --> 00:03:46,260
+in that discussion forum post, let's go ahead and copy the text and open up a word processor
+
+51
+00:03:46,780 --> 00:03:51,340
+to paste that text in. Notice that for this particular site, if I do a regular paste,
+
+52
+00:03:51,720 --> 00:03:55,980
+it actually won't show anything. So let me go ahead and undo that and then just paste in
+
+53
+00:03:56,320 --> 00:04:02,500
+the pure unformatted text. Okay, it looks like there's 673 pages worth of text. And if I scroll
+
+54
+00:04:02,520 --> 00:04:08,220
+back to the top, I can verify that this is the text from that discussion forum post. And you can do the
+
+55
+00:04:08,360 --> 00:04:13,220
+same check and ask it to perform the simple task of counting the number of replies in the discussion
+
+56
+00:04:13,440 --> 00:04:18,560
+forum post. But now we're using the document instead of the link to the website. So I'll go
+
+57
+00:04:18,760 --> 00:04:24,080
+ahead and connect to Google Docs and find that file. While it's loading, I'll also uncheck the
+
+58
+00:04:24,400 --> 00:04:28,560
+previous source, which was from the web link, because now I want to have my prompts make use
+
+59
+00:04:28,580 --> 00:04:30,080
+of the uploaded Google Doc instead.
+
+60
+00:04:30,600 --> 00:04:32,620
+And you can open up the source again on the left
+
+61
+00:04:32,840 --> 00:04:34,460
+just to verify that it has the content
+
+62
+00:04:34,660 --> 00:04:35,220
+that you're expecting.
+
+63
+00:04:35,660 --> 00:04:37,420
+Now let's go ahead and give it the same task
+
+64
+00:04:37,680 --> 00:04:38,860
+to count the number of replies.
+
+65
+00:04:39,280 --> 00:04:41,660
+And it says it counts 289 replies
+
+66
+00:04:42,220 --> 00:04:43,480
+and also provides some detail
+
+67
+00:04:43,820 --> 00:04:45,580
+on why counting the replies can be tricky.
+
+68
+00:04:45,980 --> 00:04:47,600
+So the main takeaway I hope you get from this
+
+69
+00:04:47,740 --> 00:04:48,980
+is that it really helps to verify
+
+70
+00:04:49,340 --> 00:04:50,380
+that the data you're providing
+
+71
+00:04:50,820 --> 00:04:52,000
+is what you expect it to be.
+
+72
+00:04:52,280 --> 00:04:53,600
+In the case of providing a web link,
+
+73
+00:04:53,900 --> 00:04:55,420
+that may not provide all the content
+
+74
+00:04:55,780 --> 00:04:57,120
+in the discussion forum post
+
+75
+00:04:57,340 --> 00:05:01,120
+because some of it is hidden unless you click on a button to load more comments.
+
+76
+00:05:01,740 --> 00:05:03,840
+Now you're ready to synthesize this information,
+
+77
+00:05:04,280 --> 00:05:08,540
+and going forward, I'm going to be using that uploaded document instead of the web link.
+
+78
+00:05:09,100 --> 00:05:10,700
+Something you might be curious about is,
+
+79
+00:05:10,960 --> 00:05:13,960
+what are all the sports that people are talking about when they reply,
+
+80
+00:05:14,420 --> 00:05:17,400
+and how many users are talking about each category of sport?
+
+81
+00:05:17,980 --> 00:05:19,360
+Let's go ahead and see what this says.
+
+82
+00:05:19,740 --> 00:05:23,240
+It takes a bit of time, maybe about a minute, so I'm speeding up the video here.
+
+83
+00:05:23,320 --> 00:05:28,240
+you can see that breaking and dressage are mentioned 20 to 30 times, and it also mentions
+
+84
+00:05:28,640 --> 00:05:34,220
+other sports such as surfing. One thing I'd like to point out is in the prompt I specified that the
+
+85
+00:05:34,260 --> 00:05:39,420
+count should be one count per reply, because in this case I don't want to have multiple sentences
+
+86
+00:05:39,780 --> 00:05:44,800
+about breaking or multiple sentences about dressage from the same user to be counted multiple times.
+
+87
+00:05:45,460 --> 00:05:49,680
+And you will notice if you write this prompt without specifying one count per reply that
+
+88
+00:05:49,700 --> 00:05:50,980
+that you'll get a higher count number.
+
+89
+00:05:51,420 --> 00:05:53,200
+The really cool thing here is if you scroll through
+
+90
+00:05:53,360 --> 00:05:55,300
+this long list, there are many sports that
+
+91
+00:05:55,500 --> 00:05:57,300
+at least I wouldn't have thought of looking for,
+
+92
+00:05:57,760 --> 00:05:59,260
+including poodle haircutting,
+
+93
+00:05:59,720 --> 00:06:01,640
+although even the chatbot is able to suggest
+
+94
+00:06:01,920 --> 00:06:04,600
+that poodle haircutting probably was meant as a joke.
+
+95
+00:06:05,200 --> 00:06:06,840
+If you were trying to perform this task
+
+96
+00:06:07,080 --> 00:06:10,160
+in a time before large language models became so helpful,
+
+97
+00:06:10,620 --> 00:06:12,340
+you would have to write some traditional code
+
+98
+00:06:12,500 --> 00:06:14,740
+that would look for keywords and would list out
+
+99
+00:06:15,000 --> 00:06:17,780
+specific sport names to look for and then count.
+
+100
+00:06:18,280 --> 00:06:20,860
+But now you can just ask a chatbot, look for sports.
+
+101
+00:06:21,340 --> 00:06:26,580
+And now with chatbots, you can actually apply labels that are probably too difficult to create
+
+102
+00:06:26,920 --> 00:06:28,040
+just by searching for keywords.
+
+103
+00:06:28,560 --> 00:06:34,260
+For instance, you may be interested in whether each reply agrees with the view of the original
+
+104
+00:06:34,720 --> 00:06:39,280
+poster or disagrees with the original poster, or perhaps is talking about something else.
+
+105
+00:06:39,800 --> 00:06:45,640
+So the next prompt you can try is label each reply as to whether it agrees, disagrees,
+
+106
+00:06:46,200 --> 00:06:51,300
+or other, and then output that in a table where the column headers include the username,
+
+107
+00:06:51,920 --> 00:06:55,280
+the original quote from that reply, as well as the label.
+
+108
+00:06:55,780 --> 00:06:56,360
+Let's try this out.
+
+109
+00:06:56,660 --> 00:07:00,420
+This takes some time, maybe about a minute, so I'm speeding up the video here.
+
+110
+00:07:00,820 --> 00:07:02,200
+And it looks like it's output a table.
+
+111
+00:07:02,600 --> 00:07:07,040
+The chatbot tries to clarify that it's only outputting information for replies where it
+
+112
+00:07:07,100 --> 00:07:08,320
+was able to give a proper label.
+
+113
+00:07:09,140 --> 00:07:12,900
+Here's an example where the reply disagrees with the original poster.
+
+114
+00:07:13,680 --> 00:07:16,880
+Here's an example where the reply agrees with the original poster.
+
+115
+00:07:17,320 --> 00:07:20,920
+And here is an example where the reply is talking about something else.
+
+116
+00:07:21,560 --> 00:07:25,600
+And this particular tool, as well as many other chatbots, allow you to copy that table
+
+117
+00:07:25,940 --> 00:07:27,640
+if you want to put it into a spreadsheet, for instance.
+
+118
+00:07:28,280 --> 00:07:32,000
+And it looks like you can also click on Save so that it saves it within this application
+
+119
+00:07:32,440 --> 00:07:33,700
+if you want to refer to it later.
+
+120
+00:07:34,160 --> 00:07:38,460
+So that table was actually an intermediate step towards the end goal, which is really
+
+121
+00:07:38,580 --> 00:07:40,700
+to synthesize what all these replies are saying.
+
+122
+00:07:41,220 --> 00:07:47,480
+So the next step is to build upon that table and count how many replies agree and how many
+
+123
+00:07:47,700 --> 00:07:51,560
+disagree and also to summarize the key arguments made for each of these labels.
+
+124
+00:07:52,100 --> 00:07:52,920
+So let's try this out.
+
+125
+00:07:53,280 --> 00:07:58,460
+For those that agree with the original poster, it mentions lack of excitement for spectators
+
+126
+00:07:59,000 --> 00:08:01,040
+as well as some explanations with citations.
+
+127
+00:08:01,640 --> 00:08:04,620
+Other main themes include accessibility and elitism.
+
+128
+00:08:05,100 --> 00:08:06,820
+Another one is animal welfare concerns.
+
+129
+00:08:07,560 --> 00:08:11,960
+For those that disagree with the original poster, some of the themes include the physical and
+
+130
+00:08:12,140 --> 00:08:16,780
+technical demands of dressage, teamwork and partnership, and the historical significance
+
+131
+00:08:17,280 --> 00:08:18,340
+and tradition of that sport.
+
+132
+00:08:18,760 --> 00:08:23,280
+So the app that you've seen so far has been customized to really help you work with documents.
+
+133
+00:08:23,840 --> 00:08:27,840
+In case you're using a regular chatbot, you would take the extra step of pasting in the
+
+134
+00:08:28,000 --> 00:08:30,360
+text of that source material as part of the prompt.
+
+135
+00:08:30,880 --> 00:08:35,279
+Something that I think is worth trying is to put your task at the start of the prompt
+
+136
+00:08:35,300 --> 00:08:39,700
+and also put that same task at the end of the prompt, so the document is in the middle.
+
+137
+00:08:40,180 --> 00:08:40,800
+So why is that?
+
+138
+00:08:41,280 --> 00:08:45,860
+Some AI researchers have noticed that large language models tend to do better at a task
+
+139
+00:08:46,200 --> 00:08:50,920
+when the relevant information is at the beginning or the end of the prompt, as opposed to in the middle.
+
+140
+00:08:51,160 --> 00:08:54,320
+You can compare this to how the human mind remembers a list of words.
+
+141
+00:08:54,660 --> 00:08:58,480
+For example, if I give you a long list of words and I read it aloud to you,
+
+142
+00:08:58,820 --> 00:09:01,000
+then ask you to remember all the words that I said,
+
+143
+00:09:01,320 --> 00:09:05,860
+For example, I might start with pineapple, then camera, and then list many, many words.
+
+144
+00:09:06,360 --> 00:09:09,580
+Somewhere in the middle, I'll mention a puppy, and then I'll mention more words.
+
+145
+00:09:10,520 --> 00:09:13,640
+And then finally, I'll wrap up with rainbow and pizza.
+
+146
+00:09:14,100 --> 00:09:17,380
+In the field of psychology, researchers have found that the human brain
+
+147
+00:09:17,880 --> 00:09:21,400
+might have a better chance of recalling some of the words that were at the start of the list.
+
+148
+00:09:21,620 --> 00:09:22,420
+For example, pineapple.
+
+149
+00:09:23,120 --> 00:09:24,900
+This is called the primacy effect.
+
+150
+00:09:25,300 --> 00:09:31,100
+And they've also noticed that the human brain is more likely to remember the last few words in that list.
+
+151
+00:09:31,620 --> 00:09:38,120
+For example, pizza. This is called the recency effect. AI researchers have noticed a similar
+
+152
+00:09:38,380 --> 00:09:42,700
+effect with large language models. And what some AI researchers have found with large language
+
+153
+00:09:43,040 --> 00:09:47,700
+models is that if some information is contained in the middle of a large piece of text, then that
+
+154
+00:09:47,900 --> 00:09:52,340
+might get lost. For example, you may have forgotten that there was a puppy in the middle of all that.
+
+155
+00:09:52,820 --> 00:09:57,620
+And they've been calling this Lost in the Middle, which is actually the name of the research paper,
+
+156
+00:09:57,780 --> 00:10:03,100
+Lost in the Middle, How Large Language Models Use Long Contexts. The researchers note a slight
+
+157
+00:10:03,260 --> 00:10:09,880
+improvement when a prompt has the task provided at the beginning and also at the end of the prompt.
+
+158
+00:10:10,380 --> 00:10:15,160
+But they also have a caveat that for more complicated tasks like answering questions
+
+159
+00:10:15,680 --> 00:10:20,020
+over many, many documents, this doesn't seem to make a big difference. But you can try it out to
+
+160
+00:10:20,120 --> 00:10:26,200
+see if it makes a difference when you use it. So just put in the task at the top, paste in the text,
+
+161
+00:10:26,800 --> 00:10:28,820
+and then put in the task again at the bottom.
+
+162
+00:10:29,620 --> 00:10:31,760
+Otherwise, if you just want to write the task once,
+
+163
+00:10:32,180 --> 00:10:33,680
+then place the task at the beginning,
+
+164
+00:10:34,540 --> 00:10:36,140
+followed by the text of the source material.
+
+165
+00:10:36,560 --> 00:10:38,920
+The reason this can help a bit is that much of the data
+
+166
+00:10:39,400 --> 00:10:41,240
+that these large language models are trained on
+
+167
+00:10:41,640 --> 00:10:45,180
+tends to be provided where the instruction is at the very beginning
+
+168
+00:10:45,660 --> 00:10:49,200
+and the other contextual information, like a document, is placed after that.
+
+169
+00:10:50,060 --> 00:10:51,420
+And if this is too much information,
+
+170
+00:10:52,280 --> 00:10:53,799
+then you can forget everything I just said
+
+171
+00:10:54,060 --> 00:10:57,600
+and just remember to surround your source material with delimiters.
+
+172
+00:10:58,100 --> 00:11:02,080
+Coming up next, you can also use a chatbot to translate from one language to another,
+
+173
+00:11:02,480 --> 00:11:05,960
+and you'll have much more control over how it performs that translation.
+
+174
+00:11:06,320 --> 00:11:11,520
+Let's look at how to transform text from one language to another using a chatbot next.
+

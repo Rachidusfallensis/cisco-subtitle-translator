@@ -1,0 +1,192 @@
+1
+00:00:05,440 --> 00:00:08,680
+When you're taking this course, there may be points where you feel like you're getting stuck,
+
+2
+00:00:09,120 --> 00:00:13,540
+and you may be wondering whether you need to keep studying that piece until you can move forward,
+
+3
+00:00:14,100 --> 00:00:16,880
+or maybe even go deeper in that subject before you move forward in the course.
+
+4
+00:00:17,500 --> 00:00:21,420
+What I'd actually recommend to you is to keep moving forward and see the whole course first,
+
+5
+00:00:22,100 --> 00:00:25,640
+and that way, when you see the big picture, you'll actually have a better understanding
+
+6
+00:00:25,900 --> 00:00:27,620
+of some of those things that you got stuck on earlier.
+
+7
+00:00:28,300 --> 00:00:30,320
+Let's talk a little bit more about the big picture.
+
+8
+00:00:30,960 --> 00:00:35,100
+When you're learning a new subject, there will be times when you feel unsure about something
+
+9
+00:00:35,500 --> 00:00:36,920
+and maybe feel a little bit stuck.
+
+10
+00:00:37,200 --> 00:00:40,400
+For example, you may still be wondering, what is AI really?
+
+11
+00:00:40,780 --> 00:00:45,980
+It's like if you're hiking on a trail and deciding whether to stay where you are or continue walking.
+
+12
+00:00:46,300 --> 00:00:51,240
+You might wonder if it's better to rewatch the video or maybe stop and think about it a little bit longer.
+
+13
+00:00:51,720 --> 00:00:56,420
+Another option to consider is to keep moving forward to see what comes next in your studies.
+
+14
+00:00:56,800 --> 00:01:01,580
+For example, while you're still pondering what AI really is, you can also learn a little bit about
+
+15
+00:01:02,000 --> 00:01:08,340
+computer vision, and then learn a little bit about machine translation, and then learn a lot about
+
+16
+00:01:08,840 --> 00:01:13,000
+chatbots. When you give yourself the permission to move forward in the rest of the curriculum,
+
+17
+00:01:13,600 --> 00:01:18,980
+sometimes what you learn later can help you answer some of those questions that you had earlier.
+
+18
+00:01:19,500 --> 00:01:22,660
+And even if that's not always the case, when you move forward in your studies,
+
+19
+00:01:23,240 --> 00:01:27,480
+you'll learn a lot of things that may give you more confidence when you go back to address
+
+20
+00:01:27,840 --> 00:01:32,000
+some of those questions that you had earlier. As you're studying a subject such as AI,
+
+21
+00:01:32,500 --> 00:01:36,640
+something else you'll likely encounter is that there are many other related subjects,
+
+22
+00:01:37,200 --> 00:01:41,800
+so there are also many possible paths you can take in your studies. Some of these topics may
+
+23
+00:01:41,960 --> 00:01:46,740
+be really interesting, or you may feel that these are prerequisites that you have to study first
+
+24
+00:01:47,220 --> 00:01:51,880
+before you can continue on your original journey. It's great to be excited about exploring on your
+
+25
+00:01:51,900 --> 00:01:57,520
+own, but I also suggest that you can also explore those topics later. Usually, a course is designed
+
+26
+00:01:57,720 --> 00:02:02,420
+to help you focus on a certain set of topics to help you learn what's most relevant for the goals
+
+27
+00:02:02,520 --> 00:02:07,480
+of the course. This means intentionally leaving some content out of the course in order to let you
+
+28
+00:02:07,680 --> 00:02:14,100
+move forward more efficiently. Specific to AI, you may learn about or get advice about learning more
+
+29
+00:02:14,320 --> 00:02:21,040
+math or learning coding, or you may also hear about other important topics such as data analysis or
+
+30
+00:02:21,100 --> 00:02:26,540
+data science. These are definitely great to learn too, at some point, but you can learn a lot about
+
+31
+00:02:26,880 --> 00:02:33,680
+AI and even start using AI in some daily tasks or at work, even before you get to studying those
+
+32
+00:02:33,900 --> 00:02:40,080
+other topics. I think that seeing the benefits of AI first can also make it more fun if and when you
+
+33
+00:02:40,220 --> 00:02:46,579
+do decide to get into the math and coding, or when you decide to study other useful and related topics
+
+34
+00:02:46,780 --> 00:02:52,500
+such as data analysis and data science. But the reason I want to suggest that you not feel required
+
+35
+00:02:52,900 --> 00:02:58,380
+to learn those things as your first step is that too often people get stuck or discouraged when
+
+36
+00:02:58,620 --> 00:03:03,440
+studying some of those prerequisites. It's a little like getting stuck on a hiking trail that is
+
+37
+00:03:03,580 --> 00:03:09,440
+difficult and not yet very fun. So some people may wonder if it's worth it to keep going. But if they
+
+38
+00:03:09,520 --> 00:03:14,519
+get to see and interact with some of the cool stuff first, this will make it easier and more motivating
+
+39
+00:03:14,540 --> 00:03:20,080
+to keep learning. C'est comme si vous aviez la possibilité de vous placer d'abord au sommet d'une colline pour avoir une belle vue d'ensemble.
+
+40
+00:03:20,400 --> 00:03:25,320
+of the whole trail, then when you return to the ground and hike through it on foot, you'll have a
+
+41
+00:03:25,500 --> 00:03:31,000
+better sense of where you're going and what to expect along the way, and also what to look forward
+
+42
+00:03:31,160 --> 00:03:35,780
+to when you reach your destination. Learning the math and coding will eventually help you if you
+
+43
+00:03:35,920 --> 00:03:39,919
+want to go deeper into the field, and I think it will be more motivating when you do learn those
+
+44
+00:03:39,940 --> 00:03:44,820
+foundational topics if you can already see the end results of all that math, code, and theory.
+
+45
+00:03:45,360 --> 00:03:50,560
+So please try to get that big picture view from above and check out the cool things that you can
+
+46
+00:03:50,720 --> 00:03:54,680
+do with AI. When you're ready, you can still revisit the topics that you covered earlier
+
+47
+00:03:55,180 --> 00:03:58,900
+and go deeper if you want to. Next up, you'll learn about computer vision,
+
+48
+00:03:59,420 --> 00:04:02,780
+starting with how to locate and identify objects in the picture.
+

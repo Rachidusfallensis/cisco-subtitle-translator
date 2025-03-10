@@ -1,0 +1,224 @@
+1
+00:00:05,140 --> 00:00:09,960
+When you're using an object detection service such as Google Lens, you'll notice that below
+
+2
+00:00:10,200 --> 00:00:14,700
+the suggested classes of the image classifier, you'll see search results for similar images.
+
+3
+00:00:15,380 --> 00:00:21,040
+So, these white fluffy dogs look similar to the original white fluffy dog. Similarly,
+
+4
+00:00:21,540 --> 00:00:26,960
+after the suggested classes for this cute brown dog, you can see similar images of other cute
+
+5
+00:00:26,980 --> 00:00:33,320
+brown dogs. This is called similarity search, and you can apply this to finding similar images and
+
+6
+00:00:33,500 --> 00:00:39,680
+also to finding similar audio or similar text. Let's get a brief conceptual overview of how
+
+7
+00:00:40,020 --> 00:00:46,360
+similarity search works. What if you tried to use a single number to represent any image in order to
+
+8
+00:00:46,500 --> 00:00:56,940
+help you compare and contrast any two images? Let's just pick a feature and draw a number line. For
+
+9
+00:00:56,960 --> 00:01:03,800
+So for this dog, you might assign it a number 1, whereas for this dog, you might assign it a number 6.
+
+10
+00:01:04,220 --> 00:01:11,060
+So you give this dog a higher number because in the image, it appears to have more brown fur compared to the other dog.
+
+11
+00:01:11,580 --> 00:01:15,240
+Now what if you can represent the image with not one, but two numbers?
+
+12
+00:01:15,960 --> 00:01:23,300
+So in addition to the amount of brown fur, you could draw another number line to represent the amount of white fur.
+
+13
+00:01:23,780 --> 00:01:29,360
+So this image of the first dog here might have a number 7 assigned to that image, and this
+
+14
+00:01:29,560 --> 00:01:32,780
+dog here might have a number 2 assigned to the image.
+
+15
+00:01:33,140 --> 00:01:37,540
+You may have heard the saying "birds of a feather flock together" but have you also
+
+16
+00:01:37,720 --> 00:01:41,280
+heard the saying "dogs of the same fur frolic together"?
+
+17
+00:01:41,580 --> 00:01:43,560
+Probably not, because I just made that up.
+
+18
+00:01:43,980 --> 00:01:48,420
+But I hope this helps you remember that if you take more images of dogs and try to place
+
+19
+00:01:48,440 --> 00:01:53,500
+them in the space defined by these two number lines, then you might have a dog here on the bottom left,
+
+20
+00:01:53,700 --> 00:01:58,320
+maybe this dog will be placed here on the right, and this dog here might appear somewhere on the
+
+21
+00:01:58,480 --> 00:02:04,040
+bottom left, and this dog might appear over here on the bottom right. Notice that dogs with a similar
+
+22
+00:02:04,240 --> 00:02:10,979
+amount of brown fur appear closer to each other, and dogs with white fur also appear closer to each
+
+23
+00:02:11,140 --> 00:02:16,980
+other in this space. Now in practice, we don't as humans choose these specific features for these
+
+24
+00:02:17,000 --> 00:02:21,880
+number lines. Instead, we have machine learning models do that for us, because then we get better
+
+25
+00:02:22,140 --> 00:02:27,160
+results. Whenever you train a machine learning model to perform a task on an image, you get a
+
+26
+00:02:27,320 --> 00:02:32,400
+fairly useful byproduct from this. For example, if you have an image classification model, you can
+
+27
+00:02:32,600 --> 00:02:39,000
+give it an input like this, and it outputs a class such as the text "cute dog". In order for the model
+
+28
+00:02:39,180 --> 00:02:44,739
+to perform this image classification task, it creates a representation of the important features
+
+29
+00:02:44,800 --> 00:02:50,640
+that help it to decide that this is a cute dog. This representation is actually a list of numbers,
+
+30
+00:02:51,120 --> 00:02:56,360
+maybe a few hundred to a few thousand numbers. And this is still pretty small if you consider that a
+
+31
+00:02:56,640 --> 00:03:02,520
+photograph may contain 9 million pixels, which are 9 million numbers times 3 because there's red,
+
+32
+00:03:02,720 --> 00:03:07,840
+green, and blue for every pixel. This list of numbers that a model creates in order to represent
+
+33
+00:03:08,100 --> 00:03:14,720
+the image in a compact way is called an embedding. So if you use those embeddings and treat them like
+
+34
+00:03:14,740 --> 00:03:19,660
+coordinates in space, you can place each image somewhere in that space. Here, I'm just showing
+
+35
+00:03:19,900 --> 00:03:24,740
+a two-dimensional space so that we can see it on a two-dimensional slide. So it would just be two
+
+36
+00:03:24,980 --> 00:03:29,760
+numbers representing an image. But with embeddings of 200 to 300 numbers, the math is similar.
+
+37
+00:03:30,140 --> 00:03:35,000
+If you draw a line from the location of this image to the location of this other image,
+
+38
+00:03:35,340 --> 00:03:40,580
+this line shows how far apart those two images are. If you draw a line between these two images,
+
+39
+00:03:40,860 --> 00:03:46,600
+that line also shows how far apart they are. And in this case, they're further apart compared to
+
+40
+00:03:46,700 --> 00:03:51,540
+the first line. You can measure the distance between any two images as the distance between
+
+41
+00:03:51,860 --> 00:03:57,140
+their two embeddings. And this class is more focused on getting a conceptual understanding
+
+42
+00:03:57,500 --> 00:04:02,880
+as well as practical use of AI. So I'm not getting into the math here, but it's probably math that
+
+43
+00:04:02,980 --> 00:04:08,079
+you've seen at some point in school. And since you may or may not want to relive your memories of
+
+44
+00:04:08,100 --> 00:04:13,960
+math class, I won't get into it here. So let's just clarify the difference between image classification
+
+45
+00:04:14,740 --> 00:04:20,040
+and similarity search with images. With image classification, if you give it the image of a dog,
+
+46
+00:04:20,280 --> 00:04:26,520
+it will output some class, such as the text cute dog. In contrast, if you give an image to a
+
+47
+00:04:26,860 --> 00:04:31,780
+similarity search database, then it will first create an embedding that represents that image
+
+48
+00:04:32,160 --> 00:04:36,680
+with a small list of numbers. And then it can search through a database of other dogs, where
+
+49
+00:04:36,700 --> 00:04:41,720
+each dog in the database has an embedding generated to represent it. Based on the distance
+
+50
+00:04:42,360 --> 00:04:47,380
+between the embedding of the input dog and the embedding of each dog in the database,
+
+51
+00:04:48,100 --> 00:04:53,480
+the similarity search database can retrieve a list of dogs that have the shortest distance
+
+52
+00:04:54,120 --> 00:05:00,320
+between them and the dog being searched. So here's a quick quiz. Who gave the dog a name?
+
+53
+00:05:00,840 --> 00:05:05,940
+the image classifier, and who let the dogs out, the similarity search database.
+
+54
+00:05:06,760 --> 00:05:12,500
+Next, what if you want to go beyond a bounding box and identify every single pixel that belongs
+
+55
+00:05:12,700 --> 00:05:15,980
+to this dog, or every pixel that belongs to this dog?
+
+56
+00:05:16,400 --> 00:05:20,840
+To learn more about how, let's take a look at image segmentation in the next video.
+

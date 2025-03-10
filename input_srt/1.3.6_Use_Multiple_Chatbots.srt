@@ -1,0 +1,532 @@
+1
+00:00:05,380 --> 00:00:09,240
+When you get a recommendation from a doctor, it's pretty normal to ask for a second opinion.
+
+2
+00:00:10,520 --> 00:00:15,420
+Similar with chatbots, instead of relying on just one chatbot, you can use many other chatbots to
+
+3
+00:00:15,520 --> 00:00:18,760
+get a second, third, or fourth opinion. Let's take a look at all the chatbots that you can
+
+4
+00:00:18,900 --> 00:00:24,600
+use for free and how they're different. You may be familiar with ChatGPT because it came out
+
+5
+00:00:24,840 --> 00:00:29,980
+earlier and performs quite well. ChatGPT is one of the proprietary chatbots that you can
+
+6
+00:00:30,020 --> 00:00:36,280
+online, and others include Gemini by Google, Claude by Anthropic, Co-Pilot by Microsoft,
+
+7
+00:00:37,020 --> 00:00:43,320
+and Mistral by Mistral AI. These are proprietary because no one outside the company can download
+
+8
+00:00:43,500 --> 00:00:47,980
+the actual model and its parameters. It's private to the company that built it. You can use it for
+
+9
+00:00:48,160 --> 00:00:53,380
+free with some limits on how much per day, and you can pay for more usage or to access the company's
+
+10
+00:00:53,540 --> 00:00:58,780
+higher performing models. These are hosted models, meaning that you send your prompt over the internet
+
+11
+00:00:58,800 --> 00:01:03,320
+to a data center that is actually running the model. The model's output then gets sent back to
+
+12
+00:01:03,380 --> 00:01:08,260
+you over the internet. The reason these models are stored in data centers is that, first of all,
+
+13
+00:01:08,660 --> 00:01:13,560
+they're proprietary, but also they're so large that a personal computer wouldn't be able to run them.
+
+14
+00:01:14,260 --> 00:01:20,460
+In contrast, there are also many large language models that are fully open source or have an open
+
+15
+00:01:20,780 --> 00:01:27,700
+commercial license. Two examples include Meta AI by Meta and Command R+ by the company Coher.
+
+16
+00:01:28,060 --> 00:01:33,380
+These two open models are also hosted, like the proprietary models, in that you can easily access
+
+17
+00:01:33,640 --> 00:01:38,620
+them by going to a website. Open source means that anyone can download the model architecture
+
+18
+00:01:39,080 --> 00:01:43,940
+and its parameters and build off of it. They can modify the model, train it with more data,
+
+19
+00:01:44,520 --> 00:01:49,560
+and use it for research, to build a product, for a business, or just for personal use.
+
+20
+00:01:50,100 --> 00:01:55,179
+The research community and startup community, for instance, really love open source models because
+
+21
+00:01:55,200 --> 00:02:00,200
+these models are usually too expensive for them to build and train from scratch. Open source models
+
+22
+00:02:00,440 --> 00:02:05,460
+allow them to contribute to the field of research or even build products by building on top of these
+
+23
+00:02:05,540 --> 00:02:11,560
+open models. So open source models play an important role in making sure that new technologies are
+
+24
+00:02:11,660 --> 00:02:17,200
+accessible to everyone, not just a few large companies. An open commercial license, in the
+
+25
+00:02:17,340 --> 00:02:22,779
+case of Meta's LLAMA model, is similar to open source, but according to Meta's Terms of Service
+
+26
+00:02:22,800 --> 00:02:27,180
+agreement, if a company has over 700 million active users, then they'll need to request
+
+27
+00:02:27,460 --> 00:02:30,160
+a license from Meta to allow them to keep using it.
+
+28
+00:02:32,700 --> 00:02:37,800
+There is another website called Hugging Chat by the company Hugging Face that hosts several
+
+29
+00:02:38,040 --> 00:02:40,800
+open source models that were created by other companies.
+
+30
+00:02:41,400 --> 00:02:47,939
+These include Llama by Meta, Command R+ by Cohere, Mixtrol by Mistral AI, and notice the
+
+31
+00:02:47,960 --> 00:02:52,000
+spelling of "mixstrol" with an "x" and also "fee" by Microsoft.
+
+32
+00:02:53,160 --> 00:02:55,300
+And there are many more open-source models out there.
+
+33
+00:02:56,140 --> 00:02:58,280
+Most are too large to fit on a typical computer.
+
+34
+00:02:58,820 --> 00:03:04,300
+Your computer's random access memory, or RAM, sometimes just called "memory", may be 8GB
+
+35
+00:03:04,660 --> 00:03:07,980
+or so, or if you've upgraded your computer, it may have 16GB.
+
+36
+00:03:08,640 --> 00:03:13,240
+The amount of random access memory determines how big of a model you can have running on
+
+37
+00:03:13,320 --> 00:03:17,340
+your computer, because the model has to fit inside the computer's random access memory,
+
+38
+00:03:17,600 --> 00:03:21,060
+and still leave space for the computer's operating system and other applications.
+
+39
+00:03:21,920 --> 00:03:26,920
+And just to note that hardware memory is not the same as the concept of chatbot memory that
+
+40
+00:03:27,020 --> 00:03:27,700
+you learned about earlier.
+
+41
+00:03:28,280 --> 00:03:30,880
+Here we're talking about the physical hardware in your computer.
+
+42
+00:03:31,240 --> 00:03:35,380
+But people in the open source developer community have downloaded copies of these open source
+
+43
+00:03:35,780 --> 00:03:39,380
+models, and because they're open source, they can do things to them like compressing them
+
+44
+00:03:39,580 --> 00:03:42,320
+into smaller versions that can run on a personal computer.
+
+45
+00:03:42,820 --> 00:03:46,819
+And they then make these compressed models available for everyone else to download and
+
+46
+00:03:46,840 --> 00:03:51,680
+For example, Meta's LLAMA version 3.1 has versions in different sizes.
+
+47
+00:03:52,100 --> 00:03:54,120
+The smallest one is 8 billion parameters.
+
+48
+00:03:54,660 --> 00:03:59,540
+For the small 8 billion parameter version, it would require 16GB of random access memory.
+
+49
+00:04:00,160 --> 00:04:06,660
+A compressed version of it would take up 4GB of memory instead, so it could actually run on a typical personal computer.
+
+50
+00:04:06,940 --> 00:04:09,660
+There is an app that you can download called LM Studio,
+
+51
+00:04:10,420 --> 00:04:15,600
+which allows you to search for available compressed versions of open source large language models
+
+52
+00:04:16,040 --> 00:04:18,880
+and also download them so that you can run them on your own computer.
+
+53
+00:04:19,280 --> 00:04:21,260
+Here's what the website looks like for LM Studio,
+
+54
+00:04:21,799 --> 00:04:25,600
+and you can see that it has many of the popular models, including Llama by Meta.
+
+55
+00:04:25,980 --> 00:04:32,040
+And so I'll go ahead and download Llama 3.1 8b, which stands for 8 billion parameters, the smallest version.
+
+56
+00:04:32,460 --> 00:04:35,240
+But you can see that there are many, many open source models,
+
+57
+00:04:36,060 --> 00:04:38,840
+including, for example, Gemma by Google,
+
+58
+00:04:39,620 --> 00:04:40,420
+Fee by Microsoft,
+
+59
+00:04:41,240 --> 00:04:44,180
+and Mistral 7b, which stands for 7 billion parameters,
+
+60
+00:04:44,640 --> 00:04:45,400
+by Mistral AI.
+
+61
+00:04:45,920 --> 00:04:46,880
+And just in case you're wondering,
+
+62
+00:04:47,440 --> 00:04:49,780
+Mistral AI has released more than one
+
+63
+00:04:50,340 --> 00:04:51,580
+open source large language model.
+
+64
+00:04:51,940 --> 00:04:54,640
+You saw earlier, there was one called Mixtral with an X,
+
+65
+00:04:55,240 --> 00:04:57,160
+and there's also Mistral with an S.
+
+66
+00:04:57,720 --> 00:04:58,620
+If you're just starting out,
+
+67
+00:04:58,840 --> 00:05:00,060
+you can just stick to these models
+
+68
+00:05:00,580 --> 00:05:02,180
+that are listed on the homepage of the app.
+
+69
+00:05:02,560 --> 00:05:03,940
+In case you've heard of other models
+
+70
+00:05:04,100 --> 00:05:04,960
+that you're curious about,
+
+71
+00:05:05,200 --> 00:05:09,260
+You can search through the whole list of compressed models if you click on the magnifying glass.
+
+72
+00:05:09,980 --> 00:05:15,340
+Just as an example, you can look for Meta's Llama model, and the latest one at the time
+
+73
+00:05:15,460 --> 00:05:17,640
+of my filming is Llama 3.1.
+
+74
+00:05:18,280 --> 00:05:19,040
+Here are the search results.
+
+75
+00:05:19,540 --> 00:05:22,980
+They're slightly different based on how they are being compressed, but you can see how
+
+76
+00:05:23,140 --> 00:05:25,200
+big they are, around 4 to 5 gigabytes.
+
+77
+00:05:25,840 --> 00:05:29,960
+And the one that I'm currently downloading is this one that's about 4.92 gigabytes.
+
+78
+00:05:30,640 --> 00:05:33,979
+And if you search for Mistral, then you'll also see several options to download these
+
+79
+00:05:34,000 --> 00:05:38,360
+compressed versions of Mistral's models. Now if you click on that chat icon on the left,
+
+80
+00:05:38,680 --> 00:05:42,780
+that's where you can start chatting. At the top, you can click on the button that says "Select a
+
+81
+00:05:42,960 --> 00:05:46,940
+model to load" and the drop down menu will show all the models that you have currently downloaded
+
+82
+00:05:47,160 --> 00:05:51,260
+on your computer's hard drive. When you choose one, it will then load that model into your computer's
+
+83
+00:05:51,460 --> 00:05:55,840
+random access memory so that you can actually use it. And I'll just go ahead and give it a prompt to
+
+84
+00:05:55,900 --> 00:06:01,899
+test it out. Some chatbots perform better at complex tasks, either because they are bigger or
+
+85
+00:06:01,920 --> 00:06:06,980
+more recent. You can take a look at this leaderboard ranking on Hugging Face's website to see some of
+
+86
+00:06:07,040 --> 00:06:11,820
+the top performing large language models. These rankings are based on human volunteers who look
+
+87
+00:06:11,940 --> 00:06:15,980
+at the output of two models that are given the same input, and then the human will vote on which
+
+88
+00:06:16,100 --> 00:06:20,980
+of the two outputs they prefer. And by the way, the rankings on these leaderboards change almost
+
+89
+00:06:21,420 --> 00:06:26,400
+every week as many companies are training and providing new models or newer versions of their
+
+90
+00:06:26,600 --> 00:06:31,700
+models. So you may be wondering, why don't I just use one of those highest performing chatbots?
+
+91
+00:06:32,060 --> 00:06:38,020
+Well, it will actually be really beneficial to you if you can get into the habit of using more than one chatbot for a number of reasons.
+
+92
+00:06:38,620 --> 00:06:46,200
+One is that the rankings of these models change pretty much every week, and these companies are also coming up with updated versions of the models with different features than others.
+
+93
+00:06:46,880 --> 00:06:52,100
+So you'll be able to benefit more from all the innovation out there if you're familiar with using many of these chatbots.
+
+94
+00:06:52,580 --> 00:06:57,800
+Another practical reason for using more than one is that the free versions of these hosted
+
+95
+00:06:58,280 --> 00:07:04,220
+proprietary models usually limit how many prompts you can give it per day, or limit your use based
+
+96
+00:07:04,440 --> 00:07:09,180
+on how much text you're feeding into the chatbot in one day. If you prefer not to pay a monthly
+
+97
+00:07:09,380 --> 00:07:13,820
+subscription fee or pay for the usage, then it helps to take turns using different chatbots.
+
+98
+00:07:14,300 --> 00:07:18,520
+The other reason for using multiple chatbots is that it really helps you to get a sense of the
+
+99
+00:07:18,540 --> 00:07:22,940
+different behaviors and personalities of these models, because they all perform a little bit
+
+100
+00:07:23,200 --> 00:07:28,260
+differently. Some of them have certain features that others don't, and some of them are more wordy,
+
+101
+00:07:28,680 --> 00:07:32,860
+and some of them are more brief in their answers. So it might depend on what you're looking for in
+
+102
+00:07:32,940 --> 00:07:36,940
+a particular task, but it's good for you to get a sense of how these different chatbots perform.
+
+103
+00:07:37,360 --> 00:07:43,120
+So another reasonable question you may ask is, why use those smaller models, which are usually not as
+
+104
+00:07:43,140 --> 00:07:48,980
+powerful as the large, top-ranked models. Well, there's also a carbon footprint associated with
+
+105
+00:07:49,160 --> 00:07:53,600
+using these models. When you're using a hosted model, the company that's hosting them uses a
+
+106
+00:07:53,720 --> 00:07:58,340
+bunch of computers that are in large data centers, which are using a lot of hardware to run these
+
+107
+00:07:58,580 --> 00:08:03,900
+models. Training these models and using them eats up a lot of electricity, and this electricity
+
+108
+00:08:04,320 --> 00:08:10,260
+could be generated maybe from wind, solar, and hydro, but also natural gas, oil, and coal. So if
+
+109
+00:08:10,280 --> 00:08:14,700
+want to minimize your carbon footprint, then using a downloaded model on your personal computer for
+
+110
+00:08:14,800 --> 00:08:20,980
+simpler tasks can help you minimize your environmental impact. And if you recall from earlier, some tasks
+
+111
+00:08:21,140 --> 00:08:26,220
+are easier than others, some are harder. If you can get by with using a smaller downloaded model
+
+112
+00:08:26,420 --> 00:08:31,060
+to perform a task, you might as well use a smaller model. You can still choose to move up to a larger,
+
+113
+00:08:31,640 --> 00:08:35,900
+more powerful model when you really need them for a more complex or difficult task.
+
+114
+00:08:36,340 --> 00:08:40,599
+And another reasonable question you may ask is, why use downloadable models?
+
+115
+00:08:41,140 --> 00:08:45,860
+An important benefit to using a downloadable model on your personal computer is privacy.
+
+116
+00:08:46,460 --> 00:08:51,100
+For example, maybe I want to ask a chatbot a personal question about why my friends are
+
+117
+00:08:51,220 --> 00:08:54,840
+giving me the same birthday present every year, and I'd rather keep this to myself.
+
+118
+00:08:55,320 --> 00:08:59,740
+When you use those powerful hosted models, you need to send your prompt over the internet
+
+119
+00:09:00,340 --> 00:09:01,760
+and to the company that's hosting the model.
+
+120
+00:09:02,380 --> 00:09:06,240
+Usually, these companies will disclose if they plan on using your inputs in the future
+
+121
+00:09:06,260 --> 00:09:07,200
+further improve their products.
+
+122
+00:09:07,940 --> 00:09:12,300
+So it helps to keep in mind that keeping your prompts and your models on your own computer
+
+123
+00:09:12,700 --> 00:09:16,880
+is probably going to give you more privacy than sending your prompts over the internet.
+
+124
+00:09:17,340 --> 00:09:21,320
+Another benefit of a downloadable model is that you can use the model on your computer
+
+125
+00:09:21,620 --> 00:09:23,560
+even when you don't have an internet connection.
+
+126
+00:09:24,060 --> 00:09:28,340
+So if you're stuck on a deserted island, you'll be glad that you downloaded some large language
+
+127
+00:09:28,560 --> 00:09:29,380
+model onto your laptop.
+
+128
+00:09:30,120 --> 00:09:34,899
+And again, these compressed versions of the small models running on your personal computer
+
+129
+00:09:34,920 --> 00:09:39,080
+will likely consume less energy than a large, high-performing hosted model,
+
+130
+00:09:39,400 --> 00:09:41,100
+so it will have a smaller carbon footprint.
+
+131
+00:09:41,620 --> 00:09:46,700
+In the next video, you'll look into the helpful habit of testing out a model on a task
+
+132
+00:09:47,240 --> 00:09:49,360
+before you rely on it for that kind of task.
+
+133
+00:09:50,040 --> 00:09:51,160
+Let's check that out next.
+

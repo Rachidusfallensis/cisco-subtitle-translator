@@ -1,0 +1,268 @@
+1
+00:00:05,140 --> 00:00:08,540
+Have you ever wanted to vent to your friends, but none of your friends want to listen to it anymore?
+
+2
+00:00:09,600 --> 00:00:10,920
+Now you can talk to a chatbot instead.
+
+3
+00:00:11,940 --> 00:00:15,460
+You may be familiar with asking follow-up questions to a chatbot,
+
+4
+00:00:15,680 --> 00:00:20,300
+but it usually feels a bit like a one-sided conversation where you are the one leading the conversation.
+
+5
+00:00:20,700 --> 00:00:25,760
+There are ways you can prompt a chatbot to take more initiative in moving the conversation forward.
+
+6
+00:00:26,160 --> 00:00:30,260
+So let's take an example where you give the chatbot a role of a life coach.
+
+7
+00:00:30,820 --> 00:00:31,560
+And here's the prompt.
+
+8
+00:00:31,800 --> 00:00:33,940
+You ask it to take a non-judgmental approach.
+
+9
+00:00:34,480 --> 00:00:39,020
+And you also ask it that if it has ideas for resolving or fixing a situation,
+
+10
+00:00:39,560 --> 00:00:45,640
+that it first asks the human to share their ideas before the chatbot life coach offers suggestions.
+
+11
+00:00:46,180 --> 00:00:48,440
+I added this instruction here because by default,
+
+12
+00:00:48,860 --> 00:00:52,400
+chatbots may try their best to find solutions or fix things.
+
+13
+00:00:52,760 --> 00:00:56,920
+But when you're dealing with people, sometimes what matters is that they want to be acknowledged
+
+14
+00:00:57,580 --> 00:00:59,740
+and have space to express their feelings and thoughts.
+
+15
+00:01:00,320 --> 00:01:05,300
+And it's sometimes better to focus on giving people space before moving forward and suggesting
+
+16
+00:01:05,660 --> 00:01:06,840
+solutions or fixing things.
+
+17
+00:01:07,320 --> 00:01:12,500
+The role description also asks the chatbot to leave the conversation open for additional
+
+18
+00:01:12,880 --> 00:01:15,400
+follow-ups instead of trying to wrap up the conversation.
+
+19
+00:01:15,800 --> 00:01:21,079
+I added this here because the way chatbots tend to reply, it almost seems like they think
+
+20
+00:01:21,100 --> 00:01:25,760
+they only have one chance to respond. So they tend to wrap up their completions with some wording
+
+21
+00:01:25,980 --> 00:01:30,860
+that suggests that the conversation is over. So this prompt encourages the chatbot to continue
+
+22
+00:01:30,980 --> 00:01:35,440
+the conversation a bit longer. These instructions also ask the chatbot to assume that what is
+
+23
+00:01:35,540 --> 00:01:40,220
+outputting is what the human user is seeing or hearing. And so I'm asking the chatbot to not
+
+24
+00:01:40,520 --> 00:01:44,960
+output its internal monologue. And I added this instruction because for some of the language
+
+25
+00:01:45,260 --> 00:01:49,319
+models that I've tried, they would sometimes output their internal monologue or output a
+
+26
+00:01:49,340 --> 00:01:54,760
+description of what they're physically doing, like nodding their head attentively. So this prompt is
+
+27
+00:01:54,900 --> 00:01:59,060
+trying to encourage the chatbot to make this conversation feel more natural. I'm going to use
+
+28
+00:01:59,240 --> 00:02:04,140
+LM Studio and download a model onto my computer so that I can keep this conversation to myself.
+
+29
+00:02:04,700 --> 00:02:09,520
+I'll start off by giving it a prompt that will define its role as a life coach. It starts out by
+
+30
+00:02:09,720 --> 00:02:15,839
+asking me how I'm doing, and I reply, well, I don't know. For my birthday, my friend gave me breath
+
+31
+00:02:15,860 --> 00:02:21,880
+Notice how it responds by acknowledging my feelings first and asking me follow-up questions
+
+32
+00:02:22,240 --> 00:02:22,880
+about how I feel.
+
+33
+00:02:23,280 --> 00:02:27,980
+Normally, by default, a chatbot will tend to jump straight away to saying, "well, maybe
+
+34
+00:02:28,080 --> 00:02:28,600
+you have bad breath.
+
+35
+00:02:28,920 --> 00:02:30,080
+Let's see how we can fix that."
+
+36
+00:02:30,420 --> 00:02:34,380
+Here instead, the Life Coach chatbot is focused on learning more about how I feel.
+
+37
+00:02:34,880 --> 00:02:37,260
+So my reply is, "well, I'm devastated.
+
+38
+00:02:38,160 --> 00:02:40,340
+I wonder if this means that I have bad breath."
+
+39
+00:02:40,580 --> 00:02:44,420
+The Life Coach chatbot replies by first acknowledging the distress that I feel.
+
+40
+00:02:44,760 --> 00:02:49,380
+It goes on to suggest that there may possibly be other ways of interpreting the situation,
+
+41
+00:02:49,820 --> 00:02:53,160
+and then asks me if there's another way to look at this situation.
+
+42
+00:02:53,640 --> 00:02:57,560
+So it's cool, instead of telling me what to think, it's gently suggesting alternatives
+
+43
+00:02:58,020 --> 00:03:01,460
+and asking me to think of alternative ways to think about the situation.
+
+44
+00:03:02,000 --> 00:03:04,200
+So I reply, well, yes, that's true.
+
+45
+00:03:04,600 --> 00:03:08,820
+Maybe it's just to help me prepare for a situation where I really need to have good breath.
+
+46
+00:03:09,180 --> 00:03:11,060
+But maybe it means that my friend thinks that I smell bad.
+
+47
+00:03:11,600 --> 00:03:13,560
+The life coach acknowledges my concerns.
+
+48
+00:03:14,080 --> 00:03:19,220
+It also points out some positives of my negative feelings, noting that it shows that I value
+
+49
+00:03:19,460 --> 00:03:20,400
+how others perceive me.
+
+50
+00:03:20,680 --> 00:03:25,420
+And because I brought up bad breath, it then asks me if I would like some advice on dental
+
+51
+00:03:25,660 --> 00:03:26,960
+care and maintaining fresh breath.
+
+52
+00:03:27,740 --> 00:03:28,800
+So I say, oh sure.
+
+53
+00:03:29,260 --> 00:03:33,740
+It goes on to talk about self-care and dental care and tries not to be too pushy about it.
+
+54
+00:03:34,000 --> 00:03:35,600
+So I reply, well, maybe later.
+
+55
+00:03:36,200 --> 00:03:37,280
+I'm feeling really distraught.
+
+56
+00:03:37,620 --> 00:03:39,900
+So then it goes back to providing emotional support.
+
+57
+00:03:40,340 --> 00:03:41,020
+I say thank you.
+
+58
+00:03:41,440 --> 00:03:43,820
+And then it sort of wraps up the conversation there.
+
+59
+00:03:43,980 --> 00:03:48,220
+So I'd encourage you to actually try starting a conversation without first giving the chatbot
+
+60
+00:03:48,320 --> 00:03:51,340
+a particular role, and this will give you a sense of its default behavior.
+
+61
+00:03:51,880 --> 00:03:55,920
+Depending on which chatbot you're using, it may understand that it's supposed to be attentive
+
+62
+00:03:56,420 --> 00:03:57,440
+and ask follow-up questions.
+
+63
+00:03:57,960 --> 00:04:01,740
+But if you find that the default behavior isn't quite what you're looking for, you can prompt
+
+64
+00:04:01,940 --> 00:04:06,680
+it to encourage it to have this two-way conversation, this dialogue between you and the chatbot.
+
+65
+00:04:06,840 --> 00:04:11,380
+Up next, you'll ask a chatbot to help you with interview prep by asking it to play the
+
+66
+00:04:11,560 --> 00:04:13,540
+role of an interviewer in a mock interview.
+
+67
+00:04:14,440 --> 00:04:15,360
+Let's look at that next.
+

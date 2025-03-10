@@ -1,0 +1,236 @@
+1
+00:00:00,020 --> 00:00:07,640
+It's a piece of cake.
+
+2
+00:00:10,840 --> 00:00:18,320
+I'm on the same page. I spilled the beans. I think I bit off more than I can chew.
+
+3
+00:00:22,520 --> 00:00:23,540
+I let the cat out of the bag.
+
+4
+00:00:26,780 --> 00:00:28,540
+I'm still on the same page.
+
+5
+00:00:29,940 --> 00:00:35,240
+Some phrases have a direct word-for-word literal meaning, but they also have an alternative
+
+6
+00:00:35,500 --> 00:00:37,540
+implied or figurative meaning as well.
+
+7
+00:00:38,480 --> 00:00:39,680
+These are called idioms.
+
+8
+00:00:40,460 --> 00:00:43,180
+Let's take a look at how machine translation handles idioms.
+
+9
+00:00:44,000 --> 00:00:49,660
+If you go to Google Translate and translate from English "a piece of cake" to Italian,
+
+10
+00:00:50,040 --> 00:00:53,340
+you'll get "un pezzo di torta" which is a slice of cake.
+
+11
+00:00:53,900 --> 00:00:58,960
+If you add this in front to make it "it was a piece of cake" the Italian translation
+
+12
+00:00:59,560 --> 00:01:02,540
+becomes "un gioco da ragazzi" a game for children.
+
+13
+00:01:03,080 --> 00:01:07,560
+And if you add a sentence in front of that "she asked me if I could eat the grapefruit"
+
+14
+00:01:07,940 --> 00:01:13,960
+then "piece of cake" gets translated back into "a slice of cake" and I'm going to hide
+
+15
+00:01:13,980 --> 00:01:18,860
+save it for the end of the lecture, but if I make one tiny change, then it goes back again to
+
+16
+00:01:19,460 --> 00:01:25,100
+a game for children. So what's going on here? The phrase "a piece of cake" is an idiom which has
+
+17
+00:01:25,280 --> 00:01:31,520
+cultural meaning beyond the word-for-word literal meaning that it's a slice of sweet baked dessert.
+
+18
+00:01:32,060 --> 00:01:36,360
+Let's take a closer look at idioms and how translation models handle them. So here's a
+
+19
+00:01:36,380 --> 00:01:44,060
+piece of cake. In Italian, we say "un pezzo di torta". In French, this is "un par du gâteau".
+
+20
+00:01:44,380 --> 00:01:53,960
+In Arabic, this is "kutatun minal kake". In Chinese, this is "i kuei tangao". In Japanese, this is "keeki hito kire".
+
+21
+00:01:54,280 --> 00:02:00,460
+In Spanish, this is "un pedazo de pastel". This is the literal translation of the phrase "piece of cake"
+
+22
+00:02:01,020 --> 00:02:05,479
+in that it's not assuming any cultural meaning associated with it. Now let's see some alternative
+
+23
+00:02:05,500 --> 00:02:08,140
+translations for piece of cake in these same languages.
+
+24
+00:02:08,640 --> 00:02:14,740
+In Italian, as you saw earlier, it's "un gioco da ragazzi" which literally means "a
+
+25
+00:02:14,880 --> 00:02:17,060
+game for children" or "child's play".
+
+26
+00:02:17,340 --> 00:02:21,860
+In French, it's "se du gâteau" which means "it's some cake".
+
+27
+00:02:22,180 --> 00:02:24,780
+It's almost the same as the literal translation that you saw earlier.
+
+28
+00:02:25,400 --> 00:02:28,920
+And there are other idioms with a similar meaning which you'll learn about when you
+
+29
+00:02:29,020 --> 00:02:30,680
+get to the lessons about chatbots.
+
+30
+00:02:31,060 --> 00:02:37,960
+In Arabic, this is "sehlel mithl shorbatin ma'an" and that means "easy as drinking water".
+
+31
+00:02:38,240 --> 00:02:43,940
+In Chinese, it's "siao cai i dia" which literally means "a side dish".
+
+32
+00:02:44,220 --> 00:02:50,200
+In Japanese, it's "asamishimae" which means "before breakfast" as in "so easy, you can
+
+33
+00:02:50,300 --> 00:02:51,360
+do it before breakfast".
+
+34
+00:02:51,620 --> 00:02:56,240
+In Spanish, it's "pan komedo" which literally means "eaten bread".
+
+35
+00:02:56,420 --> 00:02:58,160
+These are idioms in their respective languages.
+
+36
+00:02:58,840 --> 00:03:02,960
+And these particular idioms are used to describe something that's easy to do.
+
+37
+00:03:03,280 --> 00:03:10,060
+For example, I took this intro course about modern AI, and it was a piece of cake.
+
+38
+00:03:11,200 --> 00:03:15,720
+So let's take another look at these translations in action and try to think about how these
+
+39
+00:03:15,960 --> 00:03:19,180
+phrases can be interpreted, whether they're idiomatic or literal.
+
+40
+00:03:19,700 --> 00:03:24,180
+If it's just the phrase "it's a piece of cake", there isn't enough context to know
+
+41
+00:03:24,540 --> 00:03:27,660
+whether it's being used as an idiom or if it's a literal meaning.
+
+42
+00:03:28,120 --> 00:03:30,780
+In this case, the model decides that you might mean this literally.
+
+43
+00:03:31,260 --> 00:03:36,420
+Now when you add "it was" to the front, the model seems to decide that in this case,
+
+44
+00:03:36,980 --> 00:03:39,400
+it might be interpreted as the expression, the idiom.
+
+45
+00:03:39,820 --> 00:03:45,740
+So it finds the equivalent idiom in Italian: "a game for children" or "child's play".
+
+46
+00:03:45,900 --> 00:03:50,220
+If you add this sentence in front: "She asked me if I could eat the grapefruit, since what
+
+47
+00:03:50,300 --> 00:03:52,819
+follows is: it was a piece of cake."
+
+48
+00:03:52,840 --> 00:03:58,040
+The previous sentence provides context that perhaps what she said was a grapefruit is
+
+49
+00:03:58,180 --> 00:04:00,760
+in fact not a grapefruit but a slice of cake.
+
+50
+00:04:01,160 --> 00:04:05,720
+And now, to change it back to the idiomatic expression again, I actually just added a
+
+51
+00:04:05,960 --> 00:04:05,980
+period.
+
+52
+00:04:06,340 --> 00:04:10,880
+As you saw in the earlier lesson about context, you can see now that machine learning models
+
+53
+00:04:11,200 --> 00:04:15,800
+are not following strict rules but are trying to produce sensible output based on what they've
+
+54
+00:04:15,900 --> 00:04:17,579
+learned from looking at previous examples.
+
+55
+00:04:18,040 --> 00:04:22,199
+So it's not as if adding a period to the end of an idiom will always signal to the
+
+56
+00:04:22,220 --> 00:04:27,720
+model that it should use the idiomatic translation. In fact, it might be fun for you to try an idiom
+
+57
+00:04:27,860 --> 00:04:33,160
+of your choice and add context around it to try to change it back and forth between the idiomatic
+
+58
+00:04:33,420 --> 00:04:39,020
+and literal translation. Next, let's take a look at the distance between two words and how that
+
+59
+00:04:39,360 --> 00:04:40,400
+affects the translation.
+

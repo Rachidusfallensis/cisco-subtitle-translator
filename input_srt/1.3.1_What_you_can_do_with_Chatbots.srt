@@ -1,0 +1,388 @@
+1
+00:00:05,100 --> 00:00:09,420
+Did you know that if you eat a salad every time you would otherwise eat a piece of cake,
+
+2
+00:00:10,160 --> 00:00:13,880
+you might see about a 10% reduction in how much you enjoy your life?
+
+3
+00:00:14,660 --> 00:00:17,080
+On that note, does AI have a sense of humor?
+
+4
+00:00:18,080 --> 00:00:20,080
+You'll find out as we explore chatbots together.
+
+5
+00:00:21,060 --> 00:00:25,140
+As you get started learning about chatbots, I would like to give you just two vocabulary
+
+6
+00:00:25,460 --> 00:00:27,300
+words up front as you will hear them a lot.
+
+7
+00:00:27,460 --> 00:00:32,900
+The input that you give to a chatbot is called a prompt, and its output is called a completion,
+
+8
+00:00:33,360 --> 00:00:36,020
+but you might also hear this referred to as a response.
+
+9
+00:00:36,660 --> 00:00:40,400
+You'll learn a bit more about why the input is called a prompt and the output called a
+
+10
+00:00:40,600 --> 00:00:42,420
+completion a little bit later in the course.
+
+11
+00:00:42,880 --> 00:00:48,480
+But for now, when you hear prompt, just think input, and when you hear completion or response,
+
+12
+00:00:49,180 --> 00:00:50,020
+think output.
+
+13
+00:00:50,820 --> 00:00:55,620
+You may have already used chatbots before and realized that you can ask it for information,
+
+14
+00:00:56,180 --> 00:00:57,160
+like with a search engine.
+
+15
+00:00:57,280 --> 00:01:03,780
+There's actually quite a lot that you can do with chatbots, so I would like to group these types of tasks into seven categories.
+
+16
+00:01:04,379 --> 00:01:18,680
+You can expand, you can synthesize, you can transform, evaluate, you can chat, take actions, and you can also input not just text, but also images with text into the chatbot.
+
+17
+00:01:18,820 --> 00:01:22,520
+Let's take a look at examples for each of these seven categories to see what they mean.
+
+18
+00:01:22,920 --> 00:01:28,300
+By expand, I mean that you can ask a simple question such as, who is BTS?
+
+19
+00:01:29,140 --> 00:01:34,320
+And the chatbot will expand on that by outputting a lot of information about what you asked for.
+
+20
+00:01:34,740 --> 00:01:38,340
+And another way of expanding is asking it to help you generate ideas.
+
+21
+00:01:38,880 --> 00:01:42,220
+For example, you can ask it to give you some suggestions for jokes,
+
+22
+00:01:42,620 --> 00:01:46,760
+or suggestions for places to go on vacation based on your personal interests.
+
+23
+00:01:47,300 --> 00:01:49,680
+So expand isn't a formal scientific definition,
+
+24
+00:01:50,100 --> 00:01:53,040
+but I use it to describe instances where you can give it a short prompt,
+
+25
+00:01:53,440 --> 00:01:56,180
+and the chatbot then outputs several paragraphs of information
+
+26
+00:01:56,920 --> 00:01:59,040
+or a list of suggestions for you to choose from.
+
+27
+00:01:59,340 --> 00:02:01,060
+So it's kind of expanding on your prompt.
+
+28
+00:02:01,520 --> 00:02:03,440
+Here's an example of asking for information.
+
+29
+00:02:03,860 --> 00:02:08,759
+You can ask it, what's the difference between a golden retriever and a labrador retriever?
+
+30
+00:02:09,020 --> 00:02:12,500
+And you can see that it lists out differences based on different categories
+
+31
+00:02:13,100 --> 00:02:15,380
+like personality, health, and grooming.
+
+32
+00:02:15,820 --> 00:02:18,080
+And by the way, in natural language processing,
+
+33
+00:02:18,780 --> 00:02:24,480
+This type of task is called question answering because you ask it a question and it tries to
+
+34
+00:02:24,780 --> 00:02:29,360
+answer that question. And here's an example of generating ideas. I'll ask it to suggest some
+
+35
+00:02:29,620 --> 00:02:34,260
+jokes about puppies. And I thought this was pretty good. Why was the puppy so good at school?
+
+36
+00:02:35,000 --> 00:02:41,420
+Because it was the teacher's pet. Another category is synthesize. For example, you can say summarize
+
+37
+00:02:41,700 --> 00:02:47,139
+this and then paste in the text of an article or some paper that you're reading. Another synthesized
+
+38
+00:02:47,200 --> 00:02:53,700
+task is to label text. Say you have many small pieces of text, like replies to a social media
+
+39
+00:02:53,960 --> 00:02:59,520
+post or a couple of online customer reviews of a product. You can ask a chatbot to label them by
+
+40
+00:02:59,760 --> 00:03:06,140
+topic or label them as having a positive or negative sentiment. And again, synthesize isn't
+
+41
+00:03:06,300 --> 00:03:12,319
+an official scientific term, but I'm using it in contrast to the expand task to describe scenarios
+
+42
+00:03:12,480 --> 00:03:18,100
+where you feed in a lot of information into the prompt, such as an article or several social media
+
+43
+00:03:18,360 --> 00:03:25,300
+posts, and ask the chatbot to distill or synthesize that information into something smaller and more
+
+44
+00:03:25,480 --> 00:03:31,620
+digestible. So here's an example of asking a chatbot to summarize an article about Labrador retrievers.
+
+45
+00:03:42,620 --> 00:03:45,420
+And here's an example of the other synthesized task, labeling.
+
+46
+00:03:46,380 --> 00:03:50,480
+You can ask it to give topic labels to the following three articles about Paris.
+
+47
+00:04:06,380 --> 00:04:08,440
+The next category is Transform.
+
+48
+00:04:09,160 --> 00:04:14,840
+For example, you can translate from one language to another language, which is the machine translation
+
+49
+00:04:15,160 --> 00:04:21,620
+task that you saw earlier. And you can also reword or revise a piece of text. Let's see what that
+
+50
+00:04:21,799 --> 00:04:26,660
+means. Here's an example where you can translate a phrase, every cloud has a silver lining,
+
+51
+00:04:27,040 --> 00:04:35,160
+from English into multiple languages at the same time. Pretty cool, eh? And here's an example of a
+
+52
+00:04:35,420 --> 00:04:42,279
+rewrite task. You can ask a chatbot to rewrite an article to use simple vocabulary that most people
+
+53
+00:04:42,300 --> 00:04:48,860
+can understand. So here's an article about corgis which uses big words and the chatbot rewrites or
+
+54
+00:04:49,180 --> 00:04:56,060
+transforms it using more commonly used vocabulary words. Another category of tasks is evaluate. For
+
+55
+00:04:56,200 --> 00:05:01,760
+example, you can evaluate if a statement is factually correct or evaluate an essay by giving
+
+56
+00:05:01,940 --> 00:05:07,360
+it a qualitative score. Here's an example of an evaluate task, fact checking. So I'm asking,
+
+57
+00:05:07,920 --> 00:05:14,380
+Is this an accurate statement? Since we only use 10% of our brains, only 10% of me was saying that
+
+58
+00:05:14,580 --> 00:05:20,300
+corgis are cuter than bulldogs. And the chatbot replies that actually we use much more than 10%
+
+59
+00:05:20,500 --> 00:05:25,540
+of our brains and that is a common misconception that we only use 10% of our brains. It doesn't
+
+60
+00:05:25,640 --> 00:05:30,200
+have any comments on whether it's correct to say that corgis are cuter than bulldogs.
+
+61
+00:05:30,660 --> 00:05:36,059
+I do want to mention early on that fact-checking goes both ways. You can have a chatbot help you
+
+62
+00:05:36,080 --> 00:05:41,380
+to fact check what humans say or write, and it's also very important for you as a human to check
+
+63
+00:05:41,620 --> 00:05:46,380
+what a chatbot outputs. You'll learn more about why later on in this course. Here's the other type
+
+64
+00:05:46,580 --> 00:05:52,900
+of evaluate task, which is qualitative scoring of something subjective such as an essay. So here I'm
+
+65
+00:05:53,040 --> 00:05:58,660
+asking the chatbot to evaluate the following short essays on a score of 0 to 10, where 10 is the
+
+66
+00:05:58,920 --> 00:06:03,719
+highest, and to also share why it gave those scores. So there's a paragraph trying to make the case
+
+67
+00:06:04,060 --> 00:06:08,700
+that dogs are better than cats as pets. And then there's another paragraph trying to make the case
+
+68
+00:06:09,120 --> 00:06:14,140
+that cats are better than dogs. And then finally a paragraph that says neither dogs or cats are
+
+69
+00:06:14,340 --> 00:06:18,800
+better. They're both great. And the chatbot outputs a score for each paragraph as well as an
+
+70
+00:06:19,000 --> 00:06:24,780
+explanation for each score. You can also chat with a chatbot. And by that, I mean you can have an
+
+71
+00:06:25,000 --> 00:06:30,219
+ongoing back and forth conversation. And there are ways you can start these conversations so that
+
+72
+00:06:30,240 --> 00:06:34,180
+you're not the only one moving the conversation forward, but you can actually have the chatbot
+
+73
+00:06:34,460 --> 00:06:39,380
+ask follow-up questions or take the initiative in leading the conversation. You'll learn more about
+
+74
+00:06:39,580 --> 00:06:45,280
+that later in this course. Here's an example where I'm initiating a conversation by talking about my
+
+75
+00:06:45,400 --> 00:06:49,400
+day. And it's okay if you can't read all of what's going on here, but the chatbot is also asking
+
+76
+00:06:49,800 --> 00:06:55,239
+follow-up questions and making suggestions for what I can think about or talk about next. You can also
+
+77
+00:06:55,260 --> 00:07:01,440
+use chatbots to take actions beyond just outputting text. An AI-enabled feature that is very related
+
+78
+00:07:01,740 --> 00:07:06,940
+to today's chatbots is a personal assistant. You can use a personal assistant on your phone
+
+79
+00:07:07,420 --> 00:07:13,060
+to set a calendar event or send a text message to a friend. And a lot of chatbots now are also
+
+80
+00:07:13,400 --> 00:07:18,780
+able to connect to other software so that they can, for instance, search the internet to help
+
+81
+00:07:18,920 --> 00:07:23,600
+them answer your question. Here's an example of taking action by using a personal assistant.
+
+82
+00:07:24,120 --> 00:07:29,200
+I'm using Google Assistant on an Android phone, and you could do something similar with Siri on an iPhone.
+
+83
+00:07:29,820 --> 00:07:31,920
+So first I ask it to create a calendar event.
+
+84
+00:07:32,600 --> 00:07:37,760
+It asks me some follow-ups on what is the event title and what is the time and date of the event.
+
+85
+00:07:38,200 --> 00:07:40,440
+And you can see that it added this event to my calendar.
+
+86
+00:07:41,800 --> 00:07:46,660
+Here's another example of taking action where a chatbot searches the internet in order to answer my question.
+
+87
+00:07:46,960 --> 00:07:55,460
+So I'm asking it about upcoming meteor showers, which is an example of a current or future event that will likely require the chatbot to find this information on the internet.
+
+88
+00:07:55,780 --> 00:08:03,620
+Also, a really helpful feature in this case is that it also outputs links to the websites that it searched so that you can read the original source content yourself.
+
+89
+00:08:04,360 --> 00:08:14,040
+And fairly recently, chatbots have also been designed so that they can take in not only text, but also take in images and text together as a combined input.
+
+90
+00:08:14,480 --> 00:08:17,680
+For example, you might take a picture of something and ask, what is this?
+
+91
+00:08:19,540 --> 00:08:23,580
+So here's an image, and I'll ask, is this a panda?
+
+92
+00:08:24,040 --> 00:08:29,160
+So the chatbot understands that my question is about the image that I'm also providing as part of the input.
+
+93
+00:08:29,720 --> 00:08:36,640
+And it explains that this is in fact not a panda, but a steamed bun or dumpling that looks like a panda.
+
+94
+00:08:37,260 --> 00:08:39,780
+Before you dive into the specific categories of tasks,
+
+95
+00:08:39,979 --> 00:08:44,560
+The next couple of videos will help you explore interesting characteristics of chatbots,
+
+96
+00:08:44,940 --> 00:08:48,800
+including how they behave and sometimes how they don't behave.
+
+97
+00:08:49,460 --> 00:08:53,520
+Next up is predicting the next word. I'll see you in the next video.
+

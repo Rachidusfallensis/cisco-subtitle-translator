@@ -1,0 +1,428 @@
+1
+00:00:05,260 --> 00:00:09,340
+If you have any friends who are into photography, they may love to tell you how they can use their
+
+2
+00:00:09,360 --> 00:00:14,140
+professional camera to blur the background in photos. If you don't have a professional camera
+
+3
+00:00:14,300 --> 00:00:19,000
+yourself, you can still do that with your regular phone and AI. Let's see how that works with
+
+4
+00:00:19,140 --> 00:00:24,640
+something called image segmentation. In most photo apps, you can create a portrait effect
+
+5
+00:00:25,060 --> 00:00:31,060
+by blurring the background. For example, in Google Photos, you can click on Edit and then click on
+
+6
+00:00:31,240 --> 00:00:37,120
+Portrait. Notice that it's blurring the image, but not the whole image, just the background behind me.
+
+7
+00:00:37,500 --> 00:00:42,500
+So again, here is the original image, and here is the image with the blurred background. This is
+
+8
+00:00:42,720 --> 00:00:47,540
+called the Bokeh effect, and people like that it helps the viewer focus their attention on the
+
+9
+00:00:47,900 --> 00:00:52,900
+subject of the photo. And don't worry, Bokeh effect is not an AI-related word that you need to
+
+10
+00:00:52,920 --> 00:00:58,200
+remember. Photographers love talking about the bokeh effect, so it's just a nice word to know
+
+11
+00:00:58,600 --> 00:01:04,720
+in case you're friends with a photographer. The photo app is able to identify specifically which
+
+12
+00:01:04,920 --> 00:01:09,460
+parts of an image represent the person in the foreground as opposed to everything else in the
+
+13
+00:01:09,580 --> 00:01:16,740
+background on a pixel by pixel level. And by pixel, I'm referring to all the tiny little dots that
+
+14
+00:01:16,920 --> 00:01:21,860
+make up a digital photograph. Here's what I mean. If you look at just a small section of the
+
+15
+00:01:21,880 --> 00:01:27,260
+photograph and then zoom in. Imagine if we zoomed in enough that we're actually looking at all the
+
+16
+00:01:27,580 --> 00:01:32,820
+pixels that make up an image. It's essentially like a spreadsheet where every cell of the spreadsheet
+
+17
+00:01:33,160 --> 00:01:38,540
+has a number that defines how much red, how much green, and how much blue is in that particular
+
+18
+00:01:38,860 --> 00:01:44,340
+pixel. And in order to generate this portrait photo effect, the software attempts to identify
+
+19
+00:01:44,840 --> 00:01:51,840
+for every pixel whether that pixel is part of the object in the foreground, or
+
+20
+00:01:51,860 --> 00:01:56,400
+or is part of the background.
+
+21
+00:02:01,880 --> 00:02:07,620
+So, the ability to determine which pixel represents the person and which pixel represents the
+
+22
+00:02:07,780 --> 00:02:11,740
+background is a computer vision task called image segmentation.
+
+23
+00:02:12,240 --> 00:02:17,280
+Note, I am skipping over some additional processing that goes in in order to identify the foreground
+
+24
+00:02:17,300 --> 00:02:22,500
+versus the background, and this is called depth perception, but it is possible to just rely on
+
+25
+00:02:22,720 --> 00:02:27,180
+image segmentation to create this portrait effect, so for now don't worry about remembering what
+
+26
+00:02:27,440 --> 00:02:32,000
+depth perception is. The output of image segmentation is actually going to be something
+
+27
+00:02:32,300 --> 00:02:37,280
+that looks like an image with the same height and width of the original photograph, but where each
+
+28
+00:02:37,440 --> 00:02:44,500
+pixel is given a value of 0 or 1. In this case, I'm representing the 1 values with the color white
+
+29
+00:02:44,720 --> 00:02:49,560
+and the zero values with the color black. But these can be any color for visualization purposes.
+
+30
+00:02:50,020 --> 00:02:56,000
+The computer itself just sees a spreadsheet-like grid of zeros and ones. So a value of one indicates
+
+31
+00:02:56,280 --> 00:03:01,180
+that a pixel from the original image is part of the segmented object, in this case the person.
+
+32
+00:03:01,700 --> 00:03:06,560
+A value of zero represents anything that was not part of the segmented object. In this case,
+
+33
+00:03:06,820 --> 00:03:12,760
+that's the background. This image of just zeros and ones is called a mask. You can think of it the
+
+34
+00:03:12,780 --> 00:03:17,740
+same way you think of a mask you wear for a costume. It outlines particular areas of the image,
+
+35
+00:03:18,020 --> 00:03:22,380
+just like a mask that you might wear if you're a superhero or just attending some dress-up event
+
+36
+00:03:22,600 --> 00:03:28,580
+outlines a certain area of your face. And this mask can then be used downstream for other steps
+
+37
+00:03:28,840 --> 00:03:35,200
+in the software application to process just the pixels that are the person or just the pixels that
+
+38
+00:03:35,300 --> 00:03:40,020
+are in the background. So here's what you can do to get the blur effect. So here's the original image,
+
+39
+00:03:40,420 --> 00:03:45,580
+And here is the mask. And here is where we want to store just the pixels of the person in the
+
+40
+00:03:45,700 --> 00:03:51,700
+foreground. For this pixel, let's say the value is 125. And in the mask, the value at that same
+
+41
+00:03:51,940 --> 00:04:01,520
+location is 0. So 125 times 0 is 0. And let's put a 0 here. Let's try another pixel here. Let's say
+
+42
+00:04:01,600 --> 00:04:10,720
+it's 150. In the mask, the value at the same location is 1. 150 times 1 is 150. So let's save
+
+43
+00:04:10,840 --> 00:04:15,680
+that here. And if you do that for all the pixels, you'll get an image that has the same pixels of
+
+44
+00:04:15,780 --> 00:04:20,799
+the subject, like this. And I'm simplifying a little bit for the sake of clarity. Normally,
+
+45
+00:04:21,200 --> 00:04:26,520
+for color photos, every pixel stores three values. One for how much red, how much green,
+
+46
+00:04:26,980 --> 00:04:31,880
+and how much blue, and that mixes together to produce the color. The next step is to go back
+
+47
+00:04:32,040 --> 00:04:37,080
+to the original image and blur the whole thing. Yes, the background and even the subject in the
+
+48
+00:04:37,260 --> 00:04:42,660
+foreground. Everything. I'll explain why in a bit. Then, take this subject that you carved out using
+
+49
+00:04:42,920 --> 00:04:47,960
+the segmentation mask and overlay it on top of the blurred image. And that's how you get the nice
+
+50
+00:04:48,160 --> 00:04:53,699
+portrait bokeh effect with a blurred background using image segmentation. Now, you may be wondering
+
+51
+00:04:53,720 --> 00:04:59,160
+why we take this somewhat indirect approach of getting the mask of the subject, blurring the
+
+52
+00:04:59,540 --> 00:05:05,440
+entire photo, and then adding the subject back on top. For instance, what if you just used the
+
+53
+00:05:05,640 --> 00:05:11,140
+image segmentation mask to identify all the pixels of the background behind the subject and just
+
+54
+00:05:11,440 --> 00:05:15,660
+directly blur those pixels? Well, let's zoom in a bit to see what might happen. The thing is,
+
+55
+00:05:15,940 --> 00:05:20,539
+the way the blurring effect works is kind of like dipping your finger in water and then moving it
+
+56
+00:05:20,560 --> 00:05:23,340
+over a watercolor painting to get the pixels to mix together.
+
+57
+00:05:23,940 --> 00:05:26,740
+So if you apply the blur somewhere here, that's fine.
+
+58
+00:05:27,140 --> 00:05:29,640
+But when you try to blur the parts of the background
+
+59
+00:05:30,040 --> 00:05:32,920
+that border the subject, which you don't want to be blurry,
+
+60
+00:05:33,320 --> 00:05:35,780
+then you'll end up blurring the pixels of the subject as well.
+
+61
+00:05:36,160 --> 00:05:38,840
+So if you do the recommended method that you saw earlier,
+
+62
+00:05:39,160 --> 00:05:41,520
+this helps you to make sure that the person in the photo
+
+63
+00:05:41,820 --> 00:05:43,560
+doesn't have a blurry outline around them.
+
+64
+00:05:45,920 --> 00:05:46,800
+Oh, and one more thing.
+
+65
+00:05:47,320 --> 00:05:49,679
+You can actually try out image segmentation yourself
+
+66
+00:05:49,700 --> 00:05:50,920
+by going to Meta AI's website.
+
+67
+00:05:51,640 --> 00:05:53,940
+If you start from the Meta AI chatbot site,
+
+68
+00:05:54,320 --> 00:05:55,720
+you can click on the left-hand menu
+
+69
+00:05:56,120 --> 00:05:57,860
+and then click on AI Demos.
+
+70
+00:05:58,280 --> 00:06:01,820
+The AI Demos page includes a section called Segment Anything.
+
+71
+00:06:02,260 --> 00:06:03,300
+It's currently version two
+
+72
+00:06:03,560 --> 00:06:04,580
+at the time that I'm filming this.
+
+73
+00:06:05,040 --> 00:06:05,760
+So let's click on that.
+
+74
+00:06:06,140 --> 00:06:07,740
+Then I'll click on the button, Try It Now.
+
+75
+00:06:08,100 --> 00:06:09,460
+It starts out with a default video
+
+76
+00:06:09,800 --> 00:06:10,980
+that's about 10 seconds long,
+
+77
+00:06:11,280 --> 00:06:12,760
+but I'll go here and click on the button
+
+78
+00:06:12,920 --> 00:06:14,120
+that says Change Video.
+
+79
+00:06:14,620 --> 00:06:16,240
+And there are other videos to choose from,
+
+80
+00:06:16,560 --> 00:06:18,620
+but I'm going to drag and drop a video of my own.
+
+81
+00:06:18,940 --> 00:06:23,500
+Note that for any video that you upload, it will show about the first 9 to 10 seconds of it.
+
+82
+00:06:23,860 --> 00:06:26,260
+So I'll go ahead and click play and take a look at the video.
+
+83
+00:06:26,700 --> 00:06:30,180
+Now I'm going to pause the video so that I can click on an object to segment.
+
+84
+00:06:30,580 --> 00:06:33,220
+And in this case, I'll click on this emoji ball in my hand.
+
+85
+00:06:33,440 --> 00:06:37,920
+It gives me the option to add more mouse clicks to define the object that I'm interested in.
+
+86
+00:06:38,180 --> 00:06:42,800
+But this looks pretty good, so I'll just go ahead and click on the button here that says track objects.
+
+87
+00:06:43,240 --> 00:06:45,700
+After a few seconds, it starts to play the video again.
+
+88
+00:06:46,100 --> 00:06:49,480
+And you can see that the emoji ball is being outlined by a blue line.
+
+89
+00:06:49,860 --> 00:06:51,340
+So if you click on the button that says next,
+
+90
+00:06:51,640 --> 00:06:55,440
+it gives you some options for things that you can do with the object that you've now segmented.
+
+91
+00:06:55,760 --> 00:06:59,080
+For instance, you can click on erase and then gradient.
+
+92
+00:06:59,760 --> 00:07:01,240
+And you can also click on pixelate.
+
+93
+00:07:01,520 --> 00:07:04,380
+If you click on spotlight, it looks like it's outlining the emoji ball.
+
+94
+00:07:04,720 --> 00:07:06,540
+If you click on burst, it looks like this.
+
+95
+00:07:06,960 --> 00:07:08,360
+And you can actually click on emoji.
+
+96
+00:07:08,900 --> 00:07:14,720
+So in this video, it's actually replacing this emoji ball with an actual emoji.
+
+97
+00:07:15,160 --> 00:07:17,300
+and you can cycle through a couple different emojis.
+
+98
+00:07:17,820 --> 00:07:18,320
+That's pretty cool.
+
+99
+00:07:18,680 --> 00:07:19,940
+You can also update the background,
+
+100
+00:07:20,620 --> 00:07:23,740
+and it would only affect the background and not the objects that are segmented.
+
+101
+00:07:24,020 --> 00:07:25,620
+So I'd encourage you to try it out for yourself.
+
+102
+00:07:26,020 --> 00:07:30,180
+Maybe you can find a fun video that you'd like to use to practice image segmentation.
+
+103
+00:07:30,540 --> 00:07:31,200
+Coming up next,
+
+104
+00:07:31,620 --> 00:07:34,080
+what if you took a picture of something that has text in it,
+
+105
+00:07:34,280 --> 00:07:36,620
+like an outdoor sign or a restaurant receipt,
+
+106
+00:07:37,040 --> 00:07:40,500
+and wanted to be able to copy that text into a text message, for instance?
+
+107
+00:07:41,040 --> 00:07:42,480
+Let's look at how to do that next.
+

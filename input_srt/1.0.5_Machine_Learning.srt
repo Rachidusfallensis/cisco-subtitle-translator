@@ -1,0 +1,304 @@
+1
+00:00:05,140 --> 00:00:07,380
+If you want to learn how to bake a cake, how would you do that?
+
+2
+00:00:09,560 --> 00:00:14,320
+One way to learn is to get a cookbook and follow the instructions step by step.
+
+3
+00:00:16,540 --> 00:00:20,620
+Another way to do that is to watch a friend, family member, or someone on YouTube do it,
+
+4
+00:00:22,220 --> 00:00:24,840
+and then you can follow along and try to mimic what they're doing.
+
+5
+00:00:26,480 --> 00:00:31,840
+Let's see how this relates to AI, and in particular a subfield of AI called machine learning.
+
+6
+00:00:32,860 --> 00:00:38,800
+So going back to a little bit of history, AI researchers from the 1950s to 1980s primarily
+
+7
+00:00:39,100 --> 00:00:44,480
+worked on a subfield of AI called symbolic AI in which they came up with ever more complex
+
+8
+00:00:44,900 --> 00:00:50,800
+instructions to get machines to perform tasks intelligently. This is often referred to as a
+
+9
+00:00:50,860 --> 00:00:56,740
+rules-based approach. However, at the same time, there was another approach called machine learning
+
+10
+00:00:57,160 --> 00:01:02,960
+based on statistics, and it tried to get a computer to learn from data and examples instead of giving
+
+11
+00:01:03,100 --> 00:01:07,420
+it lots of rules to follow. The term of machine learning was first coined by Arthur Samuel,
+
+12
+00:01:07,860 --> 00:01:12,960
+a researcher at IBM, who trained a computer to play the game of checkers, not by giving it lots
+
+13
+00:01:13,120 --> 00:01:17,479
+of instructions on how to play the game, but by getting the computer to play checkers against a
+
+14
+00:01:17,500 --> 00:01:22,820
+version of itself and to learn over time what moves gave it more points or fewer points. Tom
+
+15
+00:01:23,220 --> 00:01:28,160
+Mitchell, a professor who founded Carnegie Mellon's machine learning department, gave a formal
+
+16
+00:01:28,360 --> 00:01:33,560
+definition of machine learning that's been widely cited. I'll first give one of his quotes from his
+
+17
+00:01:33,720 --> 00:01:39,960
+book, then the more formal and famous one. Machine learning is the study of algorithms that allows
+
+18
+00:01:40,220 --> 00:01:46,340
+computer programs to automatically improve through experience. And here's the original definition
+
+19
+00:01:46,360 --> 00:01:51,360
+from Tom Mitchell. I removed some words because I think it helps to see the simpler wording first.
+
+20
+00:01:51,680 --> 00:01:57,960
+A computer program is said to learn from experience with respect to some tasks if its performance
+
+21
+00:01:58,560 --> 00:02:05,580
+at the tasks as measured improves with experience. And now here's the full text. A program is said to
+
+22
+00:02:05,700 --> 00:02:13,060
+learn from experience E with respect to some class of tasks T and performance measure P if its
+
+23
+00:02:13,080 --> 00:02:20,960
+performance at tasks in T, as measured by P, improves with experience E. In other words,
+
+24
+00:02:21,500 --> 00:02:28,200
+a machine learns from experience if it performs a task, gets objective feedback on how well it does,
+
+25
+00:02:28,580 --> 00:02:33,900
+and then uses that feedback to get better at that task. Let's walk through an example of the
+
+26
+00:02:34,100 --> 00:02:39,239
+machine learning approach. Suppose you want a machine to perform a task of identifying whether
+
+27
+00:02:39,260 --> 00:02:45,300
+a photograph is of a panda or not a panda. You give the machine an image and ask it to output
+
+28
+00:02:46,140 --> 00:02:52,900
+panda or not panda. So far, it knows nothing about what pandas look like, but it performs the task
+
+29
+00:02:53,140 --> 00:02:58,420
+as best it can and in this case outputs not a panda. Then you give it the correct answer, panda.
+
+30
+00:02:58,820 --> 00:03:02,680
+The machine takes note that its prediction was incorrect and makes some adjustments.
+
+31
+00:03:03,320 --> 00:03:08,700
+Then you give it another image like this one. It tries its best and in this case outputs panda.
+
+32
+00:03:09,080 --> 00:03:11,720
+You give it the correct answer, which is also panda.
+
+33
+00:03:12,280 --> 00:03:17,420
+Again, the machine uses your feedback, compares it to what it output itself, and makes adjustments,
+
+34
+00:03:17,940 --> 00:03:22,100
+or essentially learns, so that it can do better the next time it performs the task.
+
+35
+00:03:22,440 --> 00:03:28,340
+So the next time it does this task again, whether on the same image or on new images that it's never seen before,
+
+36
+00:03:28,680 --> 00:03:32,620
+it gets better at predicting whether the image is of a panda or not.
+
+37
+00:03:33,160 --> 00:03:37,500
+And you do this in a loop, with many images, probably between 100 and 1000.
+
+38
+00:03:37,560 --> 00:03:42,820
+For each image, you provide the correct answer to the machine only after it has attempted
+
+39
+00:03:43,420 --> 00:03:44,260
+to do the task itself.
+
+40
+00:03:44,840 --> 00:03:48,180
+It predicts "not panda" and it gets the feedback that it's correct.
+
+41
+00:03:48,720 --> 00:03:53,340
+Here it predicts that this is a panda and it gets feedback that it's actually not a panda.
+
+42
+00:03:53,760 --> 00:03:58,280
+It predicts that this is a panda and it gets feedback that this is actually not a panda.
+
+43
+00:04:07,660 --> 00:04:09,540
+to get better at performing this task.
+
+44
+00:04:09,880 --> 00:04:12,120
+And one more thing, you can actually try this yourself
+
+45
+00:04:12,780 --> 00:04:14,240
+with something called Teachable Machine
+
+46
+00:04:14,680 --> 00:04:15,900
+offered by Google on this free website.
+
+47
+00:04:16,700 --> 00:04:17,739
+Let's take a look at how to use it.
+
+48
+00:04:18,640 --> 00:04:20,900
+If you go here, just click on Get Started,
+
+49
+00:04:22,380 --> 00:04:23,860
+click on Image Project on the left,
+
+50
+00:04:24,340 --> 00:04:26,340
+and then for this pop-up, just choose the one on the left,
+
+51
+00:04:26,480 --> 00:04:27,320
+Standard Image Model.
+
+52
+00:04:28,800 --> 00:04:31,020
+And here you can see that it lets you take pictures
+
+53
+00:04:31,560 --> 00:04:34,440
+of one class of objects and a second class of objects.
+
+54
+00:04:34,820 --> 00:04:37,520
+I'm going to use Pandas for the first class
+
+55
+00:04:37,520 --> 00:04:38,420
+and dogs for the second.
+
+56
+00:04:39,120 --> 00:04:42,120
+So let me just change the label to Panda on the top
+
+57
+00:04:43,140 --> 00:04:44,240
+and Dog on the bottom.
+
+58
+00:04:45,980 --> 00:04:48,060
+And then for the Panda, I'm going to click on Webcam.
+
+59
+00:04:49,860 --> 00:04:51,600
+And you can see that now my webcam is on.
+
+60
+00:04:51,800 --> 00:04:54,140
+I'm going to take some pictures of this Panda.
+
+61
+00:04:56,520 --> 00:05:00,700
+So I'll hold the record, and I'll get some different angles.
+
+62
+00:05:06,660 --> 00:05:08,600
+And then now I'll do the same for the dog.
+
+63
+00:05:11,460 --> 00:05:15,240
+So I'll click Hold to record, get some different angles,
+
+64
+00:05:18,240 --> 00:05:21,100
+and then now I can train the model.
+
+65
+00:05:21,320 --> 00:05:22,240
+So I'll click Train Model.
+
+66
+00:05:27,340 --> 00:05:27,480
+Great.
+
+67
+00:05:28,020 --> 00:05:30,440
+Now you can see that I can test this model to see how it does.
+
+68
+00:05:32,439 --> 00:05:34,480
+So now I'll give it an object that it hasn't seen before,
+
+69
+00:05:35,080 --> 00:05:37,280
+and it will try to figure out whether it's a panda or a dog.
+
+70
+00:05:40,040 --> 00:05:46,100
+Cool. And you can see that it has probabilities, but there's a higher probability that it's a panda.
+
+71
+00:05:49,700 --> 00:05:58,200
+Let's try this one. Here you can see it thinks it's a dog. Now I'll just try one more thing.
+
+72
+00:06:01,300 --> 00:06:02,340
+I guess it thinks I'm a dog.
+
+73
+00:06:04,140 --> 00:06:07,340
+So it's really fun, and I encourage you to try it yourself with your own objects.
+
+74
+00:06:07,960 --> 00:06:09,780
+So how does the machine learn?
+
+75
+00:06:10,280 --> 00:06:12,120
+It's using something called a model.
+
+76
+00:06:12,560 --> 00:06:14,820
+Let's learn more about models in the next video.
+

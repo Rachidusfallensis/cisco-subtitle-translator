@@ -1,0 +1,132 @@
+1
+00:00:05,200 --> 00:00:11,340
+If you can't see me, and also can't hear me, but can text with me, would you consider me
+
+2
+00:00:11,560 --> 00:00:17,080
+intelligent? What if you communicated with a computer with text messages? Would you consider
+
+3
+00:00:17,380 --> 00:00:21,260
+it intelligent? Let's take a look at what this has to do with artificial intelligence,
+
+4
+00:00:21,920 --> 00:00:25,000
+and look at how AI researchers have defined AI in the past.
+
+5
+00:00:25,620 --> 00:00:32,800
+To define artificial intelligence, it helps to look at what some of the early founders of computer science and AI had to say about it.
+
+6
+00:00:33,120 --> 00:00:41,080
+Alan Turing is considered one of the founders of theoretical computer science, and he provided the mathematical theory behind the modern-day computer.
+
+7
+00:00:41,480 --> 00:00:44,680
+In 1950, Turing wrote a paper in which he asked,
+
+8
+00:00:45,020 --> 00:00:54,100
+He proposed a way of answering that question called the imitation game, in which a human observer has conversations by text with a human,
+
+9
+00:00:54,460 --> 00:00:57,480
+and also has a similar conversation with a machine.
+
+10
+00:00:57,920 --> 00:01:01,780
+The observer cannot see or hear the other human or the machine,
+
+11
+00:01:02,460 --> 00:01:07,220
+so the observer has to decide purely on the quality of the text-based conversation
+
+12
+00:01:07,540 --> 00:01:11,480
+if the person on the other side is a human or not.
+
+13
+00:01:11,740 --> 00:01:15,680
+If the human cannot distinguish between the machine and the other human,
+
+14
+00:01:16,040 --> 00:01:17,580
+who is also communicating by text,
+
+15
+00:01:18,080 --> 00:01:21,180
+then that machine demonstrates the ability to think.
+
+16
+00:01:21,560 --> 00:01:27,900
+This imitation game is now also called the Turing Test. As a historical note, there was actually a
+
+17
+00:01:28,100 --> 00:01:33,260
+pretty cool movie about Alan Turing and his team's efforts during the Second World War to decrypt the
+
+18
+00:01:33,500 --> 00:01:39,580
+military communications of Nazi Germany. The name of the movie is The Imitation Game. The exact term
+
+19
+00:01:39,800 --> 00:01:44,980
+artificial intelligence was first coined by another founder of computer science, John McCarthy.
+
+20
+00:01:45,240 --> 00:01:54,640
+In 1952, McCarthy and other scientists met at Dartmouth College to propose a study of whether machines can be designed to simulate intelligence.
+
+21
+00:01:55,240 --> 00:02:08,600
+They wrote that their research would be based on the conjecture that every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.
+
+22
+00:02:08,800 --> 00:02:15,280
+McCarthy formally defined artificial intelligence as the science and engineering of making intelligent
+
+23
+00:02:15,600 --> 00:02:21,100
+machines. But how do we define intelligence? McCarthy defined intelligence as the computational
+
+24
+00:02:21,480 --> 00:02:27,880
+part of the ability to achieve goals in the world. Another way to think about this is the ability to
+
+25
+00:02:28,040 --> 00:02:33,919
+perform useful tasks. So from a historical perspective, artificial intelligence is a field
+
+26
+00:02:33,940 --> 00:02:40,660
+of research that began in the 1950s with the goal of getting machines to perform tasks that require
+
+27
+00:02:40,920 --> 00:02:46,960
+intelligence. Let's break this down a bit. Artificial and machine means that it's not performed
+
+28
+00:02:47,260 --> 00:02:53,740
+by biological intelligence, like a human, a dog, or a panda. It's task-oriented. The machine is
+
+29
+00:02:53,860 --> 00:03:00,079
+taking some action, like outputting a number or some text, to achieve a useful outcome. The third
+
+30
+00:03:00,100 --> 00:03:06,440
+part is intelligence. And defining intelligence can get somewhat philosophical, but intelligence
+
+31
+00:03:06,880 --> 00:03:12,760
+includes the ability to make decisions even in ambiguous circumstances, and to learn from
+
+32
+00:03:13,080 --> 00:03:18,900
+experience. Intelligence is often defined in terms of what humans are able to do, although it doesn't
+
+33
+00:03:19,040 --> 00:03:25,180
+have to be limited to human intelligence. Next, let's take a closer look at defining intelligence.
+

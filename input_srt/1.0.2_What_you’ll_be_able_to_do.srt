@@ -1,0 +1,132 @@
+1
+00:00:05,200 --> 00:00:08,160
+Thank you for writing with the Metropolitan Time Travel Authority.
+
+2
+00:00:08,800 --> 00:00:11,940
+The next stop is one week into the future.
+
+3
+00:00:15,140 --> 00:00:17,740
+Congratulations on finishing this course.
+
+4
+00:00:18,480 --> 00:00:21,980
+Now you know how AI is used to blur the background of this photo.
+
+5
+00:00:22,720 --> 00:00:27,580
+You're now also aware of why a phrase like this can be translated to this, a cake.
+
+6
+00:00:27,940 --> 00:00:33,460
+whereas that same phrase might also be translated into this, a game for children.
+
+7
+00:00:34,360 --> 00:00:40,960
+You can now also explain why asking a chatbot to solve a problem with this wording may lead to an incorrect answer,
+
+8
+00:00:41,460 --> 00:00:46,280
+whereas making this small change to the last sentence like this may lead to the correct answer.
+
+9
+00:00:47,380 --> 00:00:51,860
+You're now familiar with how to use chatbots to perform a wide range of tasks,
+
+10
+00:00:52,320 --> 00:00:57,580
+And you practiced with all of these chatbots, including ones that you can download onto your
+
+11
+00:00:57,860 --> 00:01:02,940
+personal computer. You've practiced for a job interview by instructing a chatbot to play the
+
+12
+00:01:03,160 --> 00:01:08,160
+role of the interviewer. And you've guided two chatbots to collaborate with each other,
+
+13
+00:01:08,580 --> 00:01:13,320
+one to play the role of a writer and the other to play the role of an editor as the two discuss
+
+14
+00:01:13,880 --> 00:01:19,700
+and iterate to write an article. And you also know how AI can help you answer one of life's
+
+15
+00:01:19,740 --> 00:01:25,440
+age-old questions. Can I park here? You finished with an open-ended mini project where you combined
+
+16
+00:01:25,640 --> 00:01:30,700
+the various AI tools to perform some daily tasks and made a short video to document your project.
+
+17
+00:01:31,220 --> 00:01:34,620
+Well, at least that's a taste of what you'll be able to do once you complete this course.
+
+18
+00:01:35,700 --> 00:01:36,520
+Let's go back to the beginning.
+
+19
+00:01:37,380 --> 00:01:42,740
+Thank you for writing with the Metropolitan Time Travel Authority. The next stop is the present.
+
+20
+00:01:44,320 --> 00:01:48,579
+Hi, welcome back. You're about to get an overview of artificial intelligence
+
+21
+00:01:48,620 --> 00:01:53,840
+and machine learning. Then look at personal use cases for computer vision, machine translation,
+
+22
+00:01:54,460 --> 00:01:59,840
+and then get an in-depth look at chatbots, how they behave, and how you can make the most of using
+
+23
+00:02:00,020 --> 00:02:03,620
+them. There's more than one way to go through this course, depending on how much time you have.
+
+24
+00:02:04,040 --> 00:02:08,860
+If you want to get a quick overview, you can just watch all the videos. You can always come back and
+
+25
+00:02:08,940 --> 00:02:13,480
+do some of the optional hands-on practice later. When you do have time to get more hands-on practice,
+
+26
+00:02:13,800 --> 00:02:21,300
+Then after each video, you'll see text that reviews some key points from the video and also provides some optional practice that you can try out.
+
+27
+00:02:21,640 --> 00:02:26,460
+The hands-on practice will really help you explore and maybe even discover something new by yourself.
+
+28
+00:02:26,940 --> 00:02:41,360
+So before we get started, I'd like you to warm up a bit by taking your hand out and now wiggle your fingers, raise your arm up and bend your elbow and pat yourself on the back to congratulate yourself for starting this journey in AI.
+
+29
+00:02:41,760 --> 00:02:43,140
+Your future self will thank you.
+
+30
+00:02:45,080 --> 00:02:45,480
+That was great.
+
+31
+00:02:46,100 --> 00:02:46,500
+Really good take.
+
+32
+00:02:46,660 --> 00:02:46,880
+Let's go.
+
+33
+00:02:47,340 --> 00:02:47,640
+Thank you.
+

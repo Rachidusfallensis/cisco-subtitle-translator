@@ -1,0 +1,496 @@
+1
+00:00:05,100 --> 00:00:08,500
+Chatbots can output text, but how can they interact with the world around them?
+
+2
+00:00:09,000 --> 00:00:12,900
+Let's take a look at how tools can allow chatbots to go beyond just outputting text.
+
+3
+00:00:13,520 --> 00:00:17,660
+If you think about your ability as a human to navigate the world around you, you rely
+
+4
+00:00:17,880 --> 00:00:22,240
+on your brain to think about what you want to do. But you also rely on the rest of your body,
+
+5
+00:00:22,740 --> 00:00:27,119
+like your arms and legs, to actually interact with the rest of the world and also discover
+
+6
+00:00:27,140 --> 00:00:31,880
+more about the world. So if you think about a large language model as a brain, you can give it
+
+7
+00:00:32,160 --> 00:00:37,120
+arms and legs so that it can interact with the rest of the software world, such as access the
+
+8
+00:00:37,420 --> 00:00:42,020
+internet or apps on your computer or phone. The software functions that a large language model
+
+9
+00:00:42,240 --> 00:00:50,280
+has the ability to run are called tools. When a tool is included, the flow of inputs and outputs
+
+10
+00:00:50,660 --> 00:00:55,419
+is a bit different than before. Let's look at how a large language model might call on a web search
+
+11
+00:00:55,460 --> 00:01:01,120
+tool. Suppose you ask in a prompt, who broke world records at the Paris Olympics? The model can choose
+
+12
+00:01:01,360 --> 00:01:06,140
+to just answer this without using the tool, but it may also decide that since this question is about
+
+13
+00:01:06,440 --> 00:01:11,260
+current events, it may need to do a web search. So the model outputs text that has a specific
+
+14
+00:01:11,540 --> 00:01:17,460
+standard format. For instance, within curly braces, it has the keyword tool in all capital letters,
+
+15
+00:01:18,120 --> 00:01:23,619
+followed by the name of the tool, web search. It also has the keyword query, followed by the query
+
+16
+00:01:23,640 --> 00:01:28,120
+I should go into the web search. This is still text that's output by the model, but since it's
+
+17
+00:01:28,180 --> 00:01:33,060
+formatted in a specific way, there is other software that can scan this completion, and when
+
+18
+00:01:33,160 --> 00:01:38,520
+it recognizes that this is a request to use a function, it redirects this output, meaning that
+
+19
+00:01:38,620 --> 00:01:44,060
+the user does not see this text. Instead, the chatbot runs the requested web search tool with
+
+20
+00:01:44,240 --> 00:01:49,299
+the given query. Then the search results, as well as the request to answer the user's original
+
+21
+00:01:49,320 --> 00:01:54,160
+question gets sent as a prompt to the model. The model can now answer the question with the
+
+22
+00:01:54,320 --> 00:01:59,700
+additional information and that answer is sent back to the user. Let's first see how a chatbot does
+
+23
+00:02:00,060 --> 00:02:04,660
+without having access to the web search tool. I'm going to use Hugging Chat because they allow you
+
+24
+00:02:04,800 --> 00:02:12,340
+to switch on and off access to tools. I'm using Microsoft Fee as the model with search web turned
+
+25
+00:02:12,540 --> 00:02:17,539
+off. The model answers the question about the Paris Olympics by sharing information about the
+
+26
+00:02:17,560 --> 00:02:24,680
+the Paris Olympics that were held in 1900. But if you might recall, Paris also held the Olympic Games
+
+27
+00:02:25,140 --> 00:02:30,320
+in 2024. Let's try this again with the same prompt, but with the web search tool turned on.
+
+28
+00:02:30,840 --> 00:02:36,340
+In Hugging Chat, you can click here to turn on the search web tool. Remember, this gives the model
+
+29
+00:02:36,540 --> 00:02:40,820
+the option to use the tool, but it can choose whether to use the tool or not. And here's the
+
+30
+00:02:40,900 --> 00:02:46,520
+same question. Who set world records at the Paris Olympic Games? This time, it cites its sources,
+
+31
+00:02:46,860 --> 00:02:51,360
+which are these websites at the bottom. And if I scroll back up, I can recognize that these
+
+32
+00:02:51,600 --> 00:02:58,820
+athletes competed in the recent Paris Olympics in 2024. Many tools tend to be traditional software
+
+33
+00:02:59,080 --> 00:03:04,660
+code. LLMs and traditional software both have different strengths that make it helpful for them
+
+34
+00:03:04,860 --> 00:03:10,899
+to work together for some tasks. Recall that LLMs are probabilistic, which means they output text
+
+35
+00:03:10,960 --> 00:03:16,640
+based on how likely each next word is to appear based on text that it learned from in its training.
+
+36
+00:03:16,980 --> 00:03:20,980
+As you saw earlier in the course, this means that if you give it the same input twice,
+
+37
+00:03:21,500 --> 00:03:26,760
+the outputs will not be identical. Traditional software code, in contrast, is deterministic,
+
+38
+00:03:27,060 --> 00:03:30,860
+which means that it follows a given set of instructions. So if you give it the same input
+
+39
+00:03:31,160 --> 00:03:36,779
+twice, you'll get the same exact output each time. Since LLMs are probabilistic, they're more
+
+40
+00:03:36,800 --> 00:03:41,940
+adaptable. By that I mean that they can respond to inputs that they haven't seen before and they
+
+41
+00:03:42,080 --> 00:03:47,400
+won't just output an error message. In contrast, traditional software is more brittle. If it
+
+42
+00:03:47,620 --> 00:03:51,780
+receives an input and doesn't have instructions on how to handle that input, it will either output
+
+43
+00:03:51,980 --> 00:03:56,200
+an error message or just not output anything at all. Let's say you want to tell a computer to
+
+44
+00:03:56,460 --> 00:04:01,240
+output the text, hello world. Having a computer print hello world is kind of a tradition for
+
+45
+00:04:01,440 --> 00:04:06,099
+anyone who is learning about computers or coding. And don't worry, I'm not asking you to learn about
+
+46
+00:04:06,120 --> 00:04:11,200
+coding in order to successfully complete this course. If I send this instruction, print hello
+
+47
+00:04:11,460 --> 00:04:16,680
+world, as it's written here, the computer will not understand and will output an error message.
+
+48
+00:04:17,180 --> 00:04:22,460
+I'll demonstrate this in Google Colab. Colab is kind of like Google Docs, but for coding. I'll
+
+49
+00:04:22,660 --> 00:04:27,820
+print hello world and I'll run the code by clicking on this play button. It doesn't understand,
+
+50
+00:04:28,460 --> 00:04:34,059
+so it outputs an error message and asks me, did you mean print with parentheses? So I'll create a
+
+51
+00:04:34,080 --> 00:04:39,880
+line of code and try again. I'll write print hello world and surround hello world with parentheses
+
+52
+00:04:40,640 --> 00:04:45,680
+and I'll run this. It gives me another error message and it asks perhaps you forgot a comma,
+
+53
+00:04:46,160 --> 00:04:50,320
+so I try again. I don't know where to stick the comma so I'll just stick it somewhere here
+
+54
+00:04:50,600 --> 00:04:56,820
+and I'll run it. It outputs yet another error message and again asks me if I forgot a comma.
+
+55
+00:04:57,360 --> 00:05:02,219
+So at this point I'm just reliving my first few years in college when I first tried to learn
+
+56
+00:05:02,240 --> 00:05:08,400
+computer programming. Fun times. In contrast to traditional code, large language models are more
+
+57
+00:05:08,660 --> 00:05:15,460
+adaptable. So I can write print hello world and first send it to an LLM. The LLM can figure out
+
+58
+00:05:15,700 --> 00:05:20,640
+that it probably should fix the code so that it can run, so it rewrites this code. Then the computer
+
+59
+00:05:20,860 --> 00:05:26,799
+runs that code and outputs hello world. So in Google Colab, I can click on this option, generate
+
+60
+00:05:26,820 --> 00:05:32,480
+with AI, it opens up a text box where I can send a prompt to their chatbot, which is probably Gemini.
+
+61
+00:05:32,760 --> 00:05:38,120
+I'll write print hello world, and it outputs this code. If I run this code, the computer outputs
+
+62
+00:05:38,500 --> 00:05:44,020
+hello world. LLens can do more than fix your code. They can also translate your ideas from human
+
+63
+00:05:44,220 --> 00:05:50,460
+readable language to computer code. So your prompt can also be python code to print hello world. The
+
+64
+00:05:50,640 --> 00:05:54,899
+model will think through what you're requesting, then output code, and then send that to the computer
+
+65
+00:05:54,920 --> 00:06:01,560
+to run. Let's try this out. You can click on generate with AI and then write Python code to
+
+66
+00:06:01,760 --> 00:06:08,240
+print hello world and it outputs code. I'll run it and it prints out hello world. So this is pretty
+
+67
+00:06:08,480 --> 00:06:13,860
+exciting but as before I always recommend having human review over whatever output you get from the
+
+68
+00:06:14,020 --> 00:06:18,780
+model. Here's an example to illustrate this. Let's say you want help with calculating the Fibonacci
+
+69
+00:06:18,900 --> 00:06:23,719
+sequence. So you don't need to know too much about the Fibonacci sequence but I'll just explain it in
+
+70
+00:06:23,740 --> 00:06:31,200
+case you're curious. The sequence looks like this. 0, 1, 1, 2, 3, 5, and so on. And this is how the
+
+71
+00:06:31,300 --> 00:06:36,280
+Fibonacci sequence is generated. You start with 0 and 1. Add them together to get the next number,
+
+72
+00:06:36,600 --> 00:06:41,960
+which is 1. Then you repeat this process. Take the most recent two numbers and add them together
+
+73
+00:06:42,460 --> 00:06:50,360
+to get the next number in the sequence. So 1 plus 1 is 2. 1 plus 2 is 3. 2 plus 3 is 5, and so on.
+
+74
+00:06:50,660 --> 00:06:53,700
+What if you want to get the 20th number, or any number in the sequence?
+
+75
+00:06:54,280 --> 00:06:58,640
+You can use computer code to calculate that, and you can ask an LLM to help you write that
+
+76
+00:06:58,820 --> 00:06:58,980
+code.
+
+77
+00:06:59,100 --> 00:07:03,720
+In Google Colab, you can click on Generate with AI, and here's the prompt: Write code
+
+78
+00:07:03,920 --> 00:07:06,800
+to calculate the 20th number in the Fibonacci sequence.
+
+79
+00:07:07,400 --> 00:07:08,300
+It outputs some code.
+
+80
+00:07:08,680 --> 00:07:11,900
+Don't worry about reading through this, that's not what I want you to focus on here.
+
+81
+00:07:12,300 --> 00:07:19,519
+I'll run this code, and it outputs 6765, which is in fact the 20th number in the Fibonacci
+
+82
+00:07:19,600 --> 00:07:25,840
+sequence. So it seems fine, but let me ask a follow-up question. Is the following code for
+
+83
+00:07:26,160 --> 00:07:31,160
+Fibonacci sequence efficient? And I'll copy the code from above to paste it in. Notice that it
+
+84
+00:07:31,340 --> 00:07:35,540
+doesn't let me paste in too much text, so I'm just going to copy the part of the code that describes
+
+85
+00:07:35,720 --> 00:07:40,400
+the algorithm. Now the chatbot outputs an explanation that the code is not efficient,
+
+86
+00:07:40,900 --> 00:07:45,839
+and it gives some explanations for why. Don't worry about trying to understand the details about why
+
+87
+00:07:45,880 --> 00:07:51,040
+it is inefficient. The point I would like you to focus on is that even if you get code that appears
+
+88
+00:07:51,260 --> 00:07:55,720
+to work, you may want to check if it's going to work for other inputs. For example, if it's
+
+89
+00:07:56,020 --> 00:08:01,240
+inefficient, it will take several minutes to run when you ask it for the 50th Fibonacci number.
+
+90
+00:08:01,660 --> 00:08:06,120
+In contrast, the efficient method would take a fraction of a second. So you may have a couple
+
+91
+00:08:06,360 --> 00:08:12,039
+questions. One is, why not just have the large language model directly calculate the Fibonacci
+
+92
+00:08:12,060 --> 00:08:17,660
+sequence instead of asking it to write code. Well, traditional code is more consistent, so when you
+
+93
+00:08:17,760 --> 00:08:22,880
+have code that is correct and efficient, you can reuse it and rely on it to follow the instructions
+
+94
+00:08:23,160 --> 00:08:27,920
+in the code. A nice thing about traditional code is that it's more computationally efficient. This
+
+95
+00:08:28,040 --> 00:08:33,560
+means it takes less time to run compared to running a several billion parameter large language model.
+
+96
+00:08:33,979 --> 00:08:39,239
+So it also uses less electricity, which also means fewer carbon emissions. So if you want to add a
+
+97
+00:08:39,260 --> 00:08:43,140
+couple numbers together, consider using a calculator instead of a large language model.
+
+98
+00:08:43,539 --> 00:08:47,700
+If you want to perform some repeatable math calculation, consider running some traditional
+
+99
+00:08:47,980 --> 00:08:52,900
+computer code, which you can ask an LLM to help you write. The other question you may have is,
+
+100
+00:08:53,160 --> 00:08:57,900
+why does the large language model output the inefficient version for calculating the
+
+101
+00:08:58,040 --> 00:09:03,080
+Fibonacci sequence? Well, for some background, many introductory computer science courses
+
+102
+00:09:03,860 --> 00:09:08,659
+start off with this exact Fibonacci sequence example. Teachers use this to illustrate the
+
+103
+00:09:08,680 --> 00:09:14,280
+importance of writing efficient code. And they do this by starting with the inefficient way of
+
+104
+00:09:14,500 --> 00:09:19,200
+writing this code. Then they show how slow it gets when you start asking for those larger Fibonacci
+
+105
+00:09:19,400 --> 00:09:24,500
+numbers. So the inefficient way of writing this code is all over the internet and in the text
+
+106
+00:09:24,860 --> 00:09:30,100
+that these large language models used to train on. Going back to the comparison of LLMs versus
+
+107
+00:09:30,440 --> 00:09:36,640
+traditional software code, LLMs can be unpredictable. If you give the same prompt to an LLM twice,
+
+108
+00:09:36,980 --> 00:09:41,940
+you'll get different outputs each time. Traditional software code is consistent. For the same inputs,
+
+109
+00:09:42,460 --> 00:09:46,880
+you get the same outputs. Let's look at an example of how a chatbot will give you different results
+
+110
+00:09:47,260 --> 00:09:52,720
+for the same prompt. Here's a task: use code to parse this document of a reddit post and its
+
+111
+00:09:52,820 --> 00:09:58,580
+replies to get the username and associated comment for the entire document. I'll put this as a table
+
+112
+00:09:58,980 --> 00:10:05,439
+with two columns: username and comment. Include the original poster and all the replies. I'll use
+
+113
+00:10:05,460 --> 00:10:11,160
+ChatGPT and upload this text file. The file contains text that I copied from this reddit
+
+114
+00:10:11,260 --> 00:10:16,400
+discussion that you may recall from earlier in the course about Olympics, breaking, and dressage.
+
+115
+00:10:16,880 --> 00:10:22,260
+So the chatbot writes some code and does some troubleshooting of its code, which is pretty cool.
+
+116
+00:10:22,640 --> 00:10:25,920
+Then it tries again, and now it outputs a table. But if you look at the output,
+
+117
+00:10:26,440 --> 00:10:31,119
+it doesn't look like it's got any comments in the column that says comment. I'm going to try this a
+
+118
+00:10:31,140 --> 00:10:36,720
+second time doing the same thing as before this time the output looks pretty good the column that
+
+119
+00:10:36,800 --> 00:10:43,360
+says comment appears to actually have the comment for each user so for the same input and task you
+
+120
+00:10:43,400 --> 00:10:48,680
+get different results each time and so if you get a chatbot to write some helpful code for you and
+
+121
+00:10:48,740 --> 00:10:54,879
+it works then i recommend you save it somewhere so that you can reuse it next let's take a look at
+
+122
+00:10:54,900 --> 00:11:01,300
+image generation you sometimes see image generation added as a tool that a chatbot can use it's
+
+123
+00:11:01,520 --> 00:11:06,080
+actually a different model independent of the large language model so let's learn a little bit more
+
+124
+00:11:06,440 --> 00:11:07,220
+about image generation
+

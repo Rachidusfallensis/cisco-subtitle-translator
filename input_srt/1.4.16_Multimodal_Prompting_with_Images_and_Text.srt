@@ -1,0 +1,332 @@
+1
+00:00:05,140 --> 00:00:09,060
+So far, you've been inputting text and getting text as output, or sometimes images.
+
+2
+00:00:10,060 --> 00:00:14,680
+Now let's see how you can input both images and text at the same time as your prompt.
+
+3
+00:00:15,740 --> 00:00:21,800
+Normally, when you have an app that is able to handle more than one kind of input, such as images and text,
+
+4
+00:00:22,400 --> 00:00:25,020
+behind the scenes, it's actually a combination of models.
+
+5
+00:00:25,400 --> 00:00:34,260
+So the image may get sent to a specific model, an image captioning model, that takes an image as input and outputs text that describes that image.
+
+6
+00:00:34,560 --> 00:00:37,620
+For example, it might output the text, a pineapple cake.
+
+7
+00:00:38,180 --> 00:00:43,340
+Then, this caption, as well as the text of the prompt, which was, how do I make something like this?
+
+8
+00:00:43,760 --> 00:00:50,620
+These both get sent to a large language model, which can then output a completion, such as, here's how to make a pineapple cake.
+
+9
+00:00:50,920 --> 00:00:57,080
+More recently, some models have been trained to directly take in both an image and text as the
+
+10
+00:00:57,220 --> 00:01:02,120
+prompt, and then be able to output completion directly. These have been called large multimodal
+
+11
+00:01:02,300 --> 00:01:08,960
+models, or LMMs, or simply multimodal models. And these large multimodal models are what you'll be
+
+12
+00:01:09,120 --> 00:01:15,380
+practicing with here. So what can you do now that you can also input images and text? Well, if you
+
+13
+00:01:15,400 --> 00:01:20,880
+If you think back to all the other tasks that you've practiced: expand, synthesize, transform,
+
+14
+00:01:21,620 --> 00:01:28,520
+evaluate, chat, and take actions, for all those scenarios, you can input both images and text
+
+15
+00:01:28,720 --> 00:01:29,060
+as a prompt.
+
+16
+00:01:29,480 --> 00:01:34,300
+A natural situation where you would input images is if you're using your phone to take a picture
+
+17
+00:01:34,420 --> 00:01:37,500
+of something that you see and ask a chatbot to do something with it.
+
+18
+00:01:37,700 --> 00:01:42,320
+So I'm going to demonstrate these tasks using chatbots that you can access as apps on your
+
+19
+00:01:42,480 --> 00:01:42,560
+phone.
+
+20
+00:01:43,640 --> 00:01:49,720
+the expand task which includes answering questions. As you've seen with just pure text, I recommend
+
+21
+00:01:49,920 --> 00:01:55,640
+that you first ask the chatbot to describe the image or write out any relevant information and
+
+22
+00:01:55,820 --> 00:02:01,180
+then ask it to perform the task that you want. So I've taken an image of a piece of food and I'm
+
+23
+00:02:01,340 --> 00:02:07,260
+asking it "what is this? How do I make it?" and it responds that this is a Taiwanese pineapple cake
+
+24
+00:02:07,480 --> 00:02:11,940
+and then follows with baking instructions for how to make it. Just as you saw with machine
+
+25
+00:02:11,960 --> 00:02:15,120
+In translation, the context may affect how the model performs.
+
+26
+00:02:15,880 --> 00:02:19,720
+In this case, the context may be the background of the object that you're interested in.
+
+27
+00:02:20,120 --> 00:02:24,980
+Notice that whereas earlier I placed this food on top of some white paper towels, now
+
+28
+00:02:25,180 --> 00:02:27,600
+I've placed it on top of a bluish-gray plate.
+
+29
+00:02:28,000 --> 00:02:33,100
+So now when I ask it "What is this?" and "How do I make it?" it replies that this
+
+30
+00:02:33,280 --> 00:02:36,760
+is an Indian sweet called "son papadi".
+
+31
+00:02:36,780 --> 00:02:41,980
+If I try again, now it says that this is an Indian sweet called "Gajou Kotli".
+
+32
+00:02:42,200 --> 00:02:46,280
+So just to better understand what's going on, I can go back to that original earlier
+
+33
+00:02:46,640 --> 00:02:49,420
+image where I placed this food on top of a white paper towel.
+
+34
+00:02:49,900 --> 00:02:52,560
+Then I'll ask "What is this and how do I make it?"
+
+35
+00:02:52,860 --> 00:02:56,260
+Then it says "This appears to be a Taiwanese pineapple cake".
+
+36
+00:02:56,300 --> 00:03:00,800
+And I was going to experiment more with other plates or backgrounds, but I got hungry.
+
+37
+00:03:01,520 --> 00:03:06,740
+You can also ask a multimodal chatbot to give you ideas for how to interpret a painting
+
+38
+00:03:06,760 --> 00:03:10,800
+even how to name it. Here I'm uploading a painting that I've made, followed by some
+
+39
+00:03:11,040 --> 00:03:15,840
+text, describe this artwork, and suggest what this artwork is about, then suggest possible
+
+40
+00:03:16,120 --> 00:03:19,980
+names to give it. So it's pretty cool that it recognizes that this painting is based
+
+41
+00:03:20,280 --> 00:03:24,720
+on Vincent van Gogh's Starry Night painting. It also acknowledges the unusual addition
+
+42
+00:03:25,180 --> 00:03:30,880
+of the green frog. It provides possible ways to interpret the painting, such as "a child's
+
+43
+00:03:31,020 --> 00:03:36,720
+view of the world". Finally, it suggests some possible names for the painting, such as "Twinkle
+
+44
+00:03:36,740 --> 00:03:41,100
+little frog. And you can have a chatbot assist you with synthesizing visual
+
+45
+00:03:41,420 --> 00:03:45,640
+information around you. For instance, based on the rules seen in this photo, can I
+
+46
+00:03:45,820 --> 00:03:46,040
+park here?
+
+47
+00:03:49,420 --> 00:03:52,800
+Here the chatbot is requesting additional information from me because
+
+48
+00:03:52,900 --> 00:03:56,340
+it points out that whether I can park here or not depends on the day of the
+
+49
+00:03:56,460 --> 00:04:00,360
+week and time of day, as well as whether I have a special permit. So I'll give this
+
+50
+00:04:00,580 --> 00:04:04,440
+additional information. Today is Friday 5:00 p.m. and I don't have special
+
+51
+00:04:04,460 --> 00:04:05,580
+permits. Can I park here?
+
+52
+00:04:11,760 --> 00:04:16,019
+And it tells me that the answer is yes and also provides details to explain why.
+
+53
+00:04:16,480 --> 00:04:20,579
+And to be honest, I have in fact checked this because these signs are really hard
+
+54
+00:04:20,739 --> 00:04:24,680
+to read. If you want to analyze those parking sign rules, please let me know if
+
+55
+00:04:24,740 --> 00:04:28,460
+the chatbot was correct. You saw earlier in the course that with optical
+
+56
+00:04:28,860 --> 00:04:32,560
+character recognition you can apply translation to an image, for example a
+
+57
+00:04:32,640 --> 00:04:37,740
+a picture of a restaurant menu. You can also use a multimodal chatbot to transform text into
+
+58
+00:04:37,900 --> 00:04:42,180
+another language. And the nice thing is, on top of that, you can also ask it to perform
+
+59
+00:04:42,620 --> 00:04:45,220
+follow-up tasks, such as describing each food item.
+
+60
+00:04:49,620 --> 00:04:54,000
+So notice that in addition to translating each food item, it also shows the original language,
+
+61
+00:04:54,420 --> 00:04:57,900
+which would help me point to what I want when I'm in the restaurant communicating with the
+
+62
+00:04:58,120 --> 00:05:01,760
+restaurant server. It also provides a brief description of the food, which can help me
+
+63
+00:05:01,780 --> 00:05:02,700
+me decide what to order.
+
+64
+00:05:05,540 --> 00:05:07,680
+Here's an example of how you can apply evaluation.
+
+65
+00:05:08,340 --> 00:05:10,420
+Describe criteria for evaluating photographs.
+
+66
+00:05:11,060 --> 00:05:14,660
+Then evaluate the quality of these photographs and assign a numeric score.
+
+67
+00:05:15,240 --> 00:05:17,480
+So I've uploaded three photographs that I took in a garden.
+
+68
+00:05:37,880 --> 00:05:42,480
+The chatbot first provides some criteria that it would use for evaluating these photographs.
+
+69
+00:05:43,180 --> 00:05:48,100
+And for each photograph, it assigns a numeric score, explains why it gave that score, and
+
+70
+00:05:48,140 --> 00:05:49,920
+it also describes what kind of flowers these are.
+
+71
+00:05:50,280 --> 00:05:51,920
+In this case, these are dahlias.
+
+72
+00:05:52,320 --> 00:05:56,420
+And you can also chat with a multimodal chatbot about some photograph you took, as well as
+
+73
+00:05:56,780 --> 00:05:59,300
+ask it to take some action, like search the web for you.
+
+74
+00:05:59,720 --> 00:06:02,200
+Here's a picture of a sign of a park in Montreal, Canada.
+
+75
+00:06:02,720 --> 00:06:10,180
+I'll ask it, "Where should I visit first?"
+
+76
+00:06:10,200 --> 00:06:14,780
+It recognizes the location that this sign is about and suggests some places within the
+
+77
+00:06:15,440 --> 00:06:20,700
+It also continues the conversation by asking me if I have any specific interests to help
+
+78
+00:06:20,840 --> 00:06:22,460
+it better understand what I should do next.
+
+79
+00:06:23,000 --> 00:06:28,060
+I reply that I like taking pictures, so it does some web searches and provides more suggestions
+
+80
+00:06:28,460 --> 00:06:30,900
+for places I can visit and take photographs.
+
+81
+00:06:31,460 --> 00:06:36,740
+Coming up next, you probably heard terms like "generative AI" and "transformers".
+
+82
+00:06:36,760 --> 00:06:41,100
+Now that you've had some hands-on practice with these AI models, let's look at some common
+
+83
+00:06:41,300 --> 00:06:45,580
+vocabulary words that may come up when you're reading about or hearing about AI.
+

@@ -1,0 +1,328 @@
+1
+00:00:05,320 --> 00:00:10,880
+So you've just been invited to be a judge on a TV show called "Debating with the Stars."
+
+2
+00:00:11,100 --> 00:00:17,240
+For each round, all participants are given the same debate topic and asked to give their opening statement.
+
+3
+00:00:17,700 --> 00:00:21,580
+Your task as a judge is to review their statements and give them each a score.
+
+4
+00:00:22,060 --> 00:00:25,340
+Let's see how a chatbot can help you decide how to judge these debates.
+
+5
+00:00:26,340 --> 00:00:31,540
+We're going to simulate the debate participants with several open models that are hosted on Hugging Chat.
+
+6
+00:00:31,800 --> 00:00:37,760
+These include Meta Llama, QN, Command R+, Microsoft Fee, and Mistral Nemo.
+
+7
+00:00:38,200 --> 00:00:39,260
+Here's the debate topic.
+
+8
+00:00:39,780 --> 00:00:43,420
+Pineapples are better than anchovies as pizza toppings.
+
+9
+00:00:44,040 --> 00:00:49,280
+And since we're going to prompt chatbots to perform a task, here is the prompt for these debate participants.
+
+10
+00:00:49,680 --> 00:00:54,140
+Given the following debate topic, write an opening statement that agrees with the statement.
+
+11
+00:00:54,880 --> 00:00:58,340
+And we'll have some hosted proprietary models play the role of judges.
+
+12
+00:00:58,960 --> 00:01:02,440
+Here, we'll use Gemini, Claude, and ChatGPT.
+
+13
+00:01:02,960 --> 00:01:04,480
+And here is the task for the judges.
+
+14
+00:01:05,120 --> 00:01:10,540
+The following debate participants have been given a debate topic, and each participant has provided their argument.
+
+15
+00:01:10,980 --> 00:01:12,020
+Here are the judging instructions.
+
+16
+00:01:12,680 --> 00:01:18,140
+And it asks the judge to list out criteria for judging, to then evaluate each participant's argument,
+
+17
+00:01:18,660 --> 00:01:24,140
+and after reviewing the arguments, provide a ranking of the participants, as well as explain your reasoning.
+
+18
+00:01:24,700 --> 00:01:27,360
+And here's the first debate participant, Meadow Llama.
+
+19
+00:01:27,880 --> 00:01:30,000
+And don't worry about reading through all these opening statements.
+
+20
+00:01:30,800 --> 00:01:34,280
+I think it will be a fun exercise after this video for you to try this out yourself
+
+21
+00:01:35,020 --> 00:01:37,600
+and spend some time studying how various chatbots
+
+22
+00:01:38,140 --> 00:01:39,560
+attempt to make persuasive arguments.
+
+23
+00:01:40,160 --> 00:01:42,840
+Now let's see what Qwen says about the debate topic.
+
+24
+00:01:46,140 --> 00:01:48,860
+Next is Coheres, Command + R+.
+
+25
+00:01:52,080 --> 00:01:53,820
+And here is Microsoft V.
+
+26
+00:01:55,920 --> 00:02:01,240
+Finally, we have Mr. Nemo making the case for pineapples over anchovies.
+
+27
+00:02:02,380 --> 00:02:04,040
+The first judge is Gemini.
+
+28
+00:02:04,340 --> 00:02:06,780
+I'll start by giving it the task for being a judge.
+
+29
+00:02:07,280 --> 00:02:11,140
+Then I will give it the names of the debate participants as well as each participant's
+
+30
+00:02:11,340 --> 00:02:11,780
+opening statement.
+
+31
+00:02:12,120 --> 00:02:17,620
+And it lists out some criteria for judging, including argument strength, evidence, relevance
+
+32
+00:02:17,840 --> 00:02:21,000
+to the topic, creativity, and overall appeal.
+
+33
+00:02:21,660 --> 00:02:27,100
+And for each participant and for each criteria, it lists out what it thought about that opening
+
+34
+00:02:27,300 --> 00:02:30,800
+statement, as well as providing a score for each participant.
+
+35
+00:02:31,320 --> 00:02:33,080
+So for Lama, it gave a score of 9.
+
+36
+00:02:33,620 --> 00:02:35,400
+For QN, it gave a score of 8.
+
+37
+00:02:35,940 --> 00:02:38,240
+For Cohere, score of 8.
+
+38
+00:02:38,580 --> 00:02:40,460
+Microsoft Fee, also 8.
+
+39
+00:02:41,020 --> 00:02:42,820
+And Mr. Nemo, a score of 9.
+
+40
+00:02:43,360 --> 00:02:47,360
+And I would like to point out that you don't have to take these scores as the final score
+
+41
+00:02:47,500 --> 00:02:49,420
+you would actually give to the debate participants.
+
+42
+00:02:49,940 --> 00:02:54,940
+but it's actually quite helpful to get some ideas for what criteria you would use for evaluating
+
+43
+00:02:55,480 --> 00:03:00,060
+these open-ended essays. And it's also very helpful to see how other chatbots would perform
+
+44
+00:03:00,200 --> 00:03:05,120
+the same evaluation. So now let's have Claude by Anthropic also play the role of the judge.
+
+45
+00:03:05,460 --> 00:03:10,740
+As before, let's give it the task for being a judge and also give it the arguments from each
+
+46
+00:03:11,000 --> 00:03:14,799
+debate participant. And the output's really fast, so don't worry, I'm going to scroll back up to
+
+47
+00:03:14,820 --> 00:03:22,640
+walk through this. So for criteria, it lists the structure, persuasiveness, evidence, also addressing
+
+48
+00:03:23,040 --> 00:03:30,160
+counter arguments, creativity, the delivery, and also relevance. Now for each participant and each
+
+49
+00:03:30,440 --> 00:03:36,120
+criteria, it also provides a score up to 10, and it adds them up for a total score. So with meta,
+
+50
+00:03:36,500 --> 00:03:43,440
+it gave it a score of 59. For QN, it gave a score of 54. Command R+, it gave a score of 54.
+
+51
+00:03:44,220 --> 00:03:46,500
+Microsoft Fee gave a score of 59.
+
+52
+00:03:47,260 --> 00:03:48,960
+Mr. Nemo, score of 59.
+
+53
+00:03:49,700 --> 00:03:51,220
+And now it provides an overall ranking
+
+54
+00:03:52,080 --> 00:03:54,460
+and also gives an explanation for the ranking.
+
+55
+00:03:55,580 --> 00:03:57,920
+Now let's have ChatGPT play the role of judge.
+
+56
+00:03:58,380 --> 00:03:59,440
+So we'll give it the same task
+
+57
+00:03:59,840 --> 00:04:02,120
+and the same arguments from the same debate participants.
+
+58
+00:04:03,160 --> 00:04:04,900
+And you can see similar criteria
+
+59
+00:04:05,380 --> 00:04:06,340
+from the previous two judges.
+
+60
+00:04:07,040 --> 00:04:09,720
+There's clarity, persuasiveness, relevance,
+
+61
+00:04:10,480 --> 00:04:13,240
+creativity, providing evidence, and engagement.
+
+62
+00:04:13,780 --> 00:04:18,239
+And for each participant and each criteria, it also gives a score and then adds them up.
+
+63
+00:04:18,760 --> 00:04:20,540
+So for Meta, it gave a score of 52.
+
+64
+00:04:21,060 --> 00:04:23,440
+For QN, it gave a score of 48.
+
+65
+00:04:24,160 --> 00:04:26,480
+For Command R+, it got a score of 48.
+
+66
+00:04:27,080 --> 00:04:30,000
+For Microsoft Fee, it got a score of 55.
+
+67
+00:04:30,740 --> 00:04:33,040
+And for Mr. Nemo, it got a score of 49.
+
+68
+00:04:33,660 --> 00:04:39,860
+And now it provides a ranking as well as overall feedback, as well as an explanation of its rankings.
+
+69
+00:04:40,480 --> 00:04:45,260
+So you might notice that different judges give different numeric scores and even different
+
+70
+00:04:45,500 --> 00:04:48,880
+rankings for the same debate participants, just like in real life.
+
+71
+00:04:49,340 --> 00:04:52,200
+So how can you generalize this process to help you with your tasks?
+
+72
+00:04:52,760 --> 00:04:56,600
+In addition to evaluating people's essays or their debate arguments, you can make use
+
+73
+00:04:56,780 --> 00:04:59,440
+of chatbots to help you evaluate other chatbots.
+
+74
+00:04:59,760 --> 00:05:04,160
+Since many tasks that you give a chatbot are asking them to also give an open-ended answer
+
+75
+00:05:04,640 --> 00:05:08,420
+where there's no one single right answer, you're going to need some way to measure
+
+76
+00:05:08,660 --> 00:05:09,700
+how well they do on the task.
+
+77
+00:05:10,120 --> 00:05:16,660
+And it's still important for you as a human to make the final call on which chatbot or group of chatbots you wish to use for a particular task,
+
+78
+00:05:17,060 --> 00:05:23,440
+but it can really speed things up to help you get ideas for objective evaluation criteria and help you think through how you want to define quality.
+
+79
+00:05:23,920 --> 00:05:29,560
+So for any task that you ask a chatbot to perform, you can send its output to another chatbot for evaluation.
+
+80
+00:05:30,220 --> 00:05:37,580
+Then you can take the original output and the evaluation of it to help you decide how well the chatbot performed at that task.
+
+81
+00:05:37,940 --> 00:05:42,460
+In the AI research community, they've been calling this model-graded evaluation.
+
+82
+00:05:43,320 --> 00:05:48,380
+Coming up next, you'll practice chatting with a chatbot, starting with talking about whatever's on your mind.
+

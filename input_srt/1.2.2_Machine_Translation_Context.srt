@@ -1,0 +1,260 @@
+1
+00:00:05,260 --> 00:00:08,820
+Dear esteemed president of the Furry Friends Forever Cat Cafe.
+
+2
+00:00:10,460 --> 00:00:14,840
+Ooh, hey you! Who's a good boy? You're a good boy!
+
+3
+00:00:17,220 --> 00:00:20,400
+Have you ever noticed how you choose different words depending on who you're talking to?
+
+4
+00:00:21,540 --> 00:00:24,640
+Let's take a look at how the context affects how a word is translated.
+
+5
+00:00:25,220 --> 00:00:31,500
+In some languages, like French, there is a formal way to address someone and an informal way as well.
+
+6
+00:00:31,840 --> 00:00:36,160
+For example, let's say I'm interested in addressing a friend and I told my friend,
+
+7
+00:00:36,440 --> 00:00:40,140
+Since you like eating salads, I will give you an apple for your birthday.
+
+8
+00:00:40,560 --> 00:00:44,240
+In French, the informal way to say you is to.
+
+9
+00:00:44,600 --> 00:00:52,280
+This T' here is short for te, which is the version of you that is receiving the action of the verb to offer.
+
+10
+00:00:52,720 --> 00:00:55,280
+And this ton here means your.
+
+11
+00:00:55,700 --> 00:00:57,840
+When you're addressing someone in a special position,
+
+12
+00:00:58,280 --> 00:01:00,960
+such as a teacher, manager, or public figure,
+
+13
+00:01:01,380 --> 00:01:03,740
+you might use the formal way to address them.
+
+14
+00:01:04,080 --> 00:01:04,400
+For example,
+
+15
+00:01:04,900 --> 00:01:08,020
+I told my queen, since you like eating salads,
+
+16
+00:01:08,220 --> 00:01:10,240
+I will give you an apple for your birthday.
+
+17
+00:01:10,560 --> 00:01:12,980
+The formal word for you is vous,
+
+18
+00:01:13,340 --> 00:01:16,160
+and the formal word for your is votre.
+
+19
+00:01:16,620 --> 00:01:17,640
+But if you look over here,
+
+20
+00:01:17,840 --> 00:01:21,740
+it appears that the translation is still using the informal word for you.
+
+21
+00:01:22,200 --> 00:01:26,340
+So I'm going to hide what I'm changing for now because it will make more sense at the end of this video.
+
+22
+00:01:26,860 --> 00:01:33,660
+But you can see on the right that now it's addressing the queen with the formal words vous and votre.
+
+23
+00:01:34,140 --> 00:01:37,700
+In real life, whether you're addressing your friend or addressing a queen,
+
+24
+00:01:38,260 --> 00:01:41,160
+this context affects which words you use.
+
+25
+00:01:41,500 --> 00:01:46,080
+And machine translation models also use context to decide which word to use.
+
+26
+00:01:46,440 --> 00:01:50,480
+Let's take a closer look at context in the context of machine translation.
+
+27
+00:01:51,040 --> 00:01:53,540
+Here's that sentence addressing your friend in English.
+
+28
+00:01:54,080 --> 00:01:56,020
+And here is its translation in French.
+
+29
+00:01:56,400 --> 00:02:02,820
+So the word for you is tu, the other you is t' and your is ton.
+
+30
+00:02:03,200 --> 00:02:06,540
+These are the informal versions of the French word for you.
+
+31
+00:02:07,500 --> 00:02:10,340
+Here's that same sentence but now addressing my queen.
+
+32
+00:02:10,580 --> 00:02:12,260
+The French translation is this.
+
+33
+00:02:12,720 --> 00:02:16,580
+The word for you is vous and the word for your is votre.
+
+34
+00:02:17,020 --> 00:02:18,580
+This is the formal version of you.
+
+35
+00:02:19,000 --> 00:02:25,080
+If you're a French speaker, you would pick up on the word queen to recognize that the word for you should be the formal version.
+
+36
+00:02:25,500 --> 00:02:32,020
+For the machine translation model, the word queen is relevant context for the words you and your.
+
+37
+00:02:32,300 --> 00:02:35,640
+The words surrounding any given word are called the context.
+
+38
+00:02:36,260 --> 00:02:38,140
+You may have heard the word context before.
+
+39
+00:02:38,600 --> 00:02:41,140
+For example, let's say a professional singer says,
+
+40
+00:02:41,460 --> 00:02:43,460
+For lunch, I ate a kid's meal.
+
+41
+00:02:43,680 --> 00:02:46,820
+And then a gossip magazine publishes an article titled,
+
+42
+00:02:47,200 --> 00:02:53,700
+famous pop star heard saying, for lunch, I ate a kid. This is an example of the celebrity's
+
+43
+00:02:53,880 --> 00:02:59,780
+statement being taken out of context, because kid's meal is an important part of the context
+
+44
+00:03:00,300 --> 00:03:05,120
+of what that person was actually saying. But you may recall that the translation model did not pick
+
+45
+00:03:05,220 --> 00:03:09,660
+up on the fact that the queen might need to be addressed formally. So it's still using the
+
+46
+00:03:09,980 --> 00:03:15,420
+informal word to for you. So let's try to give the translation model more context. So again,
+
+47
+00:03:15,560 --> 00:03:20,440
+it's starting out with the informal words for you. Let's try to add the word formal in square
+
+48
+00:03:20,660 --> 00:03:26,340
+brackets after the first u. That doesn't work. Let me undo that so I can test out one change at a
+
+49
+00:03:26,400 --> 00:03:32,220
+time. Now I'll try to replace u with the formal French word vous. That also doesn't change the
+
+50
+00:03:32,380 --> 00:03:38,200
+translation. So I'll again undo this change so that I can test each change one at a time. Now
+
+51
+00:03:38,360 --> 00:03:44,719
+I'll change the lowercase q in queen to an uppercase q. It's still not enough context. Let's undo
+
+52
+00:03:44,740 --> 00:03:49,140
+everything for now. There's a saying I heard recently, which is everything, everywhere,
+
+53
+00:03:49,500 --> 00:03:54,380
+all at once. So let's try to use all three changes to give the translation model more context.
+
+54
+00:03:54,860 --> 00:04:01,620
+So let's change you to vous, add formal in square brackets, and capitalize the q in queen.
+
+55
+00:04:02,040 --> 00:04:06,800
+Et voilà! Finally, with all these hints, the translation app has now figured out that you're
+
+56
+00:04:06,980 --> 00:04:13,419
+asking it to use the formal words for you and your in French. And by the way, if you don't know what
+
+57
+00:04:13,480 --> 00:04:18,079
+"voilà" means there might be an app that can help you. The main point I hope you take from this
+
+58
+00:04:18,560 --> 00:04:24,600
+is to experiment with these models in order to better understand how they behave and also how
+
+59
+00:04:24,740 --> 00:04:29,820
+they sometimes don't behave. You'll start to notice how the apps that rely on machine learning models
+
+60
+00:04:30,120 --> 00:04:35,180
+are not always following explicit rules, so the changes I made here to get the effects that you
+
+61
+00:04:35,340 --> 00:04:41,499
+saw here may not be the only way to do it and also may not work in all situations. Next, you'll look
+
+62
+00:04:41,520 --> 00:04:46,740
+Look at the difference between translating a phrase word for word as opposed to translating
+
+63
+00:04:47,080 --> 00:04:48,400
+the meaning behind that phrase.
+
+64
+00:04:49,020 --> 00:04:49,580
+This will be fun.
+
+65
+00:04:49,840 --> 00:04:52,740
+I promise it will be a slice of sweet baked dessert.
+

@@ -1,0 +1,156 @@
+1
+00:00:00,040 --> 00:00:03,280
+*music*
+
+2
+00:00:05,100 --> 00:00:07,040
+Chatbots can also be used for evaluation.
+
+3
+00:00:07,700 --> 00:00:10,360
+For example, you can use the chatbot to help with fact checking.
+
+4
+00:00:10,820 --> 00:00:12,000
+Imagine this scenario:
+
+5
+00:00:12,500 --> 00:00:14,240
+You're writing to your friend on their birthday
+
+6
+00:00:14,740 --> 00:00:16,560
+about their birthday cake that you bought for them.
+
+7
+00:00:16,880 --> 00:00:17,840
+Here's what you plan to say:
+
+8
+00:00:18,200 --> 00:00:20,020
+I dropped your birthday cake on the ground,
+
+9
+00:00:20,420 --> 00:00:22,280
+but don't worry, I picked it up right away.
+
+10
+00:00:22,880 --> 00:00:24,800
+So according to the 5-second rule,
+
+11
+00:00:25,100 --> 00:00:27,780
+the bacteria didn't have enough time to crawl on the cake.
+
+12
+00:00:28,060 --> 00:00:28,620
+Happy birthday!
+
+13
+00:00:29,520 --> 00:00:34,000
+Just in case, you ask a chatbot to evaluate this and check if it's correct before you
+
+14
+00:00:34,140 --> 00:00:34,340
+send it.
+
+15
+00:00:37,380 --> 00:00:40,540
+So it looks like it helped fix some grammar and spelling issues.
+
+16
+00:00:41,160 --> 00:00:41,920
+Okay, not bad.
+
+17
+00:00:42,440 --> 00:00:44,880
+But that's more of a rewording and revising task.
+
+18
+00:00:45,540 --> 00:00:47,820
+It's not evaluating the content of the written text.
+
+19
+00:00:48,320 --> 00:00:49,140
+Let's get a second opinion.
+
+20
+00:00:49,840 --> 00:00:53,900
+So in this case, this chatbot is checking the factual accuracy of the writing.
+
+21
+00:00:54,300 --> 00:00:58,739
+It's pointing out that the 5 second rule is a common myth, and also points out that
+
+22
+00:00:58,760 --> 00:01:03,760
+the cake isn't necessarily free of bacteria. So that's pretty helpful to know. And just to make
+
+23
+00:01:03,920 --> 00:01:09,140
+it clear that you're asking a chatbot to fact check as opposed to checking wording or grammar,
+
+24
+00:01:09,520 --> 00:01:14,240
+you can ask, is this factually correct? And then you can give it the text that you want it to check.
+
+25
+00:01:14,940 --> 00:01:20,300
+Let's go back to the earlier chatbot that had fixed the wording instead of fact checking. And now
+
+26
+00:01:20,460 --> 00:01:25,940
+it's also pointing out that this five second rule is a myth. And you can ask a chatbot to fact check
+
+27
+00:01:25,960 --> 00:01:30,700
+itself by asking it if it's sure of its previous output. You may recall this logic problem from
+
+28
+00:01:30,980 --> 00:01:35,640
+earlier in the course. After the chatbot gives its answer, you can ask a follow-up question. Can you
+
+29
+00:01:35,800 --> 00:01:40,240
+check your response to see if it is correct? And you may recall that this follow-up question is
+
+30
+00:01:40,360 --> 00:01:45,560
+called reflection, as you're asking the chatbot to reflect on its earlier output. So as you saw
+
+31
+00:01:45,800 --> 00:01:52,200
+before, the chatbot answers yes, which is incorrect. Now let's ask the follow-up question to check if
+
+32
+00:01:52,220 --> 00:01:57,000
+previous response was correct. And now, given a chance to reflect on its previous answer
+
+33
+00:01:57,500 --> 00:02:01,320
+and reasoning, the chatbot corrects itself and also explains its answer.
+
+34
+00:02:01,800 --> 00:02:06,040
+So not only is it helpful for you as a human to fact check a chatbot and its output,
+
+35
+00:02:06,500 --> 00:02:11,340
+the nice thing is you can also ask a chatbot to help fact check other pieces of writing as well.
+
+36
+00:02:11,860 --> 00:02:15,820
+And maybe the next time you ask a chatbot to perform a task, you can also ask it to reflect
+
+37
+00:02:15,960 --> 00:02:22,000
+on its output and check if it's correct. Next, another way a chatbot can evaluate is by grading.
+
+38
+00:02:22,680 --> 00:02:26,880
+And by that I mean check if a student's answer to a problem is correct or not.
+
+39
+00:02:27,240 --> 00:02:28,680
+Let's take a look at grading next.
+

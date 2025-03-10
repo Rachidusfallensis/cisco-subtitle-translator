@@ -1,0 +1,500 @@
+1
+00:00:05,480 --> 00:00:10,760
+If you learn how to write a love letter to your significant other really well, this will make life really great.
+
+2
+00:00:11,220 --> 00:00:16,020
+If you learn how to write a prompt to a chatbot really well, then life will be pretty nice too.
+
+3
+00:00:16,420 --> 00:00:18,620
+Let's take a look at some tips on how to write your prompts.
+
+4
+00:00:19,620 --> 00:00:23,740
+The first thing you might find helpful is that you can prompt in the language of your choice.
+
+5
+00:00:24,420 --> 00:00:25,420
+It doesn't have to be in English.
+
+6
+00:00:26,360 --> 00:00:30,960
+For example, you can ask in Chinese, what's the difference between a Shih Tzu and a Havanese dog?
+
+7
+00:00:31,420 --> 00:00:34,400
+四肢圈和 Havanachuan有什么区别?
+
+8
+00:00:34,760 --> 00:00:38,880
+You can ask in French, what's the difference between a Shih Tzu and a Havanese dog?
+
+9
+00:00:39,180 --> 00:00:43,120
+quelle est la différence entre un Shih Tzu et un Sean Havanais?
+
+10
+00:00:43,360 --> 00:00:46,480
+Certain models have more training emphasis on certain languages.
+
+11
+00:00:47,480 --> 00:00:49,860
+Mistral AI, for instance, is based in France,
+
+12
+00:00:50,380 --> 00:00:54,160
+and they focus their model training to make it perform well in several European languages,
+
+13
+00:00:55,000 --> 00:00:57,380
+including French, German, Italian, and Spanish.
+
+14
+00:00:58,080 --> 00:01:02,680
+Another general tip I would recommend is to write more text than you normally would
+
+15
+00:01:03,400 --> 00:01:04,760
+compared to when you're doing a web search.
+
+16
+00:01:05,400 --> 00:01:08,280
+A lot of us have been transitioning from doing web searches
+
+17
+00:01:08,900 --> 00:01:11,820
+to doing searches and requesting information from chatbots.
+
+18
+00:01:12,100 --> 00:01:14,900
+So for instance, you might initially have a prompt like this.
+
+19
+00:01:15,580 --> 00:01:18,560
+What is the difference between a Shih Tzu and a Havanese dog?
+
+20
+00:01:18,920 --> 00:01:20,220
+Let's see what you get from this prompt.
+
+21
+00:01:21,060 --> 00:01:23,440
+So it answers the question and is fairly concise.
+
+22
+00:01:24,300 --> 00:01:26,800
+But you can think about what you're looking for in the answer.
+
+23
+00:01:27,480 --> 00:01:31,640
+Maybe ask it some intermediate steps that might help it to give a more complete answer,
+
+24
+00:01:32,040 --> 00:01:34,500
+such as list out similarities and differences.
+
+25
+00:01:35,100 --> 00:01:37,880
+And perhaps you can share what you plan to do with the information you get.
+
+26
+00:01:38,160 --> 00:01:42,760
+For example, ask it for advice on how to distinguish one thing from another.
+
+27
+00:01:43,160 --> 00:01:45,640
+Let's see what you might get with a more detailed prompt.
+
+28
+00:01:46,080 --> 00:01:49,160
+So you can see that it follows the guidance of the more detailed prompt
+
+29
+00:01:49,740 --> 00:01:51,700
+and lists similarities and differences,
+
+30
+00:01:52,680 --> 00:01:54,780
+then explains how to tell them apart.
+
+31
+00:01:55,400 --> 00:01:58,060
+So if you can be more detailed in what you're asking for,
+
+32
+00:01:58,400 --> 00:02:02,500
+then the chatbot will better understand what you're looking for and try to respond accordingly.
+
+33
+00:02:03,080 --> 00:02:08,080
+Another general suggestion is to break down your task into a sequence of subtasks.
+
+34
+00:02:08,420 --> 00:02:11,760
+For instance, you can ask what's the difference between these two types of dogs
+
+35
+00:02:12,020 --> 00:02:15,280
+and give it a list of steps that you might have taken to answer this question yourself.
+
+36
+00:02:15,980 --> 00:02:19,760
+First, review reference material, then list out similarities and differences,
+
+37
+00:02:20,420 --> 00:02:22,700
+And finally, suggest how to tell them apart.
+
+38
+00:02:26,620 --> 00:02:27,680
+And let's see what you might get.
+
+39
+00:02:31,420 --> 00:02:34,840
+And you can see at the top, it says, searched two sites,
+
+40
+00:02:35,600 --> 00:02:37,860
+meaning that it took those two web links that were provided
+
+41
+00:02:38,540 --> 00:02:40,720
+and looked through those in order for it to answer the question.
+
+42
+00:02:41,480 --> 00:02:44,660
+And notice that there is a logical sequence to the subtasks.
+
+43
+00:02:45,020 --> 00:02:47,800
+The earlier tasks involve research and gathering information.
+
+44
+00:02:48,260 --> 00:02:53,040
+Those come before the later tasks that involve using that information to draw conclusions.
+
+45
+00:02:53,940 --> 00:02:57,840
+And you can also describe how you want the output to be organized or formatted,
+
+46
+00:02:58,600 --> 00:03:01,760
+whether it's a table or bullet points or numbered list.
+
+47
+00:03:02,240 --> 00:03:08,440
+For example, you can ask, format your response in a table with these rows and these columns,
+
+48
+00:03:09,020 --> 00:03:12,000
+and answer this part of the question with a list of bullet points.
+
+49
+00:03:12,600 --> 00:03:17,079
+So this is quite helpful because by default, you'll most likely get either paragraphs
+
+50
+00:03:17,700 --> 00:03:21,560
+or sometimes bullet points, but if you want something different, then you can just ask for
+
+51
+00:03:21,680 --> 00:03:26,740
+that. Let's see what you might get with a prompt like this. So Gemini produces a nice looking table,
+
+52
+00:03:27,040 --> 00:03:31,740
+and on top of that, you may notice that it gives you an option to export into Google Sheets. Then
+
+53
+00:03:31,820 --> 00:03:37,400
+it provides a list of bullet points as requested. In addition to the format of the output, you can
+
+54
+00:03:37,640 --> 00:03:43,580
+also set expectations for what you consider to be a good response or good outcome. Most chatbots,
+
+55
+00:03:43,720 --> 00:03:48,440
+default tend to reply in a somewhat confident tone and will try their best to give some answer,
+
+56
+00:03:48,940 --> 00:03:53,700
+but you can set expectations that you would rather it admit when it's not sure or does not have enough
+
+57
+00:03:53,980 --> 00:03:59,380
+information. In other words, what you consider to be a good answer is sometimes to say "I don't know."
+
+58
+00:03:59,600 --> 00:04:04,720
+Let's first see what happens when you don't set the expectation and see how it differs when you do
+
+59
+00:04:04,920 --> 00:04:09,680
+set the expectation. So I'll just give it that top half of the prompt and not the bottom half.
+
+60
+00:04:10,080 --> 00:04:14,600
+Here's what you might get if you ask it to describe similarities and differences for the following categories.
+
+61
+00:04:15,120 --> 00:04:20,480
+You might be thinking that the question about smell and taste is not as common as the category about appearance,
+
+62
+00:04:21,160 --> 00:04:25,960
+and that there's probably less information about how dogs smell or what kind of food they prefer over others.
+
+63
+00:04:26,440 --> 00:04:29,260
+But a chatbot may still try its best to give a reasonable answer.
+
+64
+00:04:30,320 --> 00:04:37,580
+Now let's see how the same chatbot will respond if you do include your expectation that when it's not sure, it should say so.
+
+65
+00:04:42,920 --> 00:04:47,380
+So you can see that in the case of taste, it does admit that it's not 100% sure about
+
+66
+00:04:47,500 --> 00:04:48,280
+specific differences.
+
+67
+00:04:49,320 --> 00:04:52,340
+Another recommendation is to add structure to your prompts.
+
+68
+00:04:52,900 --> 00:04:57,820
+For instance, you can add subheaders to your prompts such as references and steps.
+
+69
+00:04:58,400 --> 00:05:00,460
+You can include numbering and bullet points as well.
+
+70
+00:05:00,880 --> 00:05:05,780
+You can also use special characters around text that you think should be treated differently
+
+71
+00:05:06,160 --> 00:05:07,220
+than its surrounding text.
+
+72
+00:05:07,760 --> 00:05:12,520
+For example, you may want to make it clear when a web link starts and ends, and so you
+
+73
+00:05:12,600 --> 00:05:13,920
+can put angle brackets around them.
+
+74
+00:05:14,440 --> 00:05:16,600
+And you can choose any special characters to do this.
+
+75
+00:05:17,040 --> 00:05:21,960
+A common recommendation is to use three double quotes at the start and end, or use three
+
+76
+00:05:22,420 --> 00:05:24,100
+hashtags at the start and the end.
+
+77
+00:05:24,800 --> 00:05:29,320
+These special characters that define the start and end of some specific piece of text are
+
+78
+00:05:29,460 --> 00:05:30,420
+called delimiters.
+
+79
+00:05:32,480 --> 00:05:33,360
+Let's try out this prompt.
+
+80
+00:05:33,880 --> 00:05:39,300
+And here, for instance, Cohere's chatbot interface lets you choose tools like Web Scraper, which
+
+81
+00:05:39,460 --> 00:05:42,700
+allows the chatbot to look up web pages that you give it links to.
+
+82
+00:05:43,400 --> 00:05:46,500
+Don't worry about the other tools right now, you'll learn more about tools later in the
+
+83
+00:05:47,240 --> 00:05:48,340
+So I'll go ahead and put in the prompt.
+
+84
+00:05:48,900 --> 00:05:53,580
+Notice how it indicates that it's using the URL scraper twice, one for each web link that's
+
+85
+00:05:53,700 --> 00:05:54,280
+given in the prompt.
+
+86
+00:05:54,820 --> 00:05:58,500
+One nice feature in Cohere's web interface is that you can highlight different parts
+
+87
+00:05:58,680 --> 00:06:02,660
+of its output, and it can give you the reference to the article where it got the information.
+
+88
+00:06:03,040 --> 00:06:07,560
+and it can help you verify that the output is grounded in the references that you asked it to
+
+89
+00:06:07,680 --> 00:06:13,960
+read. Another interesting feature of chatbots is that you can give them a temporary role or persona
+
+90
+00:06:14,260 --> 00:06:19,500
+that affects how they perform the task. You can say, you are a veterinarian, and then ask this
+
+91
+00:06:19,700 --> 00:06:25,959
+question. Or you can say, you are a comedian, and ask the same question. Let's go ahead and use a
+
+92
+00:06:25,980 --> 00:06:33,700
+model called Nemo by the company NVIDIA. So let's see if we can find Nemo. So here's Mistral AI's
+
+93
+00:06:33,820 --> 00:06:39,160
+website. Mistral AI actually teamed up with NVIDIA to train a model called Mistral Nemo, which is
+
+94
+00:06:39,280 --> 00:06:44,220
+based on NVIDIA's large language model Nemo. If I click on the current model, which is called
+
+95
+00:06:44,460 --> 00:06:52,319
+Mistral Large 2, it shows the models available. And look, I found Mistral Nemo here. So I'll first
+
+96
+00:06:52,340 --> 00:06:57,960
+give it a persona of a veterinarian, and let's see what it says. It gives a fairly structured answer
+
+97
+00:06:58,420 --> 00:07:04,240
+with different subheaders that includes its health and lifespan. Now let's try again by giving it the
+
+98
+00:07:04,400 --> 00:07:10,100
+persona of a comedian who likes to tell jokes. Now, with the persona of a comedian, instead of a
+
+99
+00:07:10,380 --> 00:07:16,180
+structured and formal answer, it gives a short paragraph that sounds more casual. Now, I'll admit
+
+100
+00:07:16,380 --> 00:07:21,759
+that I was hoping that it would tell a joke based on the prompt, what's the difference between a
+
+101
+00:07:21,780 --> 00:07:27,400
+shih tzu and a Havanese dog. If giving a persona isn't enough, you can give it explicit instructions
+
+102
+00:07:27,800 --> 00:07:33,640
+to tell a joke. And you can also try something else. You can give it examples of prompts and
+
+103
+00:07:33,860 --> 00:07:38,680
+completions to show it how you want to perform a task. So I give it a question, what's the
+
+104
+00:07:38,900 --> 00:07:44,640
+difference between a guitar and a fish? And I also give it the answer, which is a joke, you can't
+
+105
+00:07:44,940 --> 00:07:50,279
+tune a fish. And then I give it another example of the question, what's the difference between a
+
+106
+00:07:50,320 --> 00:07:56,640
+well-dressed dog on a bicycle and a poorly dressed dog on a unicycle. And I also give it an answer,
+
+107
+00:07:57,080 --> 00:08:02,320
+which is a tire. And finally, I give it the question that I want it to answer, which is,
+
+108
+00:08:02,720 --> 00:08:07,760
+what is the difference between a Shih Tzu and a Havanese dog? This pattern of giving examples
+
+109
+00:08:08,200 --> 00:08:12,700
+of both the input and the desired output in a prompt is what researchers are calling
+
+110
+00:08:13,240 --> 00:08:18,220
+few-shot prompting. In contrast, if you don't give any examples and just give it a task,
+
+111
+00:08:18,840 --> 00:08:20,960
+This is called zero shot prompting.
+
+112
+00:08:21,440 --> 00:08:26,300
+Now, the classic way of doing few shot prompting is to give the examples and then the next question.
+
+113
+00:08:26,860 --> 00:08:32,880
+But in practice, you may find it more helpful to give a bit more instruction for what you're asking the chatbot to do.
+
+114
+00:08:33,380 --> 00:08:36,539
+So I'm also going to start this prompt with this instruction.
+
+115
+00:08:37,200 --> 00:08:38,840
+Study how these questions are answered.
+
+116
+00:08:39,539 --> 00:08:43,260
+And I'm also going to proceed the final question with the instruction.
+
+117
+00:08:44,180 --> 00:08:45,580
+Now answer the following question.
+
+118
+00:08:47,020 --> 00:08:49,120
+Let's try this out using Meta AI.
+
+119
+00:08:49,940 --> 00:08:54,400
+Okay, so it's okay, some answers are funnier than others,
+
+120
+00:08:55,220 --> 00:09:00,080
+but you can see that it's attempting to answer the question as if giving the punchline to a joke,
+
+121
+00:09:00,720 --> 00:09:04,220
+in a similar structure as the previous examples given in the prompt.
+
+122
+00:09:04,700 --> 00:09:09,120
+Maybe you can play around with your own prompt and see if you can get the model to tell some good jokes.
+
+123
+00:09:09,560 --> 00:09:16,299
+The next optional video will take a break from AI and discuss some interpretations of the expression
+
+124
+00:09:16,840 --> 00:09:22,240
+every cloud has a silver lining. After that, the next several videos will dive into the different
+
+125
+00:09:22,640 --> 00:09:28,500
+categories of tasks that you saw in the overview. See you in the next video, or the one after that.
+

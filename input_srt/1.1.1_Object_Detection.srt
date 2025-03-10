@@ -1,0 +1,212 @@
+1
+00:00:05,080 --> 00:00:09,080
+If you want to know what kind of flower this is, one thing you can do is to take a picture of it
+
+2
+00:00:09,320 --> 00:00:14,540
+and then get your photo app to tell you what it is. In this case, it says it's a peony. So how does
+
+3
+00:00:14,680 --> 00:00:19,360
+the app do that? Let's take a look at computer vision, and in particular, object detection,
+
+4
+00:00:19,800 --> 00:00:25,519
+to find out more. So here's a photo that I'm viewing inside the Google Photos app. On the
+
+5
+00:00:25,540 --> 00:00:31,000
+bottom here, you can click on Lens, and you'll see that it creates a rectangle around an object
+
+6
+00:00:31,420 --> 00:00:37,140
+that it detected. And in this case, it's me. One common task in computer vision is to identify
+
+7
+00:00:37,680 --> 00:00:43,260
+a subsection of an image that contains an object of interest. It does this by defining a rectangle
+
+8
+00:00:43,640 --> 00:00:49,120
+called a bounding box that surrounds that object. And theoretically, it could also create a bounding
+
+9
+00:00:49,260 --> 00:00:54,740
+box around other objects of interest as well. For example, maybe over here, or maybe down here,
+
+10
+00:00:54,900 --> 00:00:59,540
+or maybe even back up here. This task of defining bounding boxes around objects of interest
+
+11
+00:00:59,980 --> 00:01:05,780
+is called object localization. Something I'd like to mention is that these bounding boxes are
+
+12
+00:01:06,100 --> 00:01:12,180
+usually rectangles and not other shapes like circles, triangles, or even parallelograms,
+
+13
+00:01:12,460 --> 00:01:17,680
+because rectangles are fairly efficient to define and work with. Another thing I'd like to note is
+
+14
+00:01:17,780 --> 00:01:23,679
+that object localization just identifies a region with something of interest, but doesn't yet include
+
+15
+00:01:23,700 --> 00:01:28,960
+the step of identifying what is within that bounding box. In other words, it tells you where
+
+16
+00:01:29,340 --> 00:01:35,000
+an object is within an image, but not what that object is. Here's another photograph. If I click
+
+17
+00:01:35,200 --> 00:01:40,680
+on lens here and then scroll down a bit, you can see that it classified this image to be either a
+
+18
+00:01:40,900 --> 00:01:48,579
+Maltese dog or a terrier. And by the way, his name is Tofu. This is another common task in computer
+
+19
+00:01:48,600 --> 00:01:50,560
+vision called image classification.
+
+20
+00:01:51,400 --> 00:01:56,460
+One thing to note here is that the task of classification does not include the creation
+
+21
+00:01:56,700 --> 00:01:57,380
+of the bounding box.
+
+22
+00:01:57,960 --> 00:02:01,740
+Even though in this demonstration the app has also created a bounding box around the
+
+23
+00:02:01,880 --> 00:02:07,400
+dog, the task of classification is just focused on identifying the name or label of an image.
+
+24
+00:02:07,740 --> 00:02:11,420
+The possible set of outputs of an image classifier are called classes.
+
+25
+00:02:12,080 --> 00:02:18,160
+Some examples of classes could be person, flower, dog, or bird, for instance.
+
+26
+00:02:18,620 --> 00:02:23,920
+To identify where an object is and what it is, you can combine these two tasks.
+
+27
+00:02:24,720 --> 00:02:27,340
+Object localization gets us these bounding boxes.
+
+28
+00:02:27,800 --> 00:02:29,440
+That's where these objects are located.
+
+29
+00:02:29,920 --> 00:02:34,460
+Then you can apply image classification on the subset of the image that's within each
+
+30
+00:02:34,640 --> 00:02:35,080
+bounding box.
+
+31
+00:02:35,740 --> 00:02:39,980
+So you get person, glasses, flower, tree, for instance.
+
+32
+00:02:40,620 --> 00:02:46,160
+This combination of object localization and image classification is called object detection.
+
+33
+00:02:46,620 --> 00:02:51,140
+Notice that for a single photograph, object detection can detect multiple objects.
+
+34
+00:02:51,760 --> 00:02:54,900
+There are some things worth noting when you're using an object detection app.
+
+35
+00:02:55,260 --> 00:02:57,380
+You may get different specificity in the class.
+
+36
+00:02:58,220 --> 00:03:03,400
+For instance, the class will probably be more specific than just "flower", but here you
+
+37
+00:03:03,480 --> 00:03:06,740
+can see that this yellow flower is identified as a dahlia.
+
+38
+00:03:07,200 --> 00:03:13,200
+here you can see that this class is slightly more specific. It's a Dahlia pinata. I did some
+
+39
+00:03:13,440 --> 00:03:18,580
+searching online and I think this yellow Dahlia is called a golden torch Dahlia. Something else
+
+40
+00:03:18,740 --> 00:03:23,660
+that I think is helpful to know is that the camera angle or point of view can affect the results.
+
+41
+00:03:24,060 --> 00:03:29,519
+For instance, this picture of this cute puppy is facing the front of his face. The image classifier
+
+42
+00:03:29,620 --> 00:03:38,540
+suggests that it may be a Feist, Podcake Dog, Cur, Hound, Haspen, or even a Pitbull. If I use a
+
+43
+00:03:38,820 --> 00:03:43,580
+picture of the same dog at a different angle, in this case this shows its body a bit more,
+
+44
+00:03:43,920 --> 00:03:49,020
+then the image classifier suggests that it might be a Mountain View Cur, or a Cajun Squirrel Dog,
+
+45
+00:03:49,440 --> 00:03:55,639
+or Black Mouth Cur. And by the way, this puppy's name is Neo. You may also see different or better
+
+46
+00:03:55,660 --> 00:04:01,860
+results if you adjust the bounding box manually. For instance, here, given the default bounding box,
+
+47
+00:04:02,200 --> 00:04:06,760
+you don't see any text that suggests what type of bird it is, you just see some similar looking
+
+48
+00:04:06,940 --> 00:04:11,220
+images, and you'll learn more about these search results in the next video. But if you manually
+
+49
+00:04:11,540 --> 00:04:15,700
+adjust the bounding box, usually making it fit more closely around the object, then you might
+
+50
+00:04:15,900 --> 00:04:21,200
+get better results. So now, the image classifier gives some suggested classes: Humboldt Penguin,
+
+51
+00:04:21,920 --> 00:04:27,960
+African penguin, and penguin. So you've probably noticed that below the image classifier results,
+
+52
+00:04:28,520 --> 00:04:33,260
+you can see similar images. The photo app is performing another type of task
+
+53
+00:04:33,740 --> 00:04:38,720
+called similarity search. Let's take a look at similarity search in the next video.
+

@@ -9,3 +9,4 @@ __pycache__/
 # Ignore large video files
 input_videos/*
 !input_videos/.gitkeep
+.env

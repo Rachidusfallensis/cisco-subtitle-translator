@@ -1,0 +1,240 @@
+1
+00:00:05,120 --> 00:00:09,480
+One particular tool you'll come across when you work with chatbots is an image generation tool.
+
+2
+00:00:09,920 --> 00:00:12,200
+Let's see how you can use tools to help you generate images.
+
+3
+00:00:12,920 --> 00:00:17,680
+Image generation is done by more than one category of models, but most recently,
+
+4
+00:00:18,200 --> 00:00:22,720
+the category of models that have been performing really well are called diffusion models.
+
+5
+00:00:23,200 --> 00:00:28,360
+The way diffusion models work is they start with an image that's just a bunch of random pixels,
+
+6
+00:00:28,920 --> 00:00:29,700
+which we call noise.
+
+7
+00:00:30,240 --> 00:00:34,740
+A diffusion model slowly removes some of that noise a bit at a time,
+
+8
+00:00:35,240 --> 00:00:38,580
+as if it expects that there is an image underneath all that noise.
+
+9
+00:00:39,100 --> 00:00:41,560
+And it does this in a repeated iterative process.
+
+10
+00:00:42,120 --> 00:00:46,340
+Each time, it looks at the image as if there is a coherent picture or painting
+
+11
+00:00:47,100 --> 00:00:50,280
+behind all that random noise, and it tries to remove that noise.
+
+12
+00:00:50,740 --> 00:00:53,660
+When it's removed enough of the noise, then you get an image.
+
+13
+00:00:54,060 --> 00:00:57,500
+And something I'll point out here is that in those earlier iterations,
+
+14
+00:00:58,200 --> 00:01:02,700
+it's not that the model already knows what the final image looks like behind all that noise.
+
+15
+00:01:03,300 --> 00:01:08,280
+So those green lines that you see in the earlier iterations could have turned into a frog,
+
+16
+00:01:08,660 --> 00:01:11,220
+but could have also turned into a turtle or a tree.
+
+17
+00:01:11,780 --> 00:01:14,520
+To guide a diffusion model to create a specific image,
+
+18
+00:01:14,800 --> 00:01:20,100
+the models are trained to take in both an image and text label that describes that image.
+
+19
+00:01:20,560 --> 00:01:25,460
+So when you use a diffusion model, you'll include a prompt that describes the image that you're hoping for,
+
+20
+00:01:25,900 --> 00:01:27,640
+such as frog with a balloon.
+
+21
+00:01:28,040 --> 00:01:31,880
+The diffusion model attempts to create an image that matches this text.
+
+22
+00:01:32,400 --> 00:01:38,640
+Some people have described this process as similar to when a sculptor starts with a rock and carves out a statue.
+
+23
+00:01:39,120 --> 00:01:41,840
+One of my friends actually said it reminded him of this quote.
+
+24
+00:01:42,140 --> 00:01:46,460
+I saw the angel in the marble and carved until I set him free.
+
+25
+00:01:46,960 --> 00:01:48,860
+This quote is by the artist Michelangelo.
+
+26
+00:01:49,300 --> 00:01:51,900
+There are several sites that let you try out image generation.
+
+27
+00:01:52,260 --> 00:01:53,960
+I'll demonstrate this with Meta AI.
+
+28
+00:01:54,460 --> 00:01:59,020
+You can click on this pen icon on the left, which takes you to the page that generates images.
+
+29
+00:01:59,560 --> 00:02:02,460
+So I'll ask it to generate an image of a pineapple cake.
+
+30
+00:02:02,900 --> 00:02:05,380
+So these are pretty nice images of pineapple cakes.
+
+31
+00:02:05,900 --> 00:02:09,080
+But I was actually thinking about a particular kind of pineapple cake.
+
+32
+00:02:09,479 --> 00:02:10,619
+So let me be more specific.
+
+33
+00:02:11,039 --> 00:02:14,140
+Generate an image of a Taiwanese pineapple cake.
+
+34
+00:02:17,160 --> 00:02:19,340
+So that's actually closer to what I was thinking about,
+
+35
+00:02:19,440 --> 00:02:25,900
+because Taiwanese pineapple cakes are rectangular and have that kind of flaky texture on the outside.
+
+36
+00:02:26,440 --> 00:02:28,480
+Similar to when you prompt a large language model,
+
+37
+00:02:29,080 --> 00:02:34,580
+when you prompt a diffusion model, you can give more detail in your prompt to describe the image that you want.
+
+38
+00:02:34,820 --> 00:02:37,420
+I can say a frog holding a red balloon.
+
+39
+00:02:37,960 --> 00:02:39,920
+Then if I add in the style of a Banksy,
+
+40
+00:02:40,280 --> 00:02:45,000
+it changes this to a slightly more cartoonish looking image of a frog holding a red balloon.
+
+41
+00:02:45,540 --> 00:02:50,960
+These image generation models are also provided as tools that a large language model has access to.
+
+42
+00:02:51,340 --> 00:02:55,620
+For instance, if you go to chatGPT and ask it to generate an image,
+
+43
+00:02:56,040 --> 00:03:02,260
+the chatbot will actually call an image generation model, in this case, Dolly3 by OpenAI.
+
+44
+00:03:02,520 --> 00:03:06,900
+So I can ask within chatGPT, generate an image of a purple emoji ball.
+
+45
+00:03:07,400 --> 00:03:10,260
+So that's pretty good. I had something slightly different in mind.
+
+46
+00:03:10,580 --> 00:03:16,060
+I'll ask it to generate four images of a purple emoji ball where the emoji ball is a stress ball.
+
+47
+00:03:16,500 --> 00:03:21,380
+So it looks like it's output images that have a softer texture as if it's a squishy rubber ball.
+
+48
+00:03:21,800 --> 00:03:27,860
+Sometimes you may encounter a copyright restriction if you ask a model to generate an image in the style of a famous artist.
+
+49
+00:03:28,360 --> 00:03:34,560
+For example, I can ask in chat GPT to generate an image of a frog holding a red balloon, and that's fine.
+
+50
+00:03:34,900 --> 00:03:40,880
+Now, if I ask it to generate a frog holding a red balloon in the style of a Banksy, here's what it says.
+
+51
+00:03:41,220 --> 00:03:44,600
+It wasn't able to generate the image due to content policy restrictions.
+
+52
+00:03:45,160 --> 00:03:50,360
+And it's helpful to keep in mind that even when there aren't restrictions placed on the particular software that you're using,
+
+53
+00:03:50,740 --> 00:03:55,500
+it's probably best to avoid generating images that you think might be harmful to other people.
+
+54
+00:03:55,880 --> 00:04:00,460
+Oftentimes, we as society rely on photographs to reflect reality.
+
+55
+00:04:00,880 --> 00:04:05,380
+So it's important to be careful about generating images that look like realistic photographs,
+
+56
+00:04:06,260 --> 00:04:07,280
+especially images of people.
+
+57
+00:04:07,820 --> 00:04:12,520
+Coming up next, you'll practice using personal assistants to help you use apps on your phone.
+
+58
+00:04:12,920 --> 00:04:13,260
+Hey Siri!
+
+59
+00:04:14,500 --> 00:04:14,800
+Hey Google!
+
+60
+00:04:16,059 --> 00:04:16,299
+Alexa!
+

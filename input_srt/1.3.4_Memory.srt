@@ -1,0 +1,336 @@
+1
+00:00:05,340 --> 00:00:09,620
+Sometimes you may be having a conversation with your friend when you realize that you
+
+2
+00:00:09,720 --> 00:00:13,720
+had something to add to a prior conversation, so then you go back to talking about that.
+
+3
+00:00:14,120 --> 00:00:18,820
+Chatbots can also sometimes refer to previous conversations as well, because they have some
+
+4
+00:00:19,060 --> 00:00:23,700
+additional code built around them called memory. Let's see how memory of prior conversations
+
+5
+00:00:24,540 --> 00:00:29,980
+affects how chatbots answer your most recent question. I'm going to ask a chatbot two questions
+
+6
+00:00:30,880 --> 00:00:34,420
+First, I'll ask "Who is Steve Jobs?" and it will reply.
+
+7
+00:00:34,780 --> 00:00:37,260
+Then I will ask it "Who is Eddie Xu?"
+
+8
+00:00:37,360 --> 00:00:41,440
+I'll use LM Studio and download a model from Mistral AI.
+
+9
+00:00:41,900 --> 00:00:42,660
+Let's see what it says.
+
+10
+00:00:43,000 --> 00:00:46,320
+And don't worry if you can't read all the text, I'll show you the relevant highlights
+
+11
+00:00:46,640 --> 00:00:47,720
+of the output in a moment.
+
+12
+00:00:49,220 --> 00:00:50,980
+So here's a review of what just happened.
+
+13
+00:00:51,500 --> 00:00:57,400
+In response to "Who is Steve Jobs?" the model replied that Steve Jobs is an entrepreneur
+
+14
+00:00:57,420 --> 00:01:00,640
+and gave more details about Steve Jobs' life and work in technology.
+
+15
+00:01:01,260 --> 00:01:06,320
+Then, in response to, who is Eddie Xu, it replied that Eddie Xu is an entrepreneur,
+
+16
+00:01:06,880 --> 00:01:09,420
+and mentions several other things, none of which are true,
+
+17
+00:01:09,740 --> 00:01:12,420
+but the point here is that they're all about engineering and business.
+
+18
+00:01:13,020 --> 00:01:16,700
+So next, I'm going to start a new conversation with the same model.
+
+19
+00:01:17,060 --> 00:01:18,860
+I'll ask it, who is Taylor Swift?
+
+20
+00:01:19,360 --> 00:01:22,500
+Then, after it responds, I'll ask it, who is Eddie Xu?
+
+21
+00:01:23,220 --> 00:01:28,920
+I'll use the same model, and I'll mention that before this, I started a new conversation by
+
+22
+00:01:29,120 --> 00:01:33,560
+clicking the new chat button on the top left corner. Let's see what happens, and then let's
+
+23
+00:01:33,740 --> 00:01:39,680
+review the results. So in response to Who is Taylor Swift, the model replies that Taylor Swift
+
+24
+00:01:39,920 --> 00:01:46,220
+is a singer-songwriter and mentions her life and work in music. Then, in response to Who is Eddie
+
+25
+00:01:46,420 --> 00:01:52,619
+Xu, it replies that Eddie is a violinist, composer, and conductor. Again, not true, but the point is
+
+26
+00:01:52,640 --> 00:01:57,720
+that the reply is all about music. So what's going on here? To understand why this is happening,
+
+27
+00:01:58,380 --> 00:02:04,280
+let's look at a feature of chatbots called memory. If you give a prompt like who is Steve Jobs and
+
+28
+00:02:04,360 --> 00:02:11,000
+the large language model gives its completion, a piece of software saves both your prompt and the
+
+29
+00:02:11,200 --> 00:02:17,540
+model's completion as part of an ongoing conversation. So when you give it another prompt, such as who is
+
+30
+00:02:17,580 --> 00:02:22,620
+Eddie Xu, that's not the only thing that gets sent to the large language model. This current prompt
+
+31
+00:02:23,080 --> 00:02:28,760
+gets appended to the ongoing conversation, and this whole conversation becomes the actual input
+
+32
+00:02:29,180 --> 00:02:34,140
+that's sent to the model, and that determines the model's completion. So if the earlier conversation
+
+33
+00:02:34,440 --> 00:02:39,900
+mentions entrepreneur, then the current completion may be influenced by this prior conversation,
+
+34
+00:02:40,520 --> 00:02:46,260
+and also mention entrepreneur. This feature of chatbots, which records the ongoing conversation
+
+35
+00:02:46,280 --> 00:02:52,180
+history and feeds it to the large language model is a feature that we call the memory of a chatbot.
+
+36
+00:02:52,500 --> 00:02:56,660
+And I'd just like to point out that the memory is a piece of software that is built independently
+
+37
+00:02:57,240 --> 00:03:01,940
+of the large language model itself. The model itself will not actually remember any of your
+
+38
+00:03:02,140 --> 00:03:08,220
+prior prompts or its prior completions in an ongoing conversation. Same thing happens when
+
+39
+00:03:08,320 --> 00:03:16,240
+you first ask, who is Taylor Swift? That prompt and its completion gets saved into memory. The
+
+40
+00:03:16,260 --> 00:03:21,380
+to that conversation, and the model uses that entire conversation about singer-songwriter
+
+41
+00:03:21,640 --> 00:03:26,300
+and music to determine its current completion, which ends up also talking about music.
+
+42
+00:03:26,760 --> 00:03:31,440
+And the influence of the conversation history may show up in less obvious situations as
+
+43
+00:03:31,600 --> 00:03:31,760
+this.
+
+44
+00:03:32,060 --> 00:03:37,200
+For instance, I was using Meta AI inside WhatsApp and asked it a few questions about the Olympics.
+
+45
+00:03:37,720 --> 00:03:39,620
+Then I asked it, who is Eddie Xu?
+
+46
+00:03:39,940 --> 00:03:43,520
+It replied that Eddie is a table tennis player who attended the Olympics.
+
+47
+00:03:44,020 --> 00:03:48,620
+Again, this is a hallucination, but the point is that it hallucinated about the Olympics
+
+48
+00:03:49,080 --> 00:03:52,080
+because the previous conversation history was about that same topic.
+
+49
+00:03:52,580 --> 00:03:56,960
+Now this has implications because you might be using the chatbot for an extended period
+
+50
+00:03:57,140 --> 00:04:02,580
+of time and for different tasks, and the completions that the chatbot gives you may start to be
+
+51
+00:04:02,820 --> 00:04:07,300
+influenced by previous conversations that you don't expect to be related to what you
+
+52
+00:04:07,400 --> 00:04:10,020
+are currently asking about in your most recent prompt.
+
+53
+00:04:10,320 --> 00:04:13,680
+For example, maybe an earlier conversation mentions pineapples.
+
+54
+00:04:14,020 --> 00:04:19,660
+Then, when you ask for pizza topping recommendations, it might suggest pineapples in part because
+
+55
+00:04:19,940 --> 00:04:22,079
+it was influenced by the previous conversation.
+
+56
+00:04:22,440 --> 00:04:27,000
+So I recommend that you start a new conversation whenever you want to move on to a new topic
+
+57
+00:04:27,320 --> 00:04:31,780
+to clear out any previous prompts and completions that might affect the current completion.
+
+58
+00:04:32,140 --> 00:04:36,520
+So the model's completion will be based on your current prompt and not any past prompts
+
+59
+00:04:36,660 --> 00:04:37,240
+and completions.
+
+60
+00:04:37,700 --> 00:04:42,680
+So if you ask for pizza topping recommendations, it won't necessarily be influenced to suggest
+
+61
+00:04:42,900 --> 00:04:43,360
+pineapples.
+
+62
+00:04:44,260 --> 00:04:48,860
+Most chatbots let you click on a button to start a new conversation or a new chat.
+
+63
+00:04:49,460 --> 00:04:52,160
+This clears out the memory of the previous conversations.
+
+64
+00:04:52,800 --> 00:04:57,740
+I would like to add one more thing about why memory is a separate piece of software that's
+
+65
+00:04:57,860 --> 00:05:00,040
+distinct from the actual large language model itself.
+
+66
+00:05:00,760 --> 00:05:05,240
+When a model is done training, the parameters in the model will no longer be updated when
+
+67
+00:05:05,260 --> 00:05:10,060
+is being used by end users like you and me. So when you send a prompt to a large language model
+
+68
+00:05:10,340 --> 00:05:15,260
+and it gives its completion, the parameters in that model will not be affected or changed by
+
+69
+00:05:15,420 --> 00:05:20,520
+receiving your prompt. What will change is the memory, which takes in the completion, appends
+
+70
+00:05:20,700 --> 00:05:25,400
+that to the conversation history, and also takes in the next prompt so that it can send the
+
+71
+00:05:25,660 --> 00:05:31,140
+conversation history and the current prompt to the large language model. For practical reasons,
+
+72
+00:05:31,380 --> 00:05:35,540
+it would be really difficult for any company that's hosting a large language model to try
+
+73
+00:05:35,680 --> 00:05:40,200
+and modify the parameters of a model based on each user's input to that model. And it probably
+
+74
+00:05:40,460 --> 00:05:45,280
+wouldn't be something you'd want anyways, because if a shared model changes its parameters after each
+
+75
+00:05:45,500 --> 00:05:50,240
+interaction with its users, then some other users' conversations with the chatbot would then affect
+
+76
+00:05:50,380 --> 00:05:55,240
+your own interactions with that same chatbot. So if one person is talking to the chatbot about
+
+77
+00:05:55,480 --> 00:06:00,520
+pineapples and you ask the chatbot for pizza topping recommendations, it might recommend pineapples.
+
+78
+00:06:01,240 --> 00:06:06,500
+But the way chatbots are designed, the memory of a chatbot is specific to you, the user,
+
+79
+00:06:06,980 --> 00:06:10,040
+even though the large language model is shared among many users.
+
+80
+00:06:10,480 --> 00:06:12,980
+So if someone is talking to a chatbot about pineapples,
+
+81
+00:06:13,340 --> 00:06:15,860
+and you ask the same chatbot to recommend pizza toppings,
+
+82
+00:06:16,320 --> 00:06:20,940
+its response won't be influenced by the other person's conversations about pineapples.
+
+83
+00:06:21,260 --> 00:06:27,600
+Next up, some tasks are easier, and some tasks are harder for a large language model to get right.
+
+84
+00:06:27,920 --> 00:06:31,460
+Let's look at the level of difficulty of various tasks next.
+

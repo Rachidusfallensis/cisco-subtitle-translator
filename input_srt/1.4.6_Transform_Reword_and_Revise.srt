@@ -1,0 +1,232 @@
+1
+00:00:05,200 --> 00:00:09,640
+In addition to transforming your text from one language to another, you can also transform it
+
+2
+00:00:09,800 --> 00:00:14,180
+by rewording it or revising it. Let's take a look at how you can use chatbots to do that.
+
+3
+00:00:14,920 --> 00:00:19,280
+Let's say you recently became friends with a captain of a ship because he very generously gave
+
+4
+00:00:19,380 --> 00:00:24,519
+you a ride home on a ship when you were in Puerto Rico. Your friend arrived here recently after
+
+5
+00:00:24,540 --> 00:00:30,620
+sailing through a hurricane around Bermuda in the Atlantic Ocean. He recently bought a compass in
+
+6
+00:00:30,840 --> 00:00:36,260
+Miami, Florida, and he wants to ask customer service if he can return it. So he's written a letter to
+
+7
+00:00:36,480 --> 00:00:42,080
+customer service asking for a replacement, and he's asking you to help reword his email to make sure
+
+8
+00:00:42,200 --> 00:00:46,960
+it's understood. Well, you can use a chatbot to help you reword your friend's email. Here are some
+
+9
+00:00:47,220 --> 00:00:51,979
+instructions to revise the following text to American-style English and to choose accessible
+
+10
+00:00:52,000 --> 00:00:56,620
+vocabulary words. To increase the chance that customer service is willing to help out, you ask
+
+11
+00:00:56,740 --> 00:01:03,660
+a chatbot to adjust the tone to keep it positive and avoid any misunderstanding. You also ask it to
+
+12
+00:01:03,800 --> 00:01:08,600
+try its best to maintain the original intent of the text. So let's try it out.
+
+13
+00:01:11,880 --> 00:01:16,380
+So it looks like the chatbot maintains the original intent by pointing out that the compass
+
+14
+00:01:16,740 --> 00:01:21,299
+isn't functioning and that your friend feels disappointed and even mentions trying to fix it
+
+15
+00:01:21,320 --> 00:01:27,040
+by giving it a friendly gesture. And the chatbot still says that your friend is hoping for a prompt
+
+16
+00:01:27,320 --> 00:01:34,320
+resolution and it signs the name Francis K.O. Ko. So it looks like it's doing a decent job of
+
+17
+00:01:34,500 --> 00:01:39,320
+rewording it while maintaining the original intent. And this can be helpful to you as well if you're
+
+18
+00:01:39,480 --> 00:01:43,600
+traveling abroad and learning another language, maybe even trying to work in another language.
+
+19
+00:01:44,180 --> 00:01:49,499
+You can ask a chatbot to help you reword your letters or emails or any writing that you do in
+
+20
+00:01:49,520 --> 00:01:53,380
+language that you're still learning. And even if you're writing in a language of your choice,
+
+21
+00:01:53,760 --> 00:01:58,480
+you might find it helpful to use speech recognition, also called voice dictation,
+
+22
+00:01:58,820 --> 00:02:02,140
+to help you with your writing. What you'll find when you're using speech recognition
+
+23
+00:02:02,140 --> 00:02:07,280
+is that the final wording might need a little bit of cleanup. This is in part because when you speak,
+
+24
+00:02:07,460 --> 00:02:12,140
+you're also thinking through the words you want to use. Maybe you'll also use some filler words
+
+25
+00:02:12,420 --> 00:02:17,559
+or repeat some phrase to try to clarify what you wanted to say. So let's look at an example and see
+
+26
+00:02:17,580 --> 00:02:20,660
+how you can ask a chatbot to help you clean up the transcription for you.
+
+27
+00:02:20,900 --> 00:02:27,620
+So, you know, I explained to all the people that, you know, that were there about how,
+
+28
+00:02:27,900 --> 00:02:36,020
+you know, I guess sausages are made. And so, well, well, that was the last time they invited
+
+29
+00:02:36,180 --> 00:02:44,039
+me back to the hot dog eating contest. Let's see how you can ask a chatbot to help clean up this
+
+30
+00:02:44,060 --> 00:02:48,920
+transcription. Let's first point out that the text that you want to work on was produced from speech
+
+31
+00:02:49,160 --> 00:02:54,340
+recognition, and you can ask the chatbot to rewrite it to correct the spelling or wording that may be
+
+32
+00:02:54,500 --> 00:02:58,560
+due to converting speech to text. For example, there may be words that sound the same but are
+
+33
+00:02:58,820 --> 00:03:02,300
+spelled differently and have different meanings, which you might recall from earlier in the course.
+
+34
+00:03:02,640 --> 00:03:07,680
+There are also filler words that we naturally may say when we're speaking aloud or thinking aloud,
+
+35
+00:03:08,040 --> 00:03:12,019
+but maybe we want to remove those in the final transcript. And this next part I think is quite
+
+36
+00:03:12,040 --> 00:03:17,600
+helpful because sometimes when a chatbot revises my writing, it may do more than I actually wanted
+
+37
+00:03:17,760 --> 00:03:22,780
+to do. So I want to set expectations that what I'm looking for is to preserve as much as possible
+
+38
+00:03:23,080 --> 00:03:28,140
+the style and tone and word choice. Again, this goes back to a general prompting tip of setting
+
+39
+00:03:28,440 --> 00:03:34,080
+expectations for what you consider to be a good output or a good outcome. So let's see how it does.
+
+40
+00:03:38,160 --> 00:03:46,080
+It gives the revision as well as some explanations for what it changed, and I like that it seems to be keeping most of the word choice that I originally had.
+
+41
+00:03:46,360 --> 00:03:51,900
+It also explains when it's removing filler words and phrases that are unclear or not grammatically correct.
+
+42
+00:03:52,240 --> 00:03:56,020
+You can also ask a chatbot to help you rewrite a prompt.
+
+43
+00:03:56,400 --> 00:04:01,420
+For example, maybe you want to translate Every Cloud Has a Silver Lining into other languages.
+
+44
+00:04:02,060 --> 00:04:09,280
+You can first ask the chatbot to rewrite the prompt to make the instructions clear and to get more complete or thorough results.
+
+45
+00:04:09,780 --> 00:04:10,640
+Let's see what we get from that.
+
+46
+00:04:14,100 --> 00:04:15,000
+So it's pretty good.
+
+47
+00:04:15,760 --> 00:04:18,640
+First, it puts quotes around the phrase, every cloud has a silver lining.
+
+48
+00:04:19,040 --> 00:04:25,680
+It also specifies specific languages, but it also asks in the prompt to not limit the answer to just those languages.
+
+49
+00:04:26,140 --> 00:04:31,560
+It also asks the chatbot to ensure that the translations convey the same meaning as the original phrase,
+
+50
+00:04:31,860 --> 00:04:35,400
+So this is getting into whether it would be a figurative idiomatic type of translation
+
+51
+00:04:35,980 --> 00:04:37,880
+or a literal word-for-word translation.
+
+52
+00:04:38,480 --> 00:04:39,020
+So it's pretty cool.
+
+53
+00:04:39,460 --> 00:04:42,920
+Looks like even if you forget most of the tips and tricks that you learned in this course,
+
+54
+00:04:43,280 --> 00:04:47,900
+you can still remember to ask a chatbot to help you reword and rewrite your prompts.
+
+55
+00:04:48,480 --> 00:04:53,120
+But I hope you still found all the advice on prompting helpful, and I hope you also had
+
+56
+00:04:53,220 --> 00:04:54,000
+fun while learning it.
+
+57
+00:04:54,360 --> 00:04:58,700
+Coming up next, you'll practice asking a chatbot to help you with fact-checking.
+
+58
+00:04:59,160 --> 00:05:00,620
+Let's look at that in the next video.
+

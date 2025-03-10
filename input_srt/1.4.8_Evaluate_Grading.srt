@@ -1,0 +1,188 @@
+1
+00:00:05,140 --> 00:00:09,620
+One of the ways you could use chatbots for evaluation is by doing qualitative scoring
+
+2
+00:00:09,960 --> 00:00:14,000
+on things like essays. Let's take a look at how you can prompt a chatbot to help you with that.
+
+3
+00:00:14,460 --> 00:00:18,380
+You can have a chatbot play the role of a teacher by helping you check your work
+
+4
+00:00:18,880 --> 00:00:23,180
+and help you think things through if you need some feedback. So given a problem you're trying
+
+5
+00:00:23,280 --> 00:00:28,500
+to solve, you first try out the solution yourself, then share it with a chatbot teacher. The chatbot
+
+6
+00:00:28,520 --> 00:00:32,560
+chatbot can first work out its own solution, compare it to the student's solution, and
+
+7
+00:00:32,619 --> 00:00:35,940
+if needed, give feedback and hints for how to reach the correct answer.
+
+8
+00:00:36,440 --> 00:00:40,720
+I'm calling this task "Grading" because you and the chatbot are working on a problem where
+
+9
+00:00:40,820 --> 00:00:43,340
+there is one "correct" answer.
+
+10
+00:00:43,980 --> 00:00:45,440
+Here's the problem we're trying to solve.
+
+11
+00:00:45,860 --> 00:00:47,560
+You may recognize it from earlier in the course.
+
+12
+00:00:50,940 --> 00:00:54,440
+And for this example, let's have Meta AI play the role of the student.
+
+13
+00:00:58,140 --> 00:00:59,660
+So here's the student's solution.
+
+14
+00:01:01,000 --> 00:01:02,260
+And here is the grading task.
+
+15
+00:01:03,960 --> 00:01:06,920
+First ask the chatbot to work out the problem on its own.
+
+16
+00:01:07,380 --> 00:01:09,700
+Then compare its solution to the student's solution.
+
+17
+00:01:10,140 --> 00:01:13,220
+Then decide if the student's solution is correct or not.
+
+18
+00:01:13,500 --> 00:01:16,340
+If the student's solution is incorrect, give them some hints.
+
+19
+00:01:16,760 --> 00:01:21,400
+Below that you can provide the original task or problem that the student is asked to solve,
+
+20
+00:01:21,780 --> 00:01:24,080
+and also the student's solution that's being graded.
+
+21
+00:01:24,620 --> 00:01:28,380
+And let's use HuggingChat, which also hosts the Meta Llama model.
+
+22
+00:01:28,940 --> 00:01:31,500
+So meta is grading meta.
+
+23
+00:01:32,100 --> 00:01:33,700
+That's so meta.
+
+24
+00:01:34,560 --> 00:01:35,500
+Here's the start of the prompt.
+
+25
+00:01:37,440 --> 00:01:38,980
+And let's copy in the logic problem.
+
+26
+00:01:40,040 --> 00:01:42,300
+Then let's get the student solution and copy that in.
+
+27
+00:01:44,679 --> 00:01:45,280
+And let's see what happens.
+
+28
+00:01:46,060 --> 00:01:49,120
+Looks like the teacher chatbot incorrectly thinks that the answer is yes.
+
+29
+00:01:49,980 --> 00:01:53,440
+And so it says that the student is correct and does not need any hints.
+
+30
+00:01:54,000 --> 00:01:59,140
+So I tried this a couple times before filming, and sometimes the LLAML model as the grader
+
+31
+00:01:59,620 --> 00:02:03,560
+correctly figures out the answer is no and gives the student hints to get the correct
+
+32
+00:02:04,380 --> 00:02:08,360
+But sometimes the grader also gets it wrong, so I think it's helpful to keep in mind that
+
+33
+00:02:08,479 --> 00:02:10,460
+the grader might also get the answer wrong as well.
+
+34
+00:02:11,039 --> 00:02:15,140
+Let's try this again, but this time I'll choose another open source model also hosted
+
+35
+00:02:15,320 --> 00:02:18,840
+on Hugging Chat called QN, which is produced by Alibaba.
+
+36
+00:02:19,420 --> 00:02:23,180
+So QN will now play the role of the teacher, and I'll repeat the same prompt.
+
+37
+00:02:23,640 --> 00:02:27,920
+So in this case, looks like the teacher model works through the solution and correctly states
+
+38
+00:02:28,380 --> 00:02:29,040
+that the answer is no.
+
+39
+00:02:29,580 --> 00:02:33,460
+It then reviews the student's reasoning and compares it to the teacher's reasoning.
+
+40
+00:02:33,960 --> 00:02:37,580
+It also explains why the student's reasoning led to the incorrect answer.
+
+41
+00:02:38,000 --> 00:02:42,400
+Finally, the teacher provides some hints to help the student figure out the correct solution.
+
+42
+00:02:42,820 --> 00:02:43,360
+So that's pretty nice.
+
+43
+00:02:43,860 --> 00:02:46,360
+Maybe you can try this out sometime when you would like some feedback.
+
+44
+00:02:46,700 --> 00:02:51,060
+And for this example, maybe you can give the teacher's feedback back to the student chatbot
+
+45
+00:02:51,320 --> 00:02:52,800
+and see if that helps it get the right answer.
+
+46
+00:02:53,220 --> 00:02:58,440
+Next, let's look at evaluating someone's work when it's a more open-ended task, like an essay.
+
+47
+00:02:58,940 --> 00:03:00,800
+We'll look at qualitative scoring next.
+

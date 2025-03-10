@@ -1,0 +1,244 @@
+1
+00:00:05,200 --> 00:00:07,420
+Sometimes you need to come up with creative ideas.
+
+2
+00:00:08,100 --> 00:00:09,120
+Like for example...
+
+3
+00:00:10,920 --> 00:00:11,380
+Hang on a second.
+
+4
+00:00:12,280 --> 00:00:13,300
+Let me ask a chatbot for help.
+
+5
+00:00:13,860 --> 00:00:17,740
+In the meantime, let's take a look at how you can use chatbots to come up with creative ideas.
+
+6
+00:00:18,520 --> 00:00:20,620
+Sometimes when you're trying to be creative,
+
+7
+00:00:20,980 --> 00:00:24,120
+you can ask a chatbot to give you options to help you think of new ideas.
+
+8
+00:00:24,660 --> 00:00:28,000
+For example, you can say, "Tell me a joke about puppies."
+
+9
+00:00:32,460 --> 00:00:33,660
+So here it gave me one joke.
+
+10
+00:00:34,640 --> 00:00:36,180
+Why did the puppy sit in the shade?
+
+11
+00:00:36,620 --> 00:00:38,680
+Because it didn't want to be a hot dog.
+
+12
+00:00:39,180 --> 00:00:41,000
+But it would help to ask for more than one option.
+
+13
+00:00:41,700 --> 00:00:46,340
+So you can say instead, suggest several options for a joke about puppies.
+
+14
+00:00:52,960 --> 00:00:54,240
+So now you have a couple options.
+
+15
+00:00:54,860 --> 00:00:57,280
+Feel free to rewind a bit to read through all of them
+
+16
+00:00:57,540 --> 00:01:02,800
+or prompt a chatbot yourself to see what you get. If you find a joke you like and want variations
+
+17
+00:01:03,320 --> 00:01:09,620
+in a similar style, you can ask it to analyze the joke, explain why it's funny, and then suggest
+
+18
+00:01:10,000 --> 00:01:16,820
+some similar jokes. Why don't dogs make good dancers? Because they have two left feet. So I
+
+19
+00:01:16,960 --> 00:01:23,060
+can say explain the structure and what method it uses to make the punchline be funny or interesting
+
+20
+00:01:23,080 --> 00:01:27,500
+and then suggests some jokes that use a similar method for the punchline.
+
+21
+00:01:30,780 --> 00:01:35,360
+And here, it identifies that two left feet is an idiom in English,
+
+22
+00:01:35,820 --> 00:01:41,140
+which describes when someone maybe isn't so coordinated and therefore not very good at dancing.
+
+23
+00:01:41,680 --> 00:01:47,220
+And then it tries to suggest some jokes that have the same type of wordplay that you saw in the first joke.
+
+24
+00:01:47,640 --> 00:01:51,500
+So for example, this joke, why did the scarecrow win an award?
+
+25
+00:01:51,760 --> 00:01:55,380
+because he was outstanding in his field.
+
+26
+00:01:55,880 --> 00:01:59,320
+And it explains the joke, because outstanding in a field
+
+27
+00:01:59,580 --> 00:02:03,400
+is a play on the literal idea of a scarecrow standing in a field.
+
+28
+00:02:07,240 --> 00:02:09,440
+So I encourage you to try this out for yourself.
+
+29
+00:02:10,080 --> 00:02:12,640
+Either pause the video now or wait till the end of the video,
+
+30
+00:02:13,060 --> 00:02:16,420
+and you can analyze some jokes and see if you can prompt a chatbot
+
+31
+00:02:16,880 --> 00:02:19,700
+to suggest some jokes that have a similar style or setup.
+
+32
+00:02:20,480 --> 00:02:21,720
+Here's an example to get you started.
+
+33
+00:02:22,160 --> 00:02:26,160
+Here's this joke about eating salads and cakes that you may recall from earlier.
+
+34
+00:02:26,720 --> 00:02:28,920
+And I'm actually a bit curious if you find this funny or not,
+
+35
+00:02:29,320 --> 00:02:32,080
+because I've tried this on a couple people and got mixed results.
+
+36
+00:02:32,580 --> 00:02:34,600
+But at least it makes me laugh when I tell it to myself.
+
+37
+00:02:35,120 --> 00:02:37,820
+There's also this funny phrase that I came up with.
+
+38
+00:02:38,040 --> 00:02:41,840
+I wish I remembered what I was thinking when I was inside the box.
+
+39
+00:02:42,420 --> 00:02:44,060
+Or this one, which I read somewhere online.
+
+40
+00:02:44,660 --> 00:02:47,660
+I wish I paid more attention in my first rodeo.
+
+41
+00:02:48,100 --> 00:02:52,760
+And don't worry if you don't get why this is supposed to be funny, maybe you can ask a chatbot to explain.
+
+42
+00:02:53,620 --> 00:02:57,800
+And maybe after you try asking a chatbot to tell some jokes or explain some jokes,
+
+43
+00:02:58,160 --> 00:03:01,560
+you can decide for yourself whether you think AI has a sense of humor or not.
+
+44
+00:03:02,060 --> 00:03:05,140
+You may recall that chatbots sometimes hallucinate,
+
+45
+00:03:05,660 --> 00:03:09,220
+especially when you ask it about yourself if it doesn't have information about you.
+
+46
+00:03:09,520 --> 00:03:16,240
+You can treat this behavior as a feature instead of a bug if you ask it to daydream about your future life journey.
+
+47
+00:03:16,700 --> 00:03:20,120
+For example, you may be planning your next steps in your career, maybe you're starting
+
+48
+00:03:20,280 --> 00:03:23,920
+out in your career, and it helps to read other people's biographies to get a sense of what
+
+49
+00:03:24,040 --> 00:03:25,140
+kind of life you want to live.
+
+50
+00:03:25,300 --> 00:03:29,280
+And it might also be fun to read an inspiring story about your future self.
+
+51
+00:03:29,700 --> 00:03:32,920
+And you can customize this story based on your personal interests and hobbies.
+
+52
+00:03:33,400 --> 00:03:37,620
+I'll start out by giving the chatbot a role as a fortune teller who tells inspiring stories
+
+53
+00:03:37,980 --> 00:03:39,060
+of a person's future life.
+
+54
+00:03:39,680 --> 00:03:41,880
+And I'll give the fortune teller some background info.
+
+55
+00:03:42,720 --> 00:03:46,900
+the person's name, Francis, Ko, their interests, hobbies, and values.
+
+56
+00:03:47,680 --> 00:03:53,140
+I specify the pronoun because it sometimes tends to default to he and him unless you specify this.
+
+57
+00:03:53,640 --> 00:03:56,260
+So let's see what the future may hold for Francis.
+
+58
+00:03:56,940 --> 00:04:01,920
+If you want, you can try this on yourself with your own hobbies and your own personal interests and passions
+
+59
+00:04:02,720 --> 00:04:05,480
+to see what the chatbots tell you might be in your future.
+
+60
+00:04:06,200 --> 00:04:09,780
+And I hope it might give you some inspiration for what you want to do next.
+
+61
+00:04:10,500 --> 00:04:16,600
+Let's go on to the next video to learn about one of these synthesized tasks, which is to summarize text.
+
