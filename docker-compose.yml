@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./input_srt:/app/input_srt
+      - ./output:/app/output
+      - translation_memory:/app/translation_memory
+    environment:
+      - DEEPL_API_KEY=${DEEPL_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    restart: unless-stopped
+
+volumes:
+  translation_memory: 
