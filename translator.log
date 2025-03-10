@@ -1,0 +1,20 @@
+2025-03-10 11:41:38,210 - __main__ - INFO - Starting Video Subtitle Translator
+2025-03-10 11:41:38,236 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.25.7:5000
+2025-03-10 11:41:38,236 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 11:41:38,236 - werkzeug - INFO -  * Restarting with stat
+2025-03-10 11:41:38,353 - __main__ - INFO - Starting Video Subtitle Translator
+2025-03-10 11:41:38,362 - werkzeug - WARNING -  * Debugger is active!
+2025-03-10 11:41:38,367 - werkzeug - INFO -  * Debugger PIN: 574-802-974
+2025-03-10 11:41:47,637 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:41:47] "GET / HTTP/1.1" 200 -
+2025-03-10 11:41:47,736 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:41:47] "GET /socket.io/?EIO=4&transport=polling&t=PL_fO3I HTTP/1.1" 200 -
+2025-03-10 11:41:47,737 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:41:47] "GET /stats HTTP/1.1" 200 -
+2025-03-10 11:41:47,755 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:41:47] "POST /socket.io/?EIO=4&transport=polling&t=PL_fO3a&sid=kRRxgvCwf_yO8srDAAAA HTTP/1.1" 200 -
+2025-03-10 11:41:47,771 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:41:47] "GET /socket.io/?EIO=4&transport=polling&t=PL_fO3a.0&sid=kRRxgvCwf_yO8srDAAAA HTTP/1.1" 200 -
+2025-03-10 11:41:47,844 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:41:47] "GET /socket.io/?EIO=4&transport=polling&t=PL_fO4x&sid=kRRxgvCwf_yO8srDAAAA HTTP/1.1" 200 -
+2025-03-10 11:41:59,450 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:41:59] "POST /upload HTTP/1.1" 200 -
+2025-03-10 11:42:17,593 - __main__ - INFO - Translation completed for job 1741603319-1.0.4_Intelligence.srt
+2025-03-10 11:42:17,735 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:42:17] "GET /stats HTTP/1.1" 200 -
+2025-03-10 11:42:47,737 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 11:42:47] "GET /stats HTTP/1.1" 200 -

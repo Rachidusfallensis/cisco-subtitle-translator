@@ -1,7 +1,15 @@
-moviepy
-speechrecognition
-pydub
 requests
+urllib3<2.0.0
 anthropic
 python-dotenv
-audio-extract 
+flask
+flask-socketio
+flask-limiter
+logging-utils
+python-dateutil
+
+# Type stubs for development
+types-requests
+types-Flask
+types-Flask-SocketIO
+types-python-dateutil 

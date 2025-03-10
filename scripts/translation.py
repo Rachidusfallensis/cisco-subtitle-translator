@@ -23,5 +23,6 @@ def translate_to_french(subtitles):
             print(f"⚠️ Translation error: {response.text}")
             translated_text = subtitle["text"]  # Fallback to original text
         french_subtitles.append({"start": subtitle["start"], "end": subtitle["end"], "text": translated_text})
+    
     print("✅ Translation to French completed")
     return french_subtitles

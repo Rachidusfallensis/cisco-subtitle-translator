@@ -1,0 +1,3 @@
+"""
+Video Translator scripts package.
+""" 

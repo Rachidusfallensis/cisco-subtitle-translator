@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Subtitle Translator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .drop-zone {
+            border: 2px dashed #0d6efd;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .drop-zone:hover, .drop-zone.dragover {
+            background: #e9ecef;
+            border-color: #0b5ed7;
+        }
+        .file-item {
+            background: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        .file-item:hover {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .progress {
+            height: 10px;
+        }
+        .suggestions {
+            background: #e9ecef;
+            border-left: 4px solid #0d6efd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .tooltip-icon {
+            color: #6c757d;
+            cursor: help;
+        }
+        .status-badge {
+            font-size: 0.8em;
+            padding: 5px 10px;
+            border-radius: 12px;
+        }
+        .file-preview {
+            max-height: 300px;
+            overflow-y: auto;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        .quality-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        .quality-high { background-color: #d1e7dd; color: #0f5132; }
+        .quality-medium { background-color: #fff3cd; color: #856404; }
+        .quality-low { background-color: #f8d7da; color: #842029; }
+        .stats-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .stats-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <!-- Header -->
+        <div class="row mb-4">
+            <div class="col">
+                <h1 class="display-5 mb-3">
+                    <i class="fas fa-language text-primary"></i> Video Subtitle Translator
+                </h1>
+                <p class="lead">Translate your SRT subtitle files from English to French using DeepL API</p>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <h6 class="text-muted mb-2">Active Translations</h6>
+                    <div class="stats-value" id="activeTranslations">0</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <h6 class="text-muted mb-2">Completed Today</h6>
+                    <div class="stats-value" id="completedToday">0</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <h6 class="text-muted mb-2">Average Processing Time</h6>
+                    <div class="stats-value" id="avgProcessingTime">0s</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <h6 class="text-muted mb-2">Success Rate</h6>
+                    <div class="stats-value" id="successRate">0%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="row">
+            <!-- Upload Section -->
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            Upload Files
+                            <i class="fas fa-question-circle tooltip-icon ms-2" 
+                               data-bs-toggle="tooltip" 
+                               title="Drag and drop your SRT files here or click to select files. You can upload multiple files at once."></i>
+                        </h5>
+                        
+                        <div class="drop-zone mb-3" id="dropZone">
+                            <i class="fas fa-cloud-upload-alt fa-3x text-primary mb-3"></i>
+                            <h5>Drag & Drop SRT Files Here</h5>
+                            <p class="text-muted mb-0">or click to select files</p>
+                            <input type="file" id="fileInput" multiple accept=".srt" class="d-none">
+                        </div>
+
+                        <div id="fileList" class="mt-4">
+                            <!-- Files will be listed here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Suggestions & Info Section -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            <i class="fas fa-chart-line text-primary"></i> Statistics
+                        </h5>
+                        <div id="statsContent">
+                            Loading statistics...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            <i class="fas fa-lightbulb text-warning"></i> Tips & Information
+                        </h5>
+                        
+                        <div class="suggestions">
+                            <h6><i class="fas fa-check-circle text-success"></i> Best Practices</h6>
+                            <ul class="mb-0">
+                                <li>Ensure your SRT files are properly formatted</li>
+                                <li>Check timestamps are in correct format (HH:MM:SS,mmm)</li>
+                                <li>Verify the source text is in English</li>
+                                <li>Keep original files as backup</li>
+                            </ul>
+                        </div>
+
+                        <div class="suggestions">
+                            <h6><i class="fas fa-info-circle text-primary"></i> Features</h6>
+                            <ul class="mb-0">
+                                <li>Batch processing of multiple files</li>
+                                <li>Real-time translation progress</li>
+                                <li>Translation quality analysis</li>
+                                <li>Automatic error handling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File Item Template -->
+    <template id="fileItemTemplate">
+        <div class="file-item">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+                <div>
+                    <h6 class="mb-1 filename"></h6>
+                    <span class="status-badge badge bg-secondary">Waiting</span>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-sm btn-outline-primary preview-btn">
+                        <i class="fas fa-eye"></i> Preview
+                    </button>
+                    <button class="btn btn-sm btn-outline-danger remove-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                     role="progressbar" style="width: 0%"></div>
+            </div>
+            <div class="file-preview d-none">
+                <!-- Preview content will be inserted here -->
+            </div>
+            <div class="quality-metrics d-none">
+                <!-- Quality metrics will be inserted here -->
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted status-text">Ready to process</small>
+                <div>
+                    <span class="quality-badge d-none"></span>
+                    <a href="#" class="btn btn-success btn-sm download-btn d-none">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const socket = io();
+            const dropZone = document.getElementById('dropZone');
+            const fileInput = document.getElementById('fileInput');
+            const fileList = document.getElementById('fileList');
+            const fileItemTemplate = document.getElementById('fileItemTemplate');
+            
+            // Initialize tooltips
+            const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            tooltips.forEach(tooltip => new bootstrap.Tooltip(tooltip));
+
+            // File processing queue
+            const fileQueue = new Map();
+
+            // Update statistics periodically
+            function updateStats() {
+                fetch('/stats')
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('activeTranslations').textContent = 
+                            data.translations.active_translations;
+                        document.getElementById('completedToday').textContent = 
+                            data.translations.completed_jobs;
+                        document.getElementById('avgProcessingTime').textContent = 
+                            `${data.translations.average_processing_time.toFixed(1)}s`;
+                        const successRate = (data.translations.completed_jobs / 
+                            Math.max(1, data.translations.total_jobs) * 100).toFixed(1);
+                        document.getElementById('successRate').textContent = `${successRate}%`;
+
+                        // Update detailed stats
+                        document.getElementById('statsContent').innerHTML = `
+                            <div class="mb-3">
+                                <strong>Storage Usage:</strong>
+                                <div class="text-muted">
+                                    Upload Directory: ${formatBytes(data.storage.upload_dir_size)}<br>
+                                    Output Directory: ${formatBytes(data.storage.output_dir_size)}
+                                </div>
+                            </div>
+                            <div>
+                                <strong>Translation Jobs:</strong>
+                                <div class="text-muted">
+                                    Total: ${data.translations.total_jobs}<br>
+                                    Completed: ${data.translations.completed_jobs}<br>
+                                    Failed: ${data.translations.failed_jobs}
+                                </div>
+                            </div>
+                        `;
+                    })
+                    .catch(console.error);
+            }
+
+            // Update stats every 30 seconds
+            updateStats();
+            setInterval(updateStats, 30000);
+
+            function formatBytes(bytes) {
+                if (bytes === 0) return '0 Bytes';
+                const k = 1024;
+                const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+                const i = Math.floor(Math.log(bytes) / Math.log(k));
+                return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+            }
+
+            // Drag and drop handlers
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropZone.addEventListener(eventName, preventDefaults, false);
+            });
+
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropZone.addEventListener(eventName, () => {
+                    dropZone.classList.add('dragover');
+                });
+            });
+
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropZone.addEventListener(eventName, () => {
+                    dropZone.classList.remove('dragover');
+                });
+            });
+
+            // Handle file selection
+            dropZone.addEventListener('click', () => fileInput.click());
+            fileInput.addEventListener('change', handleFiles);
+            dropZone.addEventListener('drop', (e) => {
+                handleFiles({ target: { files: e.dataTransfer.files } });
+            });
+
+            function handleFiles(e) {
+                const files = Array.from(e.target.files).filter(file => file.name.endsWith('.srt'));
+                files.forEach(addFileToQueue);
+                fileInput.value = ''; // Reset file input
+            }
+
+            function addFileToQueue(file) {
+                const fileId = Date.now() + '-' + file.name;
+                if (fileQueue.has(fileId)) return;
+
+                // Create file item element
+                const fileItem = document.importNode(fileItemTemplate.content, true).children[0];
+                fileItem.querySelector('.filename').textContent = file.name;
+                fileList.appendChild(fileItem);
+
+                // Store file information
+                fileQueue.set(fileId, {
+                    file: file,
+                    element: fileItem,
+                    status: 'waiting'
+                });
+
+                // Setup preview button
+                fileItem.querySelector('.preview-btn').addEventListener('click', () => {
+                    const previewDiv = fileItem.querySelector('.file-preview');
+                    if (previewDiv.classList.contains('d-none')) {
+                        const reader = new FileReader();
+                        reader.onload = (e) => {
+                            previewDiv.textContent = e.target.result.slice(0, 500) + '...';
+                            previewDiv.classList.remove('d-none');
+                        };
+                        reader.readAsText(file);
+                    } else {
+                        previewDiv.classList.add('d-none');
+                    }
+                });
+
+                // Setup remove button
+                fileItem.querySelector('.remove-btn').addEventListener('click', () => {
+                    fileQueue.delete(fileId);
+                    fileItem.remove();
+                });
+
+                // Start processing
+                processFile(fileId, file, fileItem);
+            }
+
+            function processFile(fileId, file, fileItem) {
+                const formData = new FormData();
+                formData.append('file', file);
+
+                fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        updateFileStatus(fileItem, 'processing');
+                        listenForProgress(data.job_id, fileId, fileItem);
+                    } else {
+                        updateFileStatus(fileItem, 'error', data.error);
+                    }
+                })
+                .catch(error => {
+                    updateFileStatus(fileItem, 'error', 'Upload failed');
+                    console.error('Error:', error);
+                });
+            }
+
+            function listenForProgress(jobId, fileId, fileItem) {
+                socket.on('status_update', function(msg) {
+                    if (msg.job_id === jobId) {
+                        const progressBar = fileItem.querySelector('.progress-bar');
+                        progressBar.style.width = msg.progress + '%';
+                        
+                        if (msg.status === 'completed') {
+                            updateFileStatus(fileItem, 'completed', null, msg.output_file, msg.quality_metrics);
+                        } else if (msg.status === 'error') {
+                            updateFileStatus(fileItem, 'error', msg.error);
+                        }
+                    }
+                });
+            }
+
+            function updateFileStatus(fileItem, status, error = null, outputFile = null, qualityMetrics = null) {
+                const statusBadge = fileItem.querySelector('.status-badge');
+                const statusText = fileItem.querySelector('.status-text');
+                const downloadBtn = fileItem.querySelector('.download-btn');
+                const progressBar = fileItem.querySelector('.progress-bar');
+                const qualityBadge = fileItem.querySelector('.quality-badge');
+                const qualityMetricsDiv = fileItem.querySelector('.quality-metrics');
+
+                switch (status) {
+                    case 'processing':
+                        statusBadge.className = 'status-badge badge bg-primary';
+                        statusBadge.textContent = 'Processing';
+                        statusText.textContent = 'Translation in progress...';
+                        break;
+                    case 'completed':
+                        statusBadge.className = 'status-badge badge bg-success';
+                        statusBadge.textContent = 'Completed';
+                        statusText.textContent = 'Translation completed';
+                        progressBar.style.width = '100%';
+                        progressBar.classList.remove('progress-bar-animated');
+                        downloadBtn.href = '/download/' + outputFile;
+                        downloadBtn.classList.remove('d-none');
+
+                        if (qualityMetrics) {
+                            qualityBadge.classList.remove('d-none');
+                            qualityBadge.classList.add(
+                                qualityMetrics.quality_level === 'high' ? 'quality-high' :
+                                qualityMetrics.quality_level === 'medium' ? 'quality-medium' : 'quality-low'
+                            );
+                            qualityBadge.textContent = `Quality: ${(qualityMetrics.confidence_score * 100).toFixed(0)}%`;
+
+                            qualityMetricsDiv.classList.remove('d-none');
+                            qualityMetricsDiv.innerHTML = `
+                                <div class="mt-2 small">
+                                    <div class="text-muted">Processing Time: ${qualityMetrics.processing_time}</div>
+                                    <div class="text-muted">Length Ratio: ${qualityMetrics.length_ratio}</div>
+                                </div>
+                            `;
+                        }
+                        break;
+                    case 'error':
+                        statusBadge.className = 'status-badge badge bg-danger';
+                        statusBadge.textContent = 'Error';
+                        statusText.textContent = error || 'An error occurred';
+                        progressBar.classList.add('bg-danger');
+                        break;
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
